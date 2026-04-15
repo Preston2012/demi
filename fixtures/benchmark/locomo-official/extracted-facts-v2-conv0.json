@@ -1,0 +1,1175 @@
+[
+  {
+    "conversation_index": 0,
+    "facts": [
+      {
+        "claim": "Caroline attended a LGBTQ support group on 7 May, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline found the transgender stories at the support group inspiring",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "The LGBTQ support group has made Caroline feel accepted and given her courage to embrace herself",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to continue her education",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to check out career options",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in counseling as a career",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in working in mental health",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline would like to support people with similar issues to her own through her career",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie has children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie painted a lake sunrise in 2022",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses painting as a way to express her feelings and get creative",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses painting as a way to relax after a long day",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie plans to go swimming with her children on 8 May, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie ran a charity race for mental health on 22 May, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's hobbies include running, reading, and playing violin",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie carves out daily me-time for self-care activities",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's children are excited about summer break",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is planning a camping trip in June 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is researching adoption agencies as of 25 May, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's goal is to adopt children and provide them a loving home",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is looking into adoption agencies that support LGBTQ+ folks",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline identifies as LGBTQ+",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is single and plans to be a single parent through adoption",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is transgender and identifies as trans",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline gave a school event talk on 2 June 2023 about her transgender journey",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline encouraged students to get involved in the LGBTQ community during her school event talk on 2 June 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline started transitioning three years before 9 June 2023, which was approximately June 2020",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline came out as transgender",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has friends and family who support her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has known her friends for 4 years as of 9 June 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline moved from her home country 4 years before 9 June 2023, which was approximately June 2019",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline experienced a tough breakup",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has mentors who motivate her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline met up with Melanie on 2 June 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie is married",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has kids",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has been married for 5 years as of 9 June 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's family motivates her",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is from Sweden",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline received a necklace as a gift from her grandma in Sweden when she was young",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's necklace is a symbol of love, faith and strength",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has a hand-painted bowl made by a friend for her 18th birthday",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline received the hand-painted bowl ten years before 27 June 2023, which was on 27 June 2013",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline identifies as trans",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in pursuing a career in counseling and mental health",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline wants to work with trans people to help them accept themselves and support their mental health",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline attended an LGBTQ+ counseling workshop on 23 June 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has benefited from counseling and support groups in her own life",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie took her family camping in the mountains during the week before 27 June 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has at least 2 younger children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's younger children love nature",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie went on a hike during her family camping trip",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline went to an LGBTQ+ pride parade on 26 June, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline identifies as part of the LGBTQ+ community",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in pursuing counseling and mental health as a career",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is learning to play the piano",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to attend a transgender conference in August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to learn about advocacy at the transgender conference",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie signed up for a pottery class on 2 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie made a black and white bowl in her pottery class",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie considers pottery a huge part of her life, not just a hobby",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses pottery to express her emotions",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in counseling or mental health work",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is passionate about helping people and making a positive impact",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie took her kids to the museum on 5 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's kids were excited about a dinosaur exhibit at the museum",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's kids love learning about animals",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is a mom",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline is creating a library for when she has kids",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to read to her future children",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's library contains kids' books including classics, stories from different cultures, and educational books",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie's favorite childhood book is 'Charlotte's Web'",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline is undergoing a transition",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline had a picnic with her friends and family on 29 June, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's friends and family are supporting her transition with love, guidance, and acceptance",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie's family goes camping at the beach together",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline attended an LGBTQ conference on 10 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline felt accepted and welcomed at the LGBTQ conference on 10 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is interested in fighting for trans rights and spreading awareness",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is looking into counseling and mental health jobs",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline struggled with mental health in the past",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline received mental health support that was helpful to her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's favorite book is 'Becoming Nicole' by Amy Ellis Nutt",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "'Becoming Nicole' by Amy Ellis Nutt is a true story about a trans girl and her family",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline learned self-acceptance from reading 'Becoming Nicole'",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline learned how to find support from reading 'Becoming Nicole'",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline loves reading and considers books a huge part of her journey",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie has a dog named Luna",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has a cat named Oliver",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie recently purchased purple running shoes",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has been running more since her last conversation with Caroline",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses running to de-stress and clear her mind",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie read a book last year (2022) that reminds her to pursue her dreams",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's mental health has improved through running",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie took her kids to a pottery workshop on 11 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's kids made pots at the pottery workshop on 11 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie paints with her kids, especially nature-inspired paintings",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie and her kids created a nature-inspired painting on 14 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has kids",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie appreciates flowers for representing growth, beauty, and small moments",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Flowers were an important part of Melanie's wedding decor",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is married to a partner",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's favorite part of her wedding was marrying her partner and promising to be together forever",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie moved and her family provided support during the move",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie went on a camping trip in the forest with her family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie enjoys hiking in the mountains with her family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie enjoys exploring forests with her family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie finds peace through creativity and family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline attended a council meeting for adoption on 14 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is determined to adopt",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's favorite color is blue",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline attended a pride parade a few weeks before 15 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline joined in at the pride parade",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has transitioned",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline values expressing herself authentically",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie went camping with her family two weekends before 17 July, 2023 (on approximately 1-2 July, 2023).",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has kids.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline joined a mentorship program for LGBTQ youth on the weekend before 17 July, 2023 (on 15-16 July, 2023).",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is transgender.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline mentors a transgender teen.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and her mentee attended an LGBT pride event in June 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is planning to have an LGBTQ art show in August 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline creates paintings.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline visited a LGBTQ center.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline painted a piece inspired by her visit to a LGBTQ center, intending to capture unity and strength.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie and her kids finished a painting.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline joined a new LGBTQ activist group on 14 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is a member of 'Connected LGBTQ Activists'",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline missed a pride parade in her city on 15 July, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie went to the beach recently before 8:56 pm on 20 July, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has kids",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie goes to the beach with her kids usually once or twice a year",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's family has an annual camping trip tradition",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's family roasts marshmallows and tells stories around the campfire during camping trips",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie saw the Perseid meteor shower during a camping trip in 2022",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has a youngest child who took her first steps",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie's daughter had a birthday on 13 August, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie celebrated her daughter's birthday with a concert on 13 August, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has at least two children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "The concert Melanie attended on 13 August, 2023 featured Matt Patterson",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline attended a pride parade on 8 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is an artist",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is transgender",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's art focuses on expressing her trans experience",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline advocates for LGBTQ+ rights through her art",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline created a painting titled 'Embracing Identity'",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline uses art to explore her transition and changing body",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline identifies as LGBTQ+",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline had a negative experience on a hike before 1:50 pm on 17 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline encountered religious conservatives on a hike who said something that upset her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline cares about LGBTQ rights",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has people around her who accept and support her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie completed a pottery project before 1:50 pm on 17 August, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie made a bowl with multiple colors and patterns",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses painting as a form of self-expression and creativity",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie feels a strong connection to art",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie views art as a sanctuary and source of comfort",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie attended Pride fest together in 2022",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie plan to do a summer outing together in 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie plans to think about summer outing ideas with Caroline",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline applied to adoption agencies during the week of 17-23 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline attended an adoption advice/assistance group",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline owns a guinea pig named Oscar",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's guinea pig Oscar's favorite food is vegetables",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie owns a cat named Oliver",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie owns a cat named Bailey",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's cat Oliver hid his bone in Melanie's slipper",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie fed a horse a carrot",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline went horseback riding with her dad when she was a child",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has a love for horses",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie created a horse painting recently",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie loves to paint animals",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline created a self-portrait on 16 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline loves creating art",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline uses painting to express herself and explore her identity",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline finds painting therapeutic",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline promotes LGBTQ rights",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline wants to live authentically and help others do the same",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline went hiking on 18 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline got into a bad spot with some people while hiking on 18 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline apologized to people she had a bad spot with",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie made a plate in pottery class on 24 August, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie loves pottery and finds it relaxing and creative",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline paints",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline visited the beach on 18 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline painted a sunset after visiting the beach on 18 August, 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie spent 24 August, 2023 volunteering at a homeless shelter with her family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline is a transgender woman",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline has found a supportive community that accepts and loves her",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline created a rainbow flag mural",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's rainbow flag mural features an eagle symbolizing freedom and pride",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline made a stained glass window for a local church",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's stained glass window shows time changing lives and her journey as a transgender woman",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline found a rainbow sidewalk for Pride Month in her neighborhood",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline draws flowers",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's favorite type of art to draw is flowers",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie's favorite type of art is painting landscapes and still life",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is planning paintings inspired by autumn",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline is putting together an LGBTQ art show in September 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to show her paintings at an LGBTQ art show in September 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie took her kids to a park on 27 August, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline volunteered at an LGBTQ+ youth center",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline shared her personal story with young people at the LGBTQ+ youth center",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to continue volunteering at the LGBTQ+ youth center",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is organizing a talent show for kids at the youth center in September 2023",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plays acoustic guitar",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline started playing acoustic guitar approximately 5 years ago, around 2018",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline uses guitar playing to express her emotions",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's favorite song is 'Brave' by Sara Bareilles",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline values the song 'Brave' by Sara Bareilles for its message about courage and fighting for what is right",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie attended a concert featuring the band Summer Sounds",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie enjoys live music",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie plays clarinet",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie started playing clarinet when she was young",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses clarinet playing as a way to relax and express herself",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie enjoys classical music including Bach and Mozart",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's favorite modern song is 'Perfect' by Ed Sheeran",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline went biking with a group on the Saturday before 12 September, 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie went camping with her children a few weeks before 12 September, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has children.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline volunteers with the LGBTQ+ community.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline creates art.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline started creating art when she was 17 years old.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is a trans woman.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's transition involved exploring her gender identity through art.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie has been creating art for seven years before 12 September, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's primary art forms are painting and pottery.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline creates paintings.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline made a painting using red and blue colors to represent the binary gender system.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's painting was created to show her path as a trans woman.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Some of Caroline's close friends stopped supporting her after her transition.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Some of Caroline's close friends continued supporting her after her transition.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie went to a café on the Saturday before 12 September, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie went to a park on the Saturday before 12 September, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline contacted her mentor for adoption advice on or before 13 October, 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline is ready to be a mom and wants to adopt.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's dream is to adopt and provide a safe, loving home for children who need it.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie has a buddy who adopted in 2022.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is considering adoption.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie uses pottery for self-expression and peace.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie got hurt in September 2023 and had to take a break from pottery.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie is reading a book that Caroline recommended.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie paints as a creative outlet.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie painted a sunset-inspired painting on or before 7 October, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's sunset painting uses colors that make her feel calm.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has created an abstract painting with blue streaks.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's abstract painting is intended to show tranquility and a serene vibe.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie finds blue calming.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline has been trying out abstract art recently.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline uses abstract art as a form of self-expression.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline attended a transgender poetry reading on 6 October, 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline found the transgender poetry reading powerful and empowering.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline drew art inspired by the transgender poetry reading.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's art stands for freedom and being real.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's art is a nudge to stay true to herself and embrace her womanhood.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline and Melanie are friends.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie has a son",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's son got into an accident on 14 October, 2023 during a road trip",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie's son was okay after the accident on 14 October, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie visited the Grand Canyon on 14 October, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie has multiple children",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie went camping on 19 October, 2023",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie loves camping trips with her family",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie prefers nature for its peace and serenity",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Melanie values bonding with her family over stories, campfires, and nature",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline passed adoption agency interviews on 18 October, 2023.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's goal is to build a family through adoption.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline plans to provide a home for children who haven't had one before.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline went through a transition process.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline received support from friends and family during her transition.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline's goal is to create a safe and loving home for children.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Caroline wants to pass support to others who need it, based on the help she received.",
+        "subject": "Caroline"
+      },
+      {
+        "claim": "Melanie bought figurines on 21 October, 2023.",
+        "subject": "Melanie"
+      },
+      {
+        "claim": "Caroline and Melanie are friends.",
+        "subject": "Caroline"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "1": [
+    "abstention",
+    "contradiction_resolution",
+    "event_ordering",
+    "information_extraction",
+    "instruction_following",
+    "knowledge_update",
+    "multi_session_reasoning",
+    "preference_following",
+    "summarization",
+    "temporal_reasoning"
+  ],
+  "11": [
+    "abstention",
+    "contradiction_resolution",
+    "event_ordering",
+    "information_extraction",
+    "instruction_following",
+    "knowledge_update",
+    "multi_session_reasoning",
+    "preference_following",
+    "summarization",
+    "temporal_reasoning"
+  ]
+}

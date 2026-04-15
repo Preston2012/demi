@@ -1,0 +1,15 @@
+node_modules/
+dist/
+data/
+backups/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.env.*
+!.env.example
+models/*.onnx
+benchmark-results/
+*.tar.gz
+*.log

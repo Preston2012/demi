@@ -1,0 +1,367 @@
+import type { IMemoryRepository } from '../repository/interface.js';
+import type { Config } from '../config.js';
+import type { MemoryRecord, AddMemoryResult, InjectionPayload, SystemStats } from '../schema/memory.js';
+import type { RetrievalResult } from '../retrieval/index.js';
+import { AuditAction } from '../schema/audit.js';
+import { TrustClass, ReviewStatus, isValidTransition } from '../schema/memory.js';
+import { MemoryNotFoundError, CircuitBreakerActiveError, ValidationError } from '../errors.js';
+import { createLogger } from '../config.js';
+import { retrieve } from '../retrieval/index.js';
+import { addMemory as writeMemory } from '../write/index.js';
+import { buildInjectionPayload, formatForContext } from '../inject/index.js';
+import { createReviewQueue } from '../learn/review-queue.js';
+import { createDecayTracker } from '../learn/decay.js';
+import { createCircuitBreaker } from '../learn/circuit-breaker.js';
+import { runSelfPlay as executeSelfPlay } from '../learn/self-play.js';
+import { runInterferenceBatch as executeInterferenceBatch } from '../learn/interference-batch.js';
+import { identifyHubCandidates, promoteToHub as executePromoteToHub } from '../learn/hub-computation.js';
+import { flushShadowLog } from '../retrieval/thompson.js';
+
+const log = createLogger('dispatch');
+
+/**
+ * Core dispatch layer.
+ *
+ * Wires all 5 layers: Capture → Store → Retrieve → Inject → Learn.
+ * Every MCP tool and REST endpoint calls through this interface.
+ * Enforces cross-cutting concerns: circuit breaker, decay tracking, audit.
+ */
+
+export interface SearchResult {
+  payload: InjectionPayload;
+  contextText: string;
+  raw: RetrievalResult;
+}
+
+export interface CoreDispatch {
+  /** Search memories and build injection context. Primary read path. */
+  search(query: string, limit?: number): Promise<SearchResult>;
+
+  /** Write a new memory through trust branching pipeline. */
+  addMemory(input: unknown): Promise<AddMemoryResult>;
+
+  /** Get a single memory by ID. */
+  getMemory(id: string): Promise<MemoryRecord>;
+
+  /** Confirm a memory (user override to confirmed trust class). */
+  confirmMemory(id: string, reason?: string): Promise<void>;
+
+  /** Reject a memory (user override to rejected). */
+  rejectMemory(id: string, reason?: string): Promise<void>;
+
+  /** Get pending review queue. */
+  getPendingReviews(limit?: number): Promise<MemoryRecord[]>;
+
+  /** System stats. */
+  getStats(): Promise<SystemStats>;
+
+  /** Full brain export (all memories as async iterable). */
+  exportBrain(): Promise<AsyncIterable<MemoryRecord>>;
+
+  /** Graceful shutdown. Flush buffers. */
+  shutdown(): Promise<void>;
+
+  // --- Novel features ---
+
+  /** Freeze a memory (skip decay, user-preserved). */
+  freezeMemory(id: string): Promise<void>;
+
+  /** Unfreeze a memory. */
+  unfreezeMemory(id: string): Promise<void>;
+
+  /** Get/set global pause state. */
+  getGlobalPause(): Promise<boolean>;
+  setGlobalPause(paused: boolean): Promise<void>;
+
+  /** Memory version history. */
+  getVersionHistory(memoryId: string): Promise<unknown[]>;
+
+  /** Tags CRUD. */
+  getMemoryTags(memoryId: string): Promise<string[]>;
+  setMemoryTags(memoryId: string, tags: string[]): Promise<void>;
+  searchByTag(tag: string, limit?: number): Promise<unknown[]>;
+
+  /** Hubs. */
+  getHubs(limit?: number): Promise<unknown[]>;
+  getHubMembers(hubId: string, limit?: number): Promise<unknown[]>;
+
+  /** Cold storage. */
+  getColdStorage(limit?: number): Promise<unknown[]>;
+  resurrectMemory(id: string): Promise<void>;
+
+  /** Meta-memory stats. */
+  getMetaMemoryStats(): Promise<unknown>;
+
+  /** Self-play. */
+  runSelfPlay(): Promise<unknown>;
+  getLatestSelfPlayRun(): Promise<unknown>;
+
+  /** Interference batch. */
+  runInterferenceBatch(): Promise<unknown>;
+
+  /** Hub candidates. */
+  getHubCandidates(): Promise<unknown[]>;
+  promoteToHub(memoryId: string, hubType?: string): Promise<unknown>;
+
+  /** Increment correction count on a memory. */
+  correctMemory(id: string, newClaim: string, reason: string): Promise<void>;
+}
+
+export function createCoreDispatch(repo: IMemoryRepository, config: Config): CoreDispatch {
+  const reviewQueue = createReviewQueue(repo);
+  const decayTracker = createDecayTracker(repo, {
+    halfLifeDays: config.freshnessHalfLifeDays,
+  });
+  const circuitBreaker = createCircuitBreaker(repo, {
+    lockAfterDays: config.inactivityLockDays,
+  });
+
+  return {
+    async search(query: string, limit?: number): Promise<SearchResult> {
+      // Circuit breaker gates the read path
+      const locked = await circuitBreaker.isLocked();
+      if (locked) {
+        const lastActivity = await repo.getLastActivityTimestamp();
+        throw new CircuitBreakerActiveError(lastActivity ?? 'unknown');
+      }
+
+      // Retrieve candidates
+      const result = await retrieve(repo, query, config, limit);
+
+      // Record access for decay tracking (fire-and-forget)
+      const ids = result.candidates.map((c) => c.id);
+      if (ids.length > 0) {
+        decayTracker.recordAccessBatch(ids).catch((err) => log.error({ err }, 'Decay batch update failed'));
+      }
+
+      // Build injection payload
+      const payload = buildInjectionPayload(result, config.maxInjectedRules);
+      const contextText = formatForContext(payload);
+
+      return { payload, contextText, raw: result };
+    },
+
+    async addMemory(input: unknown): Promise<AddMemoryResult> {
+      // Delegate entirely to write pipeline (which handles its own audit logging)
+      const result = await writeMemory(input, repo, config);
+
+      // Record activity on circuit breaker for non-rejected writes
+      if (result.action !== 'rejected') {
+        circuitBreaker.recordActivity().catch((err) => log.error({ err }, 'Circuit breaker activity record failed'));
+      }
+
+      return result;
+    },
+
+    async getMemory(id: string): Promise<MemoryRecord> {
+      const record = await repo.getById(id);
+      if (!record) throw new MemoryNotFoundError(id);
+      return record;
+    },
+
+    async confirmMemory(id: string, reason?: string): Promise<void> {
+      const memory = await repo.getById(id);
+      if (!memory) throw new MemoryNotFoundError(id);
+
+      if (!isValidTransition(memory.trustClass, TrustClass.CONFIRMED)) {
+        throw new ValidationError(`Cannot transition from ${memory.trustClass} to confirmed`);
+      }
+
+      await repo.update(id, {
+        trustClass: TrustClass.CONFIRMED,
+        reviewStatus: ReviewStatus.APPROVED,
+        updatedAt: new Date().toISOString(),
+      });
+
+      await repo.appendAuditLog({
+        memoryId: id,
+        action: AuditAction.CONFIRMED,
+        details: reason ?? null,
+      });
+
+      await circuitBreaker.recordActivity();
+      log.info(`Memory confirmed: ${id}`);
+    },
+
+    async rejectMemory(id: string, reason?: string): Promise<void> {
+      const memory = await repo.getById(id);
+      if (!memory) throw new MemoryNotFoundError(id);
+
+      if (!isValidTransition(memory.trustClass, TrustClass.REJECTED)) {
+        throw new ValidationError(`Cannot transition from ${memory.trustClass} to rejected`);
+      }
+
+      await repo.update(id, {
+        trustClass: TrustClass.REJECTED,
+        reviewStatus: ReviewStatus.REJECTED,
+        updatedAt: new Date().toISOString(),
+      });
+
+      await repo.appendAuditLog({
+        memoryId: id,
+        action: AuditAction.REJECTED,
+        details: reason ?? null,
+      });
+
+      log.info(`Memory rejected: ${id}${reason ? ` (${reason})` : ''}`);
+    },
+
+    async getPendingReviews(limit?: number): Promise<MemoryRecord[]> {
+      return reviewQueue.getPending(limit);
+    },
+
+    async getStats(): Promise<SystemStats> {
+      const repoStats = await repo.getStats();
+      const locked = await circuitBreaker.isLocked();
+      const lastActivity = await repo.getLastActivityTimestamp();
+
+      return {
+        ...repoStats,
+        circuitBreakerActive: locked,
+        lastActivityAt: lastActivity,
+        uptimeSeconds: Math.floor(process.uptime()),
+        thompsonShadowEnabled: config.thompsonShadowEnabled,
+        hubCount: 0,
+        spokeCount: 0,
+        crossDomainLinkCount: 0,
+        inhibitionEdgeCount: 0,
+        procedureCount: 0,
+        coldStorageCount: 0,
+        archivedCount: 0,
+        frozenCount: 0,
+        decayPaused: false,
+        lastSelfPlayScore: null,
+        lastSelfPlayDate: null,
+        memoryHealthGrade: null,
+      };
+    },
+
+    async exportBrain(): Promise<AsyncIterable<MemoryRecord>> {
+      await repo.appendAuditLog({
+        memoryId: null,
+        action: AuditAction.EXPORT,
+        details: null,
+      });
+
+      return repo.exportAll();
+    },
+
+    async shutdown(): Promise<void> {
+      log.info('Dispatch shutdown initiated');
+      await flushShadowLog(config.backupPath);
+      log.info('Dispatch shutdown complete');
+    },
+
+    // --- Novel features ---
+
+    async freezeMemory(id: string): Promise<void> {
+      const memory = await repo.getById(id);
+      if (!memory) throw new MemoryNotFoundError(id);
+      await repo.freezeMemory(id);
+      await repo.appendAuditLog({ memoryId: id, action: AuditAction.FROZEN, details: null });
+      log.info(`Memory frozen: ${id}`);
+    },
+
+    async unfreezeMemory(id: string): Promise<void> {
+      const memory = await repo.getById(id);
+      if (!memory) throw new MemoryNotFoundError(id);
+      await repo.unfreezeMemory(id);
+      await repo.appendAuditLog({ memoryId: id, action: AuditAction.UNFROZEN, details: null });
+      log.info(`Memory unfrozen: ${id}`);
+    },
+
+    async getGlobalPause(): Promise<boolean> {
+      const val = await repo.getMetadata('global_pause');
+      return val === 'true';
+    },
+
+    async setGlobalPause(paused: boolean): Promise<void> {
+      await repo.setMetadata('global_pause', String(paused));
+      log.info(`Global pause ${paused ? 'enabled' : 'disabled'}`);
+    },
+
+    async getVersionHistory(memoryId: string) {
+      return repo.getVersionHistory(memoryId);
+    },
+
+    async getMemoryTags(memoryId: string) {
+      return repo.getMemoryTags(memoryId);
+    },
+
+    async setMemoryTags(memoryId: string, tags: string[]) {
+      await repo.setMemoryTags(memoryId, tags);
+    },
+
+    async searchByTag(tag: string, limit = 15) {
+      return repo.searchByTag(tag, limit);
+    },
+
+    async getHubs(limit = 20) {
+      return repo.getHubs(limit);
+    },
+
+    async getHubMembers(hubId: string, limit = 20) {
+      return repo.getHubMembers(hubId, limit);
+    },
+
+    async getColdStorage(limit = 50) {
+      return repo.getColdStorageMemories(limit);
+    },
+
+    async resurrectMemory(id: string) {
+      await repo.resurrectFromColdStorage(id);
+      await repo.appendAuditLog({ memoryId: id, action: AuditAction.RESURRECTED, details: null });
+      log.info(`Memory resurrected: ${id}`);
+    },
+
+    async getMetaMemoryStats() {
+      return repo.getMetaMemoryStats();
+    },
+
+    async runSelfPlay() {
+      return executeSelfPlay(repo, config);
+    },
+
+    async getLatestSelfPlayRun() {
+      return repo.getLatestSelfPlayRun();
+    },
+
+    async runInterferenceBatch() {
+      return executeInterferenceBatch(repo);
+    },
+
+    async getHubCandidates() {
+      return identifyHubCandidates(repo);
+    },
+
+    async promoteToHub(memoryId: string, hubType = 'principle') {
+      return executePromoteToHub(repo, memoryId, hubType);
+    },
+
+    async correctMemory(id: string, newClaim: string, reason: string) {
+      const memory = await repo.getById(id);
+      if (!memory) throw new MemoryNotFoundError(id);
+
+      // Create version snapshot before correction
+      const { v4: versionUuid } = await import('uuid');
+      await repo.createVersion({
+        id: versionUuid(),
+        memoryId: id,
+        claim: memory.claim,
+        changedAt: new Date().toISOString(),
+        reason,
+      });
+
+      await repo.update(id, { claim: newClaim });
+      await repo.incrementCorrectionCount(id);
+
+      await repo.appendAuditLog({
+        memoryId: id,
+        action: AuditAction.CORRECTION,
+        details: `Corrected: "${memory.claim}" → "${newClaim}". Reason: ${reason}`,
+      });
+
+      log.info({ memoryId: id }, 'Memory corrected with version snapshot');
+    },
+  };
+}

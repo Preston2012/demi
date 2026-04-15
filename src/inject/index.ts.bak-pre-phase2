@@ -1,0 +1,216 @@
+import type {
+  InjectionPayload,
+  CompiledMemory,
+} from '../schema/memory.js';
+import type { IMemoryRepository } from '../repository/interface.js';
+import type { RetrievalResult } from '../retrieval/index.js';
+import { detectAllConflicts } from './conflict.js';
+import { buildMetaMemoryHeader } from './meta.js';
+import { compileBudget } from './budget.js';
+import { createLogger } from '../config.js';
+
+const log = createLogger('inject');
+
+/**
+ * Injection builder.
+ *
+ * Takes retrieval results and builds the structured payload
+ * that gets injected into an agent's context.
+ *
+ * Rules:
+ * 1. Only normalized structured claims, never raw text
+ * 2. Max N memories (configurable, default 15)
+ * 3. Provenance metadata attached to each memory
+ * 4. Conflicts surfaced explicitly (refusal-first)
+ * 5. Score breakdown available for debugging
+ *
+ * The output format is agent-agnostic. MCP and REST adapters
+ * format it for their respective transports.
+ */
+
+/**
+ * Build injection payload from retrieval results.
+ *
+ * @param retrievalResult Output from the retrieval pipeline
+ * @param maxRules Maximum memories to inject (already respected by retrieval, but belt-and-suspenders)
+ */
+export function buildInjectionPayload(
+  retrievalResult: RetrievalResult,
+  maxRules: number = 15,
+): InjectionPayload {
+  // Budget compiler: ensure diversity across categories
+  const budget = compileBudget(retrievalResult.candidates, maxRules);
+  const candidates = budget.candidates;
+
+  if (budget.dropped.length > 0) {
+    log.debug({ dropped: budget.dropped.length, allocation: budget.allocation }, 'Budget compiler active');
+  }
+
+  // Build compiled memory objects (structured claims, not raw text)
+  const memories: CompiledMemory[] = candidates.map((c) => ({
+    claim: c.candidate.record.claim,
+    subject: c.candidate.record.subject,
+    scope: c.candidate.record.scope,
+    provenance: c.candidate.record.provenance,
+    trustClass: c.candidate.record.trustClass,
+    confidence: c.candidate.record.confidence,
+    createdAt: c.candidate.record.createdAt,
+    score: c.finalScore,
+    slot: 'fact' as const,
+    position: 'context' as const,
+    compressed: false,
+  }));
+
+  // Detect conflicts among injected memories
+  const conflicts = detectAllConflicts(candidates);
+
+  if (conflicts.length > 0) {
+    log.info(
+      { conflictCount: conflicts.length, memoryCount: memories.length },
+      'Conflicts detected in injection payload',
+    );
+  }
+
+  return {
+    knowledgeMap: null,
+    memories,
+    conflicts,
+    inhibitions: [],
+    metadata: {
+      queryUsed: retrievalResult.metadata.query,
+      candidatesEvaluated: retrievalResult.metadata.candidatesGenerated,
+      retrievalTimeMs:
+        retrievalResult.metadata.timings.totalMs,
+      hubExpansions: 0,
+      crossDomainHops: 0,
+      inhibitionsSuppressed: 0,
+      primingHits: 0,
+    },
+  };
+}
+
+/**
+ * Format injection payload as a context string for the agent.
+ * This is what actually gets prepended to the agent's system prompt.
+ *
+ * Format:
+ * --- Memory Context (N rules) ---
+ * 1. [claim] (subject: X, confidence: Y, provenance: Z)
+ * 2. [claim] ...
+ *
+ * Conflicts detected:
+ * - [message]
+ * ---
+ */
+/**
+ * Format injection payload with optional meta-memory header.
+ * Meta-memory requires repo access, so it's async.
+ */
+export async function formatForContextWithMeta(
+  payload: InjectionPayload,
+  repo?: IMemoryRepository,
+): Promise<string> {
+  const lines: string[] = [];
+
+  // Meta-memory header (compact system self-awareness)
+  if (repo) {
+    try {
+      const meta = await buildMetaMemoryHeader(repo);
+      lines.push(`[${meta}]`);
+      lines.push('');
+    } catch {
+      // Meta-memory failure is non-critical
+    }
+  }
+
+  lines.push(formatForContext(payload));
+  return lines.join('\n');
+}
+
+type QueryFormatMode = 'relevance' | 'chronological' | 'entity-grouped';
+
+function detectFormatMode(query?: string): QueryFormatMode {
+  if (!query) return 'relevance';
+  const q = query.toLowerCase();
+  if (/\b(when|before|after|first|last|earlier|later|timeline|sequence|order|date|year|month)\b/.test(q)) {
+    return 'chronological';
+  }
+  const names = query.match(/\b[A-Z][a-z]{2,}\b/g);
+  const uniqueNames = names ? new Set(names).size : 0;
+  if (uniqueNames >= 2) return 'entity-grouped';
+  return 'relevance';
+}
+
+export function formatForContext(payload: InjectionPayload): string {
+  if (payload.memories.length === 0) {
+    return '';
+  }
+
+  const lines: string[] = [];
+  lines.push(
+    `--- Memory Context (${payload.memories.length} rules) ---`,
+  );
+
+  // Typed injection: group by type
+  const hubs = payload.memories.filter((m) => m.subject.startsWith('hub:'));
+  const procedural = payload.memories.filter((m) => !m.subject.startsWith('hub:'));
+
+  if (hubs.length > 0) {
+    lines.push('Principles:');
+    for (const m of hubs) {
+      lines.push(`  - ${m.claim}`);
+    }
+    lines.push('');
+  }
+
+  const fmt = process.env.INJECT_FORMAT || 'full';
+  const formatMode = detectFormatMode(payload.metadata.queryUsed);
+  let idx = 1;
+  if (fmt === 'packed') {
+    if (formatMode === 'chronological') {
+      procedural.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+    } else if (formatMode === 'entity-grouped') {
+      procedural.sort((a, b) => {
+        const subjCmp = a.subject.localeCompare(b.subject);
+        if (subjCmp !== 0) return subjCmp;
+        return b.score - a.score;
+      });
+    }
+    // Group by subject, sorted by createdAt within each group
+    const groups = new Map<string, typeof procedural>();
+    for (const m of procedural) {
+      const subj = m.subject || 'General';
+      if (!groups.has(subj)) groups.set(subj, []);
+      groups.get(subj)!.push(m);
+    }
+    for (const [subject, mems] of groups) {
+      lines.push(`\n[${subject}]`);
+      mems.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+      for (const m of mems) {
+        lines.push(`- ${m.claim}`);
+      }
+    }
+  } else {
+    for (const m of procedural) {
+      if (fmt === 'clean') {
+        lines.push(`${idx}. ${m.claim}`);
+      } else {
+        lines.push(
+          `${idx}. ${m.claim} (subject: ${m.subject}, confidence: ${m.confidence.toFixed(2)}, provenance: ${m.provenance})`,
+        );
+      }
+      idx++;
+    }
+  }
+
+  if (fmt === 'full' && payload.conflicts.length > 0) {
+    lines.push('');
+    lines.push('Conflicts detected:');
+    for (const c of payload.conflicts) {
+      lines.push(`- ${c.message}`);
+    }
+  }
+
+  lines.push('---');
+  return lines.join('\n');
+}
