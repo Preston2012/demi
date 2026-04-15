@@ -99,39 +99,6 @@ Open evaluation harness: a script that takes any memory system's retrieval outpu
 
 ---
 
-## D. Enterprise Bundle: White Glove Onboarding
-
-### D.1 Offering
-
-| Tier | Price | Includes |
-|------|-------|----------|
-| Startup / Design Partner | $5,000-$15,000/yr | Priority support, security controls mapping PDF, audit log export configuration, architecture assurance memo, dedicated onboarding |
-| Regulated / Enterprise | $50,000+/yr (post-SOC 2) | Everything in Startup + formal SOC 2 Type II, custom trust branching rules, dedicated support SLA, DPA/BAA where applicable |
-| On-site / Remote Integration | $2,000-$3,000/day (separate) | Deployment, integration with existing agent infrastructure, domain memory seeding, custom configuration |
-
-### D.2 White Glove Value Proposition
-
-At the integration tier, buyers are paying for:
-- Validation that the trust pipeline performs for their specific use case and data
-- Custom integration with their agent stack (LangGraph, CrewAI, AutoGen, custom)
-- Domain-specific memory seeding (legal precedents, medical protocols, financial regulations)
-- Architecture assurance memo documenting control coverage
-- Direct access to the system architect during integration
-
-### D.3 Target Industries (by readiness)
-
-**Ready now (V1, self-hosted):**
-- Startups building agent products (Series A-C, need memory layer, cost-sensitive)
-- Indie developers and small teams (self-hosted, open-source core)
-
-**Ready after enterprise hardening (V2+):**
-- Legal (privileged communications, audit requirements)
-- Healthcare (HIPAA, BAA required, PHI in memory)
-- Financial services (regulatory traceability)
-- Government/defense (air-gapped, zero external API, FedRAMP path required)
-
----
-
 ## E. Product Roadmap (V1 through V3)
 
 ### V1 (Current: Build)
@@ -173,12 +140,3 @@ At the integration tier, buyers are paying for:
 
 ---
 
-## F. Resolved Decisions (R26, 4/4 council consensus)
-
-1. **Enterprise pricing**: Startup tier $5K-$15K/yr. Regulated tier $50K+/yr post-SOC 2. On-site separate at $2K-$3K/day.
-2. **Valuation**: $200K-$300K median (4-model range $150K-$450K). To reach $1M: 2-3 design partners, $40K-$80K ARR, one case study.
-3. **SOC 2**: "Security Controls Mapping" only. No "self-certification" language. Formal audit post-revenue.
-4. **Clean-LOCOMO**: Deferred. Separate micro-publication pending author contact.
-5. **Evaluation protocol**: FRAME (Fair Retrieval Assessment for Memory Evaluation). No product branding.
-6. **Hosted tier**: V1 self-host only. V2 managed single-tenant. Multi-tenant after hardening.
-7. **Founder narrative**: HN/indie only. Not in paper, addendum, or enterprise materials.
