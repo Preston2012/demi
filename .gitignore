@@ -13,3 +13,8 @@ models/*.onnx
 benchmark-results/
 *.tar.gz
 *.log
+
+# backup files
+*.bak
+*.bak-*
+*.backup
