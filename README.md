@@ -14,7 +14,7 @@ Full-corpus evaluation (April 2026):
 
 | Benchmark | Score | Notes |
 |-----------|-------|-------|
-| **BEAM 100K** | **62.7%** | #2 among published systems (Hindsight: 64.1%) |
+| **BEAM 100K** | **62.7%** | #2 among published systems (Hindsight: 75%) |
 | **LOCOMO** | **60.2%** | 1,540 questions, 4 categories |
 | **LongMemEval** | **62.4%** | 500 questions, 6 categories |
 
