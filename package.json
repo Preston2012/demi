@@ -48,7 +48,7 @@
     "@types/better-sqlite3": "^7.6.0",
     "@types/node": "^22.10.0",
     "@types/uuid": "^10.0.0",
-    "@vitest/coverage-v8": "^2.1.9",
+    "@vitest/coverage-v8": "^4.1.4",
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
@@ -58,7 +58,7 @@
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.58.1",
-    "vitest": "^2.1.0"
+    "vitest": "^4.1.4"
   },
   "lint-staged": {
     "*.ts": [
