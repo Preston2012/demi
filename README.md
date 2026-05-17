@@ -138,4 +138,4 @@ Paper: forthcoming. See `docs/ADDENDUM.md` for supplementary material (security 
 
 Coming next: **[Memory Sovereignty Principles](https://github.com/Preston2012/memory-sovereignty-principles).** A spec doc + benchmark harness scoring AI memory providers (including this one) against ten principles of user data sovereignty.
 
-[Preston Winters](https://github.com/Preston2012). Solo. Reach out at [preston@baseline.marketing](mailto:preston@baseline.marketing).
+[Preston Winters](https://github.com/Preston2012). Solo. Reach out at [preston@winterscode.com](mailto:preston@winterscode.com).
