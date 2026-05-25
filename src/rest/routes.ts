@@ -23,7 +23,7 @@ const ReviewDecideBodySchema = z.object({
 
 /**
  * REST routes. Thin adapter over CoreDispatch.
- * No business logic — every route delegates to dispatch.
+ * No business logic - every route delegates to dispatch.
  */
 
 export function registerRoutes(
@@ -32,7 +32,7 @@ export function registerRoutes(
   sseManager?: SseSessionManager,
   config?: Config,
 ): void {
-  // Global error handler — maps DemiurgeError statusCodes to HTTP
+  // Global error handler - maps DemiurgeError statusCodes to HTTP
   app.setErrorHandler((error, _req, reply) => {
     if (error instanceof DemiurgeError) {
       return reply.status(error.statusCode).send(error.toJSON());
@@ -79,7 +79,7 @@ export function registerRoutes(
 
   // Add memory
   app.post('/api/v1/memory', async (req: FastifyRequest, reply: FastifyReply) => {
-    // Pass body directly — write pipeline's Zod parser validates
+    // Pass body directly - write pipeline's Zod parser validates
     const result = await dispatch.addMemory(req.body);
     return reply.status(201).send(result);
   });

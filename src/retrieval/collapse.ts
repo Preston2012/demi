@@ -5,8 +5,8 @@
  * Deterministic tiebreak: prefer isCanonical=true on equal score.
  *
  * Called twice in pipeline:
- *   1. After rankCandidates (before cascade) — prevents siblings from consuming cascade slots
- *   2. After cascade output — prevents cascade from reintroducing siblings
+ *   1. After rankCandidates (before cascade) - prevents siblings from consuming cascade slots
+ *   2. After cascade output - prevents cascade from reintroducing siblings
  */
 
 import type { FinalScoredCandidate } from './scorer.js';

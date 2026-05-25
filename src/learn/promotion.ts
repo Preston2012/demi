@@ -16,7 +16,7 @@ const log = createLogger('promotion');
  *
  * Memories that prove useful over time (accessed frequently, old enough)
  * face a second multi-model evaluation before earning permanent status.
- * Permanent memories skip decay entirely — they've earned their spot
+ * Permanent memories skip decay entirely - they've earned their spot
  * through real usage and multi-model agreement.
  */
 
@@ -84,7 +84,7 @@ export async function runPromotionBatch(
       });
 
       if (!config.consensusRequired || evaluators.length < 2) {
-        // No consensus required — auto-promote
+        // No consensus required - auto-promote
         await repo.update(memory.id, {
           permanenceStatus: PermanenceStatus.PERMANENT,
         });
@@ -150,7 +150,7 @@ export async function runPromotionBatch(
 
         log.info({ memoryId: memory.id }, 'Memory rejected during promotion');
       } else {
-        // keep_provisional — revert from promotion-pending
+        // keep_provisional - revert from promotion-pending
         await repo.update(memory.id, {
           permanenceStatus: PermanenceStatus.PROVISIONAL,
         });

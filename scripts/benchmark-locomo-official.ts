@@ -11,10 +11,10 @@
  *   npx tsx scripts/benchmark-locomo-official.ts --limit-qa 10      # First 10 QA per conversation
  *
  * Prerequisites:
- *   - fixtures/benchmark/locomo-official/locomo10.json (official LOCOMO dataset)
- *   - fixtures/benchmark/locomo-official/extracted-facts.json (pre-extracted facts)
- *   - ANTHROPIC_API_KEY in .env
- *   - Real ONNX model + tokenizer in models/
+ * - fixtures/benchmark/locomo-official/locomo10.json (official LOCOMO dataset)
+ * - fixtures/benchmark/locomo-official/extracted-facts.json (pre-extracted facts)
+ * - ANTHROPIC_API_KEY in .env
+ * - Real ONNX model + tokenizer in models/
  */
 
 import { resolve, dirname } from 'node:path';
@@ -106,7 +106,7 @@ async function main() {
     }
   }
 
-  // Category labels — JSON cat values (NOT paper narrative order):
+  // Category labels - JSON cat values (NOT paper narrative order):
   //   1=multi-hop, 2=temporal, 3=open-domain, 4=single-hop, 5=adversarial(excluded)
   const CATEGORY_LABELS: Record<number, string> = {
     1: 'Multi-hop',
@@ -220,7 +220,7 @@ async function main() {
           if (!convSet || !convSet.has(qi)) continue;
         }
 
-        // Skip Cat 5 (adversarial) — excluded from scoring, save API cost
+        // Skip Cat 5 (adversarial) - excluded from scoring, save API cost
         if (qa.category === 5) {
           allResults.push({
             conversation_index: ci,
@@ -243,7 +243,7 @@ async function main() {
         const searchResult = await dispatch.search(qa.question, maxRules);
         const retrievalTimeMs = performance.now() - retrievalStart;
 
-        // Generate answer — concise for all scored categories
+        // Generate answer - concise for all scored categories
         // U4: Per-category answer prompts
         const queryType = locomoCategoryToQueryType(qa.category);
         const basePrompt = process.env.ANSWER_PROMPT || CATEGORY_PROMPTS[queryType];
@@ -255,7 +255,7 @@ async function main() {
 
         const predicted = await callLLM(activeModel, answerPrompt, qa.question, parseInt(process.env.ANSWER_MAX_TOKENS || "100"), 0);
 
-        // LLM judge — binary J-score (industry standard for LOCOMO)
+        // LLM judge - binary J-score (industry standard for LOCOMO)
         // Cat 5 is skipped above, so qa.answer is always defined for scored questions.
         const expectedAnswer = qa.answer ?? 'N/A';
         const judgePrompt = `You are a strict benchmark evaluator. Respond ONLY with "yes" or "no".
@@ -336,7 +336,7 @@ Does the system response correctly answer the question? Accept paraphrases, syno
     await repo.close();
   }
 
-  // Report — EXCLUDE Cat 5 from headline score (industry standard).
+  // Report - EXCLUDE Cat 5 from headline score (industry standard).
   // Cat 5 has no usable answer field; all published results (Mem0, Hindsight, Memori) exclude it.
   const scoredResults = allResults.filter((r) => r.category !== 5);
   const cat5Results = allResults.filter((r) => r.category === 5);
@@ -406,7 +406,7 @@ Does the system response correctly answer the question? Accept paraphrases, syno
   writeFileSync(reportPath, JSON.stringify(report, null, 2));
   console.log(`\nReport: ${reportPath}`);
 
-  // S25: Gold-evidence instrumentation — separate file with injected claims
+  // S25: Gold-evidence instrumentation - separate file with injected claims
   if (process.env.GOLD_EVIDENCE_LOG === 'true') {
     const evidencePath = reportPath.replace('.json', '-evidence.json');
     const evidenceData = allResults

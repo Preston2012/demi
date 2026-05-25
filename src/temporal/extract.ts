@@ -2,7 +2,7 @@
  * Temporal event extraction from conversation text.
  * Builds LLM prompts and parses structured SVO responses.
  *
- * The caller provides the LLM completion function —
+ * The caller provides the LLM completion function - 
  * this module is model-agnostic.
  */
 

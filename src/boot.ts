@@ -32,7 +32,7 @@ export interface Runtime {
  * Initialization order:
  * 1. Config (Zod + env vars)
  * 2. SQLite repository (DB, migrations, sqlite-vec, FTS5)
- * 3. Embeddings (ONNX model preload — non-fatal if missing)
+ * 3. Embeddings (ONNX model preload - non-fatal if missing)
  * 4. Core dispatch (wires retrieval, write, inject, learn layers)
  * 5. MCP server (stdio transport)
  * 6. REST server (Fastify on localhost)
@@ -75,13 +75,13 @@ export async function boot(): Promise<Runtime> {
       log.info('Temporal event store initialized');
     }
 
-    // 2. Embedding model (non-fatal — degrades to lexical-only + hash dedup)
+    // 2. Embedding model (non-fatal - degrades to lexical-only + hash dedup)
     try {
       await initializeEmbeddings(config.modelPath);
       embeddingsLoaded = true;
       log.info('Embedding model loaded');
     } catch (err) {
-      log.warn({ err }, 'Embedding model not loaded — vector search disabled');
+      log.warn({ err }, 'Embedding model not loaded - vector search disabled');
     }
 
     // 3. Core dispatch

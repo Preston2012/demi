@@ -24,8 +24,8 @@ export interface SseSessionManager {
 /**
  * Register SSE MCP transport routes on the Fastify server.
  *
- * GET /sse       — establish SSE stream (returns event stream with session ID)
- * POST /messages — receive JSON-RPC messages from client
+ * GET /sse - establish SSE stream (returns event stream with session ID)
+ * POST /messages - receive JSON-RPC messages from client
  *
  * Each SSE connection gets its own MCP Server instance sharing the same
  * CoreDispatch. Sessions are tracked and cleaned up on disconnect.
@@ -36,7 +36,7 @@ export function registerSseRoutes(
 ): SseSessionManager {
   const sessions = new Map<string, ActiveSession>();
 
-  // GET /sse — establish SSE connection
+  // GET /sse - establish SSE connection
   app.get('/sse', async (_req: FastifyRequest, reply: FastifyReply) => {
     if (sessions.size >= MAX_SESSIONS) {
       return reply.status(503).send({ error: 'Too many active SSE sessions' });
@@ -82,7 +82,7 @@ export function registerSseRoutes(
     }
   });
 
-  // POST /messages?sessionId=xxx — receive JSON-RPC messages
+  // POST /messages?sessionId=xxx - receive JSON-RPC messages
   app.post('/messages', async (req: FastifyRequest, reply: FastifyReply) => {
     const sessionId = (req.query as Record<string, string>).sessionId;
 

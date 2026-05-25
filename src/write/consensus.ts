@@ -417,7 +417,7 @@ async function callGoogle(prompt: string, config: EvaluatorConfig, signal?: Abor
 /**
  * Run multi-model consensus evaluation.
  * Each evaluator in the array uses its own provider/model.
- * Uses Promise.allSettled — failed evaluators are logged and skipped.
+ * Uses Promise.allSettled - failed evaluators are logged and skipped.
  *
  * @param input The claim and context to evaluate
  * @param evaluators Array of evaluator configs (one per provider/model)
