@@ -121,7 +121,7 @@ Open evaluation harness: a script that takes any memory system's retrieval outpu
 - [ ] Automated restore testing (RTO/RPO documented)
 - [ ] Web UI dashboard (config, memory browser, conflict viewer)
 - [ ] Managed single-tenant deployments (customer cloud)
-- [ ] Ecosystem adapters (LangGraph, CrewAI, LlamaIndex, AutoGen, Vercel AI SDK)
+- [ ] Framework adapters (LangGraph, CrewAI, LlamaIndex, AutoGen, Vercel AI SDK)
 - [ ] Temporal relevance boosting
 - [ ] Vulnerability disclosure policy + SBOM
 - [ ] DPA/BAA templates

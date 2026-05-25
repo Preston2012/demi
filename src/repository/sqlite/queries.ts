@@ -1,7 +1,7 @@
 import type Database from 'better-sqlite3';
 
 /**
- * Minimal statement wrapper — just the methods we use.
+ * Minimal statement wrapper - just the methods we use.
  * Avoids exposing BetterSqlite3.Statement in public type surface.
  */
 export interface PreparedStatement {

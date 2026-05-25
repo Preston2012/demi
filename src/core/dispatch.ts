@@ -167,7 +167,7 @@ export function createCoreDispatch(
   return {
     async search(query: string, limit?: number, conversationId?: string): Promise<SearchResult> {
       // Circuit breaker gates the read path
-      // --- S23: Compression router — skip retrieval for small conversations ---
+      // --- S23: Compression router - skip retrieval for small conversations ---
       if (stone && conversationId && process.env.COMPRESSION_ROUTER_ENABLED === 'true') {
         try {
           const { routeByBudget } = await import('../retrieval/compression-router.js');
@@ -330,7 +330,7 @@ export function createCoreDispatch(
               .map((o) => o.derivedEvidence)
               .join('\n\n');
             // S27 fix #15: raw first, computed last (LLM recency-bias attention)
-            contextText = `[MEMORY EVIDENCE]\n${contextText}\n\n[COMPUTED EVIDENCE — use these resolved values over raw memories above]\n${computedEvidence}`;
+            contextText = `[MEMORY EVIDENCE]\n${contextText}\n\n[COMPUTED EVIDENCE - use these resolved values over raw memories above]\n${computedEvidence}`;
             log.info({
               specialists: evidencePacket.specialistOutputs.map((o) => o.source),
               totalMs: evidencePacket.totalSpecialistMs.toFixed(1),

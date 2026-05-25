@@ -68,7 +68,7 @@ export function claimsRelated(
   const tokensA = tokenize(claimA);
   const tokensB = tokenize(claimB);
 
-  // If either claim has very few meaningful tokens, be lenient —
+  // If either claim has very few meaningful tokens, be lenient - 
   // short claims about the same subject are more likely to conflict.
   if (tokensA.size <= 2 || tokensB.size <= 2) return true;
 

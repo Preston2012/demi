@@ -10,11 +10,11 @@
  *   6. Cross-Reference (multi-hop entity intersection)
  *
  * Key principles:
- *   - Augment, don't replace (4/4 unanimous)
- *   - Loose budget BEFORE specialists, tight AFTER (3/4)
- *   - Each specialist appends to the evidence packet, never overwrites
- *   - Raw memories always preserved
- *   - Total specialist overhead target: p50 <40ms, p95 <120ms
+ * - Augment, don't replace (4/4 unanimous)
+ * - Loose budget BEFORE specialists, tight AFTER (3/4)
+ * - Each specialist appends to the evidence packet, never overwrites
+ * - Raw memories always preserved
+ * - Total specialist overhead target: p50 <40ms, p95 <120ms
  */
 
 import type { CompiledMemory } from '../schema/memory.js';
@@ -92,7 +92,7 @@ function resolveConflicts(outputs: SpecialistOutput[], facts: NormalizedFact[]):
         if (output.source === 'single-hop' && evidence.includes('BEST MATCH') && evidence.includes(id)) {
           evidence = evidence.replace(
             /BEST MATCH:.*$/m,
-            'BEST MATCH: [CONFLICT — this fact was superseded by a more recent update. See RECENCY STATE RESOLUTION above.]'
+            'BEST MATCH: [CONFLICT - this fact was superseded by a more recent update. See RECENCY STATE RESOLUTION above.]'
           );
           modified = true;
         }
@@ -184,7 +184,7 @@ export function formatEvidencePacket(packet: EvidencePacket): string {
   // Computed evidence last (specialist resolutions, highest priority)
   if (packet.specialistOutputs.length > 0) {
     sections.push('');
-    sections.push('[COMPUTED EVIDENCE — use these resolved values over raw memories above]');
+    sections.push('[COMPUTED EVIDENCE - use these resolved values over raw memories above]');
     for (const output of packet.specialistOutputs) {
       sections.push(output.derivedEvidence);
     }
@@ -203,12 +203,12 @@ export function isSpecialistPipelineEnabled(): boolean {
 
 /**
  * Pipeline order (S27 Council R17 reorder):
- *   1. Recency Resolver (MUST be first — mutates facts array certainty)
+ *   1. Recency Resolver (MUST be first - mutates facts array certainty)
  *   2. Temporal Specialist
  *   3. Cross-Reference (before list/count/single-hop for multi-entity context)
  *   4. List Enumerator
  *   5. Count Aggregator (operates on canonicalized list items)
- *   6. Single-Hop Fact Extractor (last — benefits from all prior context)
+ *   6. Single-Hop Fact Extractor (last - benefits from all prior context)
  */
 export function initializeSpecialists(): void {
   specialists.length = 0;

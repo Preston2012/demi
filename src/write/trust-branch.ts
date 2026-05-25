@@ -159,7 +159,7 @@ export async function classifyTrust(
 
   if (input.source === MemorySource.USER && confidence >= config.confidenceThreshold) {
     // TEST_MODE bypass: enables benchmark seeding to write user-sourced facts
-    // without conflict quarantine (d9a1e0b). Benchmark-only — production runs
+    // without conflict quarantine (d9a1e0b). Benchmark-only - production runs
     // do NOT set TEST_MODE, so conflict quarantine (C1 council ruling) applies
     // as intended. See S30 plan C6 for reasoning to keep this path.
     if (conflicts.length > 0 && process.env.TEST_MODE !== 'true') {
