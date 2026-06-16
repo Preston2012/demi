@@ -1,0 +1,7 @@
+{
+  "_meta": {
+    "purpose": "WC-5 claims-compile allowlist. Golden-config env pins that are intentionally set but not read directly by a process.env.<KEY> / config-schema reader go here, each with a one-line reason. The default is EMPTY: a pin that no production reader consumes should be removed from golden-config.json, not allowlisted. Use this only for genuinely indirect cases (e.g. a value consumed by a shell entrypoint or a downstream library), and state why.",
+    "rule": "Adding an entry here is a reviewed exception, not a routine escape. If you find yourself adding many, the golden-config has dead pins."
+  },
+  "allow": {}
+}

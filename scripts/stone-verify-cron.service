@@ -1,0 +1,13 @@
+[Unit]
+Description=Demiurge audit chain verification (one-shot)
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/demiurge
+ExecStart=/root/demiurge/scripts/stone-verify-cron.sh
+Environment=NODE_ENV=production
+EnvironmentFile=/root/demiurge/.env
+User=root
+StandardOutput=journal
+StandardError=journal

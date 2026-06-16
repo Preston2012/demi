@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Thin shim: the real logic ships as compiled TypeScript with the npm package.
+exec node /usr/local/lib/demiurge/cli/handover.js "$@"
