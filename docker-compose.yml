@@ -1,0 +1,35 @@
+services:
+  demiurge:
+    build: .
+    container_name: demiurge
+    restart: unless-stopped
+    ports:
+      # Localhost only. Do NOT change to 0.0.0.0.
+      # Docker port binds can bypass host firewall.
+      - "127.0.0.1:3100:3100"
+    volumes:
+      - demiurge-data:/app/data
+      - demiurge-backups:/app/backups
+      - ./models:/app/models:ro
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - DB_PATH=/app/data/demiurge.db
+      - BACKUP_PATH=/app/backups
+      - PORT=3100
+      # 0.0.0.0 inside container is required for Docker port mapping.
+      # External access is restricted to localhost by the 127.0.0.1 port binding above.
+      - HOST=0.0.0.0
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+        reservations:
+          memory: 512m
+
+volumes:
+  demiurge-data:
+    driver: local
+  demiurge-backups:
+    driver: local

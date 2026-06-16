@@ -1,0 +1,6398 @@
+{
+  "version": "2.0.0",
+  "seed": 42,
+  "mode": "full",
+  "sessions": [
+    {
+      "session_idx": 0,
+      "date": "2024-11-01T00:00:00.000Z",
+      "theme": "work",
+      "facts": [
+        {
+          "fact_id": "s0_f0",
+          "session_idx": 0,
+          "fact_idx": 0,
+          "theme": "work",
+          "claim": "My one-on-one with Elif ended up centered on tooling refresh.",
+          "distinctive": [
+            "Elif",
+            "tooling refresh"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f1",
+          "session_idx": 0,
+          "fact_idx": 1,
+          "theme": "work",
+          "claim": "I had a meeting with Ren about the training program.",
+          "distinctive": [
+            "Ren",
+            "training program"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f2",
+          "session_idx": 0,
+          "fact_idx": 2,
+          "theme": "work",
+          "claim": "Osric pulled me into a quick sync on tooling refresh.",
+          "distinctive": [
+            "Osric",
+            "tooling refresh"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f3",
+          "session_idx": 0,
+          "fact_idx": 3,
+          "theme": "work",
+          "claim": "My one-on-one with Octavia ended up centered on data migration.",
+          "distinctive": [
+            "Octavia",
+            "data migration"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f4",
+          "session_idx": 0,
+          "fact_idx": 4,
+          "theme": "work",
+          "claim": "Diego pulled me into a quick sync on postmortem.",
+          "distinctive": [
+            "Diego",
+            "postmortem"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f5",
+          "session_idx": 0,
+          "fact_idx": 5,
+          "theme": "work",
+          "claim": "I had a meeting with Roan about the pricing study.",
+          "distinctive": [
+            "Roan",
+            "pricing study"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f6",
+          "session_idx": 0,
+          "fact_idx": 6,
+          "theme": "work",
+          "claim": "I had a meeting with Fenwick about the tooling refresh.",
+          "distinctive": [
+            "Fenwick",
+            "tooling refresh"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s0_f7",
+          "session_idx": 0,
+          "fact_idx": 7,
+          "theme": "work",
+          "claim": "I had a meeting with Magnus about the budget.",
+          "distinctive": [
+            "Magnus",
+            "budget"
+          ],
+          "valid_from": "2024-11-01T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 1,
+      "date": "2024-11-04T12:00:00.000Z",
+      "theme": "hobby",
+      "facts": [
+        {
+          "fact_id": "s1_f0",
+          "session_idx": 1,
+          "fact_idx": 0,
+          "theme": "hobby",
+          "claim": "Spent the morning sailing out at Rosethorn Cliffs.",
+          "distinctive": [
+            "sailing",
+            "Rosethorn Cliffs"
+          ],
+          "valid_from": "2024-11-04T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s1_f1",
+          "session_idx": 1,
+          "fact_idx": 1,
+          "theme": "hobby",
+          "claim": "Foxglove Park turned out to be a great spot for hiking.",
+          "distinctive": [
+            "hiking",
+            "Foxglove Park"
+          ],
+          "valid_from": "2024-11-04T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s1_f2",
+          "session_idx": 1,
+          "fact_idx": 2,
+          "theme": "hobby",
+          "claim": "I went paragliding at Sapphire Bay.",
+          "distinctive": [
+            "paragliding",
+            "Sapphire Bay"
+          ],
+          "valid_from": "2024-11-04T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s1_f3",
+          "session_idx": 1,
+          "fact_idx": 3,
+          "theme": "hobby",
+          "claim": "I went orienteering at Crater Ridge.",
+          "distinctive": [
+            "orienteering",
+            "Crater Ridge"
+          ],
+          "valid_from": "2024-11-04T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s1_f4",
+          "session_idx": 1,
+          "fact_idx": 4,
+          "theme": "hobby",
+          "claim": "I went archery at Whisperwind Ridge.",
+          "distinctive": [
+            "archery",
+            "Whisperwind Ridge"
+          ],
+          "valid_from": "2024-11-04T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 2,
+      "date": "2024-11-08T00:00:00.000Z",
+      "theme": "travel",
+      "facts": [
+        {
+          "fact_id": "s2_f0",
+          "session_idx": 2,
+          "fact_idx": 0,
+          "theme": "travel",
+          "claim": "I visited Porto.",
+          "distinctive": [
+            "Porto"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f1",
+          "session_idx": 2,
+          "fact_idx": 1,
+          "theme": "travel",
+          "claim": "Riga was the destination this time.",
+          "distinctive": [
+            "Riga"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f2",
+          "session_idx": 2,
+          "fact_idx": 2,
+          "theme": "travel",
+          "claim": "I visited Valletta.",
+          "distinctive": [
+            "Valletta"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f3",
+          "session_idx": 2,
+          "fact_idx": 3,
+          "theme": "travel",
+          "claim": "I visited Fes.",
+          "distinctive": [
+            "Fes"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f4",
+          "session_idx": 2,
+          "fact_idx": 4,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Reykjavik.",
+          "distinctive": [
+            "Reykjavik"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f5",
+          "session_idx": 2,
+          "fact_idx": 5,
+          "theme": "travel",
+          "claim": "Lviv was the destination this time.",
+          "distinctive": [
+            "Lviv"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f6",
+          "session_idx": 2,
+          "fact_idx": 6,
+          "theme": "travel",
+          "claim": "I visited Mostar.",
+          "distinctive": [
+            "Mostar"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s2_f7",
+          "session_idx": 2,
+          "fact_idx": 7,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Mostar.",
+          "distinctive": [
+            "Mostar"
+          ],
+          "valid_from": "2024-11-08T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 3,
+      "date": "2024-11-11T12:00:00.000Z",
+      "theme": "family",
+      "facts": [
+        {
+          "fact_id": "s3_f0",
+          "session_idx": 3,
+          "fact_idx": 0,
+          "theme": "family",
+          "claim": "I called my aunt Cyrus.",
+          "distinctive": [
+            "aunt",
+            "Cyrus"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f1",
+          "session_idx": 3,
+          "fact_idx": 1,
+          "theme": "family",
+          "claim": "Got an unexpected call from my grandmother Junia today.",
+          "distinctive": [
+            "grandmother",
+            "Junia"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f2",
+          "session_idx": 3,
+          "fact_idx": 2,
+          "theme": "family",
+          "claim": "Imogen, my stepfather, and I caught up on the phone.",
+          "distinctive": [
+            "stepfather",
+            "Imogen"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f3",
+          "session_idx": 3,
+          "fact_idx": 3,
+          "theme": "family",
+          "claim": "Delphine, my second cousin, and I caught up on the phone.",
+          "distinctive": [
+            "second cousin",
+            "Delphine"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f4",
+          "session_idx": 3,
+          "fact_idx": 4,
+          "theme": "family",
+          "claim": "Krister, my uncle, and I caught up on the phone.",
+          "distinctive": [
+            "uncle",
+            "Krister"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f5",
+          "session_idx": 3,
+          "fact_idx": 5,
+          "theme": "family",
+          "claim": "Got an unexpected call from my aunt Ysolde today.",
+          "distinctive": [
+            "aunt",
+            "Ysolde"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f6",
+          "session_idx": 3,
+          "fact_idx": 6,
+          "theme": "family",
+          "claim": "Got an unexpected call from my stepfather Ingmar today.",
+          "distinctive": [
+            "stepfather",
+            "Ingmar"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f7",
+          "session_idx": 3,
+          "fact_idx": 7,
+          "theme": "family",
+          "claim": "I called my grandmother Mortimer.",
+          "distinctive": [
+            "grandmother",
+            "Mortimer"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f8",
+          "session_idx": 3,
+          "fact_idx": 8,
+          "theme": "family",
+          "claim": "Got an unexpected call from my godparent Delphine today.",
+          "distinctive": [
+            "godparent",
+            "Delphine"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s3_f9",
+          "session_idx": 3,
+          "fact_idx": 9,
+          "theme": "family",
+          "claim": "Persephone, my stepfather, and I caught up on the phone.",
+          "distinctive": [
+            "stepfather",
+            "Persephone"
+          ],
+          "valid_from": "2024-11-11T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 4,
+      "date": "2024-11-15T00:00:00.000Z",
+      "theme": "health",
+      "facts": [
+        {
+          "fact_id": "s4_f0",
+          "session_idx": 4,
+          "fact_idx": 0,
+          "theme": "health",
+          "claim": "I went to Dr. Kim for shoulder impingement.",
+          "distinctive": [
+            "Dr. Kim",
+            "shoulder impingement"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f1",
+          "session_idx": 4,
+          "fact_idx": 1,
+          "theme": "health",
+          "claim": "I went to Dr. Yamamoto for iron deficiency.",
+          "distinctive": [
+            "Dr. Yamamoto",
+            "iron deficiency"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f2",
+          "session_idx": 4,
+          "fact_idx": 2,
+          "theme": "health",
+          "claim": "I went to Dr. Rasmussen for a stress fracture.",
+          "distinctive": [
+            "Dr. Rasmussen",
+            "stress fracture"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f3",
+          "session_idx": 4,
+          "fact_idx": 3,
+          "theme": "health",
+          "claim": "I went to Dr. Andersen for a B12 panel.",
+          "distinctive": [
+            "Dr. Andersen",
+            "B12 panel"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f4",
+          "session_idx": 4,
+          "fact_idx": 4,
+          "theme": "health",
+          "claim": "Booked time with Dr. Vasquez to address flu shot.",
+          "distinctive": [
+            "Dr. Vasquez",
+            "flu shot"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f5",
+          "session_idx": 4,
+          "fact_idx": 5,
+          "theme": "health",
+          "claim": "Dr. Khoury saw me about tetanus booster.",
+          "distinctive": [
+            "Dr. Khoury",
+            "tetanus booster"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f6",
+          "session_idx": 4,
+          "fact_idx": 6,
+          "theme": "health",
+          "claim": "Dr. Bauer saw me about lower back stiffness.",
+          "distinctive": [
+            "Dr. Bauer",
+            "lower back stiffness"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f7",
+          "session_idx": 4,
+          "fact_idx": 7,
+          "theme": "health",
+          "claim": "Booked time with Dr. Voss to address hearing test.",
+          "distinctive": [
+            "Dr. Voss",
+            "hearing test"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f8",
+          "session_idx": 4,
+          "fact_idx": 8,
+          "theme": "health",
+          "claim": "Dr. Hirsch saw me about ankle sprain.",
+          "distinctive": [
+            "Dr. Hirsch",
+            "ankle sprain"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s4_f9",
+          "session_idx": 4,
+          "fact_idx": 9,
+          "theme": "health",
+          "claim": "Dr. Morales saw me about sleep study.",
+          "distinctive": [
+            "Dr. Morales",
+            "sleep study"
+          ],
+          "valid_from": "2024-11-15T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 5,
+      "date": "2024-11-18T12:00:00.000Z",
+      "theme": "food",
+      "facts": [
+        {
+          "fact_id": "s5_f0",
+          "session_idx": 5,
+          "fact_idx": 0,
+          "theme": "food",
+          "claim": "Picked up massaman curry on the way home — that was brunch.",
+          "distinctive": [
+            "massaman curry",
+            "brunch"
+          ],
+          "valid_from": "2024-11-18T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s5_f1",
+          "session_idx": 5,
+          "fact_idx": 1,
+          "theme": "food",
+          "claim": "Lunch today was tonkatsu.",
+          "distinctive": [
+            "tonkatsu",
+            "lunch"
+          ],
+          "valid_from": "2024-11-18T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s5_f2",
+          "session_idx": 5,
+          "fact_idx": 2,
+          "theme": "food",
+          "claim": "I ate kibbeh for breakfast.",
+          "distinctive": [
+            "kibbeh",
+            "breakfast"
+          ],
+          "valid_from": "2024-11-18T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s5_f3",
+          "session_idx": 5,
+          "fact_idx": 3,
+          "theme": "food",
+          "claim": "I ate kebab platter for brunch.",
+          "distinctive": [
+            "kebab platter",
+            "brunch"
+          ],
+          "valid_from": "2024-11-18T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s5_f4",
+          "session_idx": 5,
+          "fact_idx": 4,
+          "theme": "food",
+          "claim": "I ate larb for lunch.",
+          "distinctive": [
+            "larb",
+            "lunch"
+          ],
+          "valid_from": "2024-11-18T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 6,
+      "date": "2024-11-22T00:00:00.000Z",
+      "theme": "books",
+      "facts": [
+        {
+          "fact_id": "s6_f0",
+          "session_idx": 6,
+          "fact_idx": 0,
+          "theme": "books",
+          "claim": "Cracked open \"The Black Reed\" this evening.",
+          "distinctive": [
+            "The Black Reed"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s6_f1",
+          "session_idx": 6,
+          "fact_idx": 1,
+          "theme": "books",
+          "claim": "I started reading \"The Black Reed\".",
+          "distinctive": [
+            "The Black Reed"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s6_f2",
+          "session_idx": 6,
+          "fact_idx": 2,
+          "theme": "books",
+          "claim": "Cracked open \"Northern Lights\" this evening.",
+          "distinctive": [
+            "Northern Lights"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s6_f3",
+          "session_idx": 6,
+          "fact_idx": 3,
+          "theme": "books",
+          "claim": "Cracked open \"Driftless\" this evening.",
+          "distinctive": [
+            "Driftless"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s6_f4",
+          "session_idx": 6,
+          "fact_idx": 4,
+          "theme": "books",
+          "claim": "Cracked open \"Wireblood\" this evening.",
+          "distinctive": [
+            "Wireblood"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s6_f5",
+          "session_idx": 6,
+          "fact_idx": 5,
+          "theme": "books",
+          "claim": "Cracked open \"The Indigo Letter\" this evening.",
+          "distinctive": [
+            "The Indigo Letter"
+          ],
+          "valid_from": "2024-11-22T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 7,
+      "date": "2024-11-25T12:00:00.000Z",
+      "theme": "music",
+      "facts": [
+        {
+          "fact_id": "s7_f0",
+          "session_idx": 7,
+          "fact_idx": 0,
+          "theme": "music",
+          "claim": "I listened to Flintwater.",
+          "distinctive": [
+            "Flintwater"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f1",
+          "session_idx": 7,
+          "fact_idx": 1,
+          "theme": "music",
+          "claim": "Driftwood Anthem has been on repeat.",
+          "distinctive": [
+            "Driftwood Anthem"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f2",
+          "session_idx": 7,
+          "fact_idx": 2,
+          "theme": "music",
+          "claim": "Black Salt Quartet has been on repeat.",
+          "distinctive": [
+            "Black Salt Quartet"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f3",
+          "session_idx": 7,
+          "fact_idx": 3,
+          "theme": "music",
+          "claim": "I listened to Indigo Forge.",
+          "distinctive": [
+            "Indigo Forge"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f4",
+          "session_idx": 7,
+          "fact_idx": 4,
+          "theme": "music",
+          "claim": "I listened to Bramble Crown.",
+          "distinctive": [
+            "Bramble Crown"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f5",
+          "session_idx": 7,
+          "fact_idx": 5,
+          "theme": "music",
+          "claim": "I listened to Sycamore Lull.",
+          "distinctive": [
+            "Sycamore Lull"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s7_f6",
+          "session_idx": 7,
+          "fact_idx": 6,
+          "theme": "music",
+          "claim": "Discovered Russet Hare via a friend's playlist.",
+          "distinctive": [
+            "Russet Hare"
+          ],
+          "valid_from": "2024-11-25T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 8,
+      "date": "2024-11-29T00:00:00.000Z",
+      "theme": "weather",
+      "facts": [
+        {
+          "fact_id": "s8_f0",
+          "session_idx": 8,
+          "fact_idx": 0,
+          "theme": "weather",
+          "claim": "There was a thunderstorm in the morning.",
+          "distinctive": [
+            "thunderstorm"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s8_f1",
+          "session_idx": 8,
+          "fact_idx": 1,
+          "theme": "weather",
+          "claim": "Fog rolled through overnight.",
+          "distinctive": [
+            "fog"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s8_f2",
+          "session_idx": 8,
+          "fact_idx": 2,
+          "theme": "weather",
+          "claim": "Heat wave rolled through overnight.",
+          "distinctive": [
+            "heat wave"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s8_f3",
+          "session_idx": 8,
+          "fact_idx": 3,
+          "theme": "weather",
+          "claim": "Had to delay everything because of hailstorm.",
+          "distinctive": [
+            "hailstorm"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s8_f4",
+          "session_idx": 8,
+          "fact_idx": 4,
+          "theme": "weather",
+          "claim": "Had to delay everything because of polar plunge.",
+          "distinctive": [
+            "polar plunge"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s8_f5",
+          "session_idx": 8,
+          "fact_idx": 5,
+          "theme": "weather",
+          "claim": "There was lake-effect flurries in the morning.",
+          "distinctive": [
+            "lake-effect flurries"
+          ],
+          "valid_from": "2024-11-29T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 9,
+      "date": "2024-12-02T12:00:00.000Z",
+      "theme": "news",
+      "facts": [
+        {
+          "fact_id": "s9_f0",
+          "session_idx": 9,
+          "fact_idx": 0,
+          "theme": "news",
+          "claim": "Saw a long-read on the archaeological find this morning.",
+          "distinctive": [
+            "archaeological find"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f1",
+          "session_idx": 9,
+          "fact_idx": 1,
+          "theme": "news",
+          "claim": "The reservoir levels report story keeps developing.",
+          "distinctive": [
+            "reservoir levels report"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f2",
+          "session_idx": 9,
+          "fact_idx": 2,
+          "theme": "news",
+          "claim": "The climate report story keeps developing.",
+          "distinctive": [
+            "climate report"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f3",
+          "session_idx": 9,
+          "fact_idx": 3,
+          "theme": "news",
+          "claim": "I read about the algorithmic-bias study in the news.",
+          "distinctive": [
+            "algorithmic-bias study"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f4",
+          "session_idx": 9,
+          "fact_idx": 4,
+          "theme": "news",
+          "claim": "The rocket launch story keeps developing.",
+          "distinctive": [
+            "rocket launch"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f5",
+          "session_idx": 9,
+          "fact_idx": 5,
+          "theme": "news",
+          "claim": "The microplastics ruling story keeps developing.",
+          "distinctive": [
+            "microplastics ruling"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f6",
+          "session_idx": 9,
+          "fact_idx": 6,
+          "theme": "news",
+          "claim": "Saw a long-read on the reservoir levels report this morning.",
+          "distinctive": [
+            "reservoir levels report"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f7",
+          "session_idx": 9,
+          "fact_idx": 7,
+          "theme": "news",
+          "claim": "I read about the glacier retreat report in the news.",
+          "distinctive": [
+            "glacier retreat report"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f8",
+          "session_idx": 9,
+          "fact_idx": 8,
+          "theme": "news",
+          "claim": "I read about the election in the news.",
+          "distinctive": [
+            "election"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s9_f9",
+          "session_idx": 9,
+          "fact_idx": 9,
+          "theme": "news",
+          "claim": "Saw a long-read on the ferry route change this morning.",
+          "distinctive": [
+            "ferry route change"
+          ],
+          "valid_from": "2024-12-02T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 10,
+      "date": "2024-12-06T00:00:00.000Z",
+      "theme": "work",
+      "facts": [
+        {
+          "fact_id": "s10_f0",
+          "session_idx": 10,
+          "fact_idx": 0,
+          "theme": "work",
+          "claim": "My one-on-one with Osric ended up centered on tooling refresh.",
+          "distinctive": [
+            "Osric",
+            "tooling refresh"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f1",
+          "session_idx": 10,
+          "fact_idx": 1,
+          "theme": "work",
+          "claim": "Magnus pulled me into a quick sync on compliance review.",
+          "distinctive": [
+            "Magnus",
+            "compliance review"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f2",
+          "session_idx": 10,
+          "fact_idx": 2,
+          "theme": "work",
+          "claim": "Aurelio pulled me into a quick sync on feature freeze.",
+          "distinctive": [
+            "Aurelio",
+            "feature freeze"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f3",
+          "session_idx": 10,
+          "fact_idx": 3,
+          "theme": "work",
+          "claim": "I had a meeting with Dagny about the pricing study.",
+          "distinctive": [
+            "Dagny",
+            "pricing study"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f4",
+          "session_idx": 10,
+          "fact_idx": 4,
+          "theme": "work",
+          "claim": "Zahir pulled me into a quick sync on new hire.",
+          "distinctive": [
+            "Zahir",
+            "new hire"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f5",
+          "session_idx": 10,
+          "fact_idx": 5,
+          "theme": "work",
+          "claim": "Marcus pulled me into a quick sync on launch plan.",
+          "distinctive": [
+            "Marcus",
+            "launch plan"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f6",
+          "session_idx": 10,
+          "fact_idx": 6,
+          "theme": "work",
+          "claim": "My one-on-one with Tobias ended up centered on capacity planning.",
+          "distinctive": [
+            "Tobias",
+            "capacity planning"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f7",
+          "session_idx": 10,
+          "fact_idx": 7,
+          "theme": "work",
+          "claim": "I had a meeting with Fenwick about the release notes.",
+          "distinctive": [
+            "Fenwick",
+            "release notes"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s10_f8",
+          "session_idx": 10,
+          "fact_idx": 8,
+          "theme": "work",
+          "claim": "I had a meeting with Rashid about the new hire.",
+          "distinctive": [
+            "Rashid",
+            "new hire"
+          ],
+          "valid_from": "2024-12-06T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 11,
+      "date": "2024-12-09T12:00:00.000Z",
+      "theme": "hobby",
+      "facts": [
+        {
+          "fact_id": "s11_f0",
+          "session_idx": 11,
+          "fact_idx": 0,
+          "theme": "hobby",
+          "claim": "Whisperwind Ridge turned out to be a great spot for orienteering.",
+          "distinctive": [
+            "orienteering",
+            "Whisperwind Ridge"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s11_f1",
+          "session_idx": 11,
+          "fact_idx": 1,
+          "theme": "hobby",
+          "claim": "I went photography at Rosethorn Cliffs.",
+          "distinctive": [
+            "photography",
+            "Rosethorn Cliffs"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s11_f2",
+          "session_idx": 11,
+          "fact_idx": 2,
+          "theme": "hobby",
+          "claim": "Spent the morning snowshoeing out at Larkspur Pass.",
+          "distinctive": [
+            "snowshoeing",
+            "Larkspur Pass"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s11_f3",
+          "session_idx": 11,
+          "fact_idx": 3,
+          "theme": "hobby",
+          "claim": "Spent the morning paragliding out at Junegrass Meadow.",
+          "distinctive": [
+            "paragliding",
+            "Junegrass Meadow"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s11_f4",
+          "session_idx": 11,
+          "fact_idx": 4,
+          "theme": "hobby",
+          "claim": "I went foraging at Sequoia Heights.",
+          "distinctive": [
+            "foraging",
+            "Sequoia Heights"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s11_f5",
+          "session_idx": 11,
+          "fact_idx": 5,
+          "theme": "hobby",
+          "claim": "Spent the morning fly fishing out at Auric Falls.",
+          "distinctive": [
+            "fly fishing",
+            "Auric Falls"
+          ],
+          "valid_from": "2024-12-09T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 12,
+      "date": "2024-12-13T00:00:00.000Z",
+      "theme": "travel",
+      "facts": [
+        {
+          "fact_id": "s12_f0",
+          "session_idx": 12,
+          "fact_idx": 0,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Vilnius.",
+          "distinctive": [
+            "Vilnius"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f1",
+          "session_idx": 12,
+          "fact_idx": 1,
+          "theme": "travel",
+          "claim": "I visited Prague.",
+          "distinctive": [
+            "Prague"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f2",
+          "session_idx": 12,
+          "fact_idx": 2,
+          "theme": "travel",
+          "claim": "Prague was the destination this time.",
+          "distinctive": [
+            "Prague"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f3",
+          "session_idx": 12,
+          "fact_idx": 3,
+          "theme": "travel",
+          "claim": "Reykjavik was the destination this time.",
+          "distinctive": [
+            "Reykjavik"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f4",
+          "session_idx": 12,
+          "fact_idx": 4,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Antwerp.",
+          "distinctive": [
+            "Antwerp"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f5",
+          "session_idx": 12,
+          "fact_idx": 5,
+          "theme": "travel",
+          "claim": "Marrakech was the destination this time.",
+          "distinctive": [
+            "Marrakech"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f6",
+          "session_idx": 12,
+          "fact_idx": 6,
+          "theme": "travel",
+          "claim": "Osaka was the destination this time.",
+          "distinctive": [
+            "Osaka"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s12_f7",
+          "session_idx": 12,
+          "fact_idx": 7,
+          "theme": "travel",
+          "claim": "I visited Plovdiv.",
+          "distinctive": [
+            "Plovdiv"
+          ],
+          "valid_from": "2024-12-13T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 13,
+      "date": "2024-12-16T12:00:00.000Z",
+      "theme": "family",
+      "facts": [
+        {
+          "fact_id": "s13_f0",
+          "session_idx": 13,
+          "fact_idx": 0,
+          "theme": "family",
+          "claim": "Orvar, my stepmother, and I caught up on the phone.",
+          "distinctive": [
+            "stepmother",
+            "Orvar"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f1",
+          "session_idx": 13,
+          "fact_idx": 1,
+          "theme": "family",
+          "claim": "Got an unexpected call from my niece Tabitha today.",
+          "distinctive": [
+            "niece",
+            "Tabitha"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f2",
+          "session_idx": 13,
+          "fact_idx": 2,
+          "theme": "family",
+          "claim": "I called my uncle Imogen.",
+          "distinctive": [
+            "uncle",
+            "Imogen"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f3",
+          "session_idx": 13,
+          "fact_idx": 3,
+          "theme": "family",
+          "claim": "Caspar, my cousin, and I caught up on the phone.",
+          "distinctive": [
+            "cousin",
+            "Caspar"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f4",
+          "session_idx": 13,
+          "fact_idx": 4,
+          "theme": "family",
+          "claim": "Lavinia, my godparent, and I caught up on the phone.",
+          "distinctive": [
+            "godparent",
+            "Lavinia"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f5",
+          "session_idx": 13,
+          "fact_idx": 5,
+          "theme": "family",
+          "claim": "Got an unexpected call from my cousin Grover today.",
+          "distinctive": [
+            "cousin",
+            "Grover"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f6",
+          "session_idx": 13,
+          "fact_idx": 6,
+          "theme": "family",
+          "claim": "Xavier, my uncle, and I caught up on the phone.",
+          "distinctive": [
+            "uncle",
+            "Xavier"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f7",
+          "session_idx": 13,
+          "fact_idx": 7,
+          "theme": "family",
+          "claim": "Krister, my sibling, and I caught up on the phone.",
+          "distinctive": [
+            "sibling",
+            "Krister"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f8",
+          "session_idx": 13,
+          "fact_idx": 8,
+          "theme": "family",
+          "claim": "Got an unexpected call from my second cousin Persephone today.",
+          "distinctive": [
+            "second cousin",
+            "Persephone"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s13_f9",
+          "session_idx": 13,
+          "fact_idx": 9,
+          "theme": "family",
+          "claim": "Got an unexpected call from my stepmother Edmund today.",
+          "distinctive": [
+            "stepmother",
+            "Edmund"
+          ],
+          "valid_from": "2024-12-16T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 14,
+      "date": "2024-12-20T00:00:00.000Z",
+      "theme": "health",
+      "facts": [
+        {
+          "fact_id": "s14_f0",
+          "session_idx": 14,
+          "fact_idx": 0,
+          "theme": "health",
+          "claim": "Dr. Esposito saw me about iron deficiency.",
+          "distinctive": [
+            "Dr. Esposito",
+            "iron deficiency"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f1",
+          "session_idx": 14,
+          "fact_idx": 1,
+          "theme": "health",
+          "claim": "Booked time with Dr. Esposito to address balance test.",
+          "distinctive": [
+            "Dr. Esposito",
+            "balance test"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f2",
+          "session_idx": 14,
+          "fact_idx": 2,
+          "theme": "health",
+          "claim": "Dr. Rasmussen saw me about recurrent migraines.",
+          "distinctive": [
+            "Dr. Rasmussen",
+            "recurrent migraines"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f3",
+          "session_idx": 14,
+          "fact_idx": 3,
+          "theme": "health",
+          "claim": "Dr. Eriksen saw me about sleep study.",
+          "distinctive": [
+            "Dr. Eriksen",
+            "sleep study"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f4",
+          "session_idx": 14,
+          "fact_idx": 4,
+          "theme": "health",
+          "claim": "Booked time with Dr. Park to address recurrent migraines.",
+          "distinctive": [
+            "Dr. Park",
+            "recurrent migraines"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f5",
+          "session_idx": 14,
+          "fact_idx": 5,
+          "theme": "health",
+          "claim": "Dr. Kim saw me about dental cleaning.",
+          "distinctive": [
+            "Dr. Kim",
+            "dental cleaning"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f6",
+          "session_idx": 14,
+          "fact_idx": 6,
+          "theme": "health",
+          "claim": "Booked time with Dr. Najjar to address hearing test.",
+          "distinctive": [
+            "Dr. Najjar",
+            "hearing test"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f7",
+          "session_idx": 14,
+          "fact_idx": 7,
+          "theme": "health",
+          "claim": "I went to Dr. Khoury for an eye exam.",
+          "distinctive": [
+            "Dr. Khoury",
+            "eye exam"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s14_f8",
+          "session_idx": 14,
+          "fact_idx": 8,
+          "theme": "health",
+          "claim": "I went to Dr. Vasquez for a thyroid panel.",
+          "distinctive": [
+            "Dr. Vasquez",
+            "thyroid panel"
+          ],
+          "valid_from": "2024-12-20T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 15,
+      "date": "2024-12-23T12:00:00.000Z",
+      "theme": "food",
+      "facts": [
+        {
+          "fact_id": "s15_f0",
+          "session_idx": 15,
+          "fact_idx": 0,
+          "theme": "food",
+          "claim": "Picked up fish and chips on the way home — that was brunch.",
+          "distinctive": [
+            "fish and chips",
+            "brunch"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f1",
+          "session_idx": 15,
+          "fact_idx": 1,
+          "theme": "food",
+          "claim": "Picked up gnocchi on the way home — that was late-night snack.",
+          "distinctive": [
+            "gnocchi",
+            "late-night snack"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f2",
+          "session_idx": 15,
+          "fact_idx": 2,
+          "theme": "food",
+          "claim": "I ate doro wat for dinner.",
+          "distinctive": [
+            "doro wat",
+            "dinner"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f3",
+          "session_idx": 15,
+          "fact_idx": 3,
+          "theme": "food",
+          "claim": "Picked up kibbeh on the way home — that was late-night snack.",
+          "distinctive": [
+            "kibbeh",
+            "late-night snack"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f4",
+          "session_idx": 15,
+          "fact_idx": 4,
+          "theme": "food",
+          "claim": "Dinner today was mapo tofu.",
+          "distinctive": [
+            "mapo tofu",
+            "dinner"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f5",
+          "session_idx": 15,
+          "fact_idx": 5,
+          "theme": "food",
+          "claim": "I ate pierogi for breakfast.",
+          "distinctive": [
+            "pierogi",
+            "breakfast"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f6",
+          "session_idx": 15,
+          "fact_idx": 6,
+          "theme": "food",
+          "claim": "Picked up bobotie on the way home — that was late-night snack.",
+          "distinctive": [
+            "bobotie",
+            "late-night snack"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s15_f7",
+          "session_idx": 15,
+          "fact_idx": 7,
+          "theme": "food",
+          "claim": "I ate ceviche for breakfast.",
+          "distinctive": [
+            "ceviche",
+            "breakfast"
+          ],
+          "valid_from": "2024-12-23T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 16,
+      "date": "2024-12-27T00:00:00.000Z",
+      "theme": "books",
+      "facts": [
+        {
+          "fact_id": "s16_f0",
+          "session_idx": 16,
+          "fact_idx": 0,
+          "theme": "books",
+          "claim": "I started reading \"Fishhook Bay\".",
+          "distinctive": [
+            "Fishhook Bay"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s16_f1",
+          "session_idx": 16,
+          "fact_idx": 1,
+          "theme": "books",
+          "claim": "Cracked open \"The Ember Riders\" this evening.",
+          "distinctive": [
+            "The Ember Riders"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s16_f2",
+          "session_idx": 16,
+          "fact_idx": 2,
+          "theme": "books",
+          "claim": "\"The Marble Choir\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "The Marble Choir"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s16_f3",
+          "session_idx": 16,
+          "fact_idx": 3,
+          "theme": "books",
+          "claim": "I started reading \"Birds of the Borderlands\".",
+          "distinctive": [
+            "Birds of the Borderlands"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s16_f4",
+          "session_idx": 16,
+          "fact_idx": 4,
+          "theme": "books",
+          "claim": "I started reading \"The Quiet Ferryman\".",
+          "distinctive": [
+            "The Quiet Ferryman"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s16_f5",
+          "session_idx": 16,
+          "fact_idx": 5,
+          "theme": "books",
+          "claim": "I started reading \"The Mineral Sky\".",
+          "distinctive": [
+            "The Mineral Sky"
+          ],
+          "valid_from": "2024-12-27T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 17,
+      "date": "2024-12-30T12:00:00.000Z",
+      "theme": "music",
+      "facts": [
+        {
+          "fact_id": "s17_f0",
+          "session_idx": 17,
+          "fact_idx": 0,
+          "theme": "music",
+          "claim": "The Petrichor Council has been on repeat.",
+          "distinctive": [
+            "The Petrichor Council"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s17_f1",
+          "session_idx": 17,
+          "fact_idx": 1,
+          "theme": "music",
+          "claim": "Discovered Cold Iron Choir via a friend's playlist.",
+          "distinctive": [
+            "Cold Iron Choir"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s17_f2",
+          "session_idx": 17,
+          "fact_idx": 2,
+          "theme": "music",
+          "claim": "Discovered Sycamore Lull via a friend's playlist.",
+          "distinctive": [
+            "Sycamore Lull"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s17_f3",
+          "session_idx": 17,
+          "fact_idx": 3,
+          "theme": "music",
+          "claim": "I listened to Cold Iron Choir.",
+          "distinctive": [
+            "Cold Iron Choir"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s17_f4",
+          "session_idx": 17,
+          "fact_idx": 4,
+          "theme": "music",
+          "claim": "Brackish Tide has been on repeat.",
+          "distinctive": [
+            "Brackish Tide"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s17_f5",
+          "session_idx": 17,
+          "fact_idx": 5,
+          "theme": "music",
+          "claim": "Slate Equinox has been on repeat.",
+          "distinctive": [
+            "Slate Equinox"
+          ],
+          "valid_from": "2024-12-30T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 18,
+      "date": "2025-01-03T00:00:00.000Z",
+      "theme": "weather",
+      "facts": [
+        {
+          "fact_id": "s18_f0",
+          "session_idx": 18,
+          "fact_idx": 0,
+          "theme": "weather",
+          "claim": "Wind advisory rolled through overnight.",
+          "distinctive": [
+            "wind advisory"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f1",
+          "session_idx": 18,
+          "fact_idx": 1,
+          "theme": "weather",
+          "claim": "Had to delay everything because of fog.",
+          "distinctive": [
+            "fog"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f2",
+          "session_idx": 18,
+          "fact_idx": 2,
+          "theme": "weather",
+          "claim": "Patchy drizzle rolled through overnight.",
+          "distinctive": [
+            "patchy drizzle"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f3",
+          "session_idx": 18,
+          "fact_idx": 3,
+          "theme": "weather",
+          "claim": "Had to delay everything because of heat wave.",
+          "distinctive": [
+            "heat wave"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f4",
+          "session_idx": 18,
+          "fact_idx": 4,
+          "theme": "weather",
+          "claim": "There was an ice storm in the morning.",
+          "distinctive": [
+            "ice storm"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f5",
+          "session_idx": 18,
+          "fact_idx": 5,
+          "theme": "weather",
+          "claim": "There was high gusts in the morning.",
+          "distinctive": [
+            "high gusts"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f6",
+          "session_idx": 18,
+          "fact_idx": 6,
+          "theme": "weather",
+          "claim": "Heavy snow rolled through overnight.",
+          "distinctive": [
+            "heavy snow"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f7",
+          "session_idx": 18,
+          "fact_idx": 7,
+          "theme": "weather",
+          "claim": "There was a frost warning in the morning.",
+          "distinctive": [
+            "frost warning"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f8",
+          "session_idx": 18,
+          "fact_idx": 8,
+          "theme": "weather",
+          "claim": "There was patchy drizzle in the morning.",
+          "distinctive": [
+            "patchy drizzle"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s18_f9",
+          "session_idx": 18,
+          "fact_idx": 9,
+          "theme": "weather",
+          "claim": "Dust haze rolled through overnight.",
+          "distinctive": [
+            "dust haze"
+          ],
+          "valid_from": "2025-01-03T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 19,
+      "date": "2025-01-06T12:00:00.000Z",
+      "theme": "news",
+      "facts": [
+        {
+          "fact_id": "s19_f0",
+          "session_idx": 19,
+          "fact_idx": 0,
+          "theme": "news",
+          "claim": "The rare-earth standoff story keeps developing.",
+          "distinctive": [
+            "rare-earth standoff"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s19_f1",
+          "session_idx": 19,
+          "fact_idx": 1,
+          "theme": "news",
+          "claim": "I read about the data breach in the news.",
+          "distinctive": [
+            "data breach"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s19_f2",
+          "session_idx": 19,
+          "fact_idx": 2,
+          "theme": "news",
+          "claim": "Saw a long-read on the trade deal this morning.",
+          "distinctive": [
+            "trade deal"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s19_f3",
+          "session_idx": 19,
+          "fact_idx": 3,
+          "theme": "news",
+          "claim": "I read about the ferry route change in the news.",
+          "distinctive": [
+            "ferry route change"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s19_f4",
+          "session_idx": 19,
+          "fact_idx": 4,
+          "theme": "news",
+          "claim": "The stadium proposal story keeps developing.",
+          "distinctive": [
+            "stadium proposal"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s19_f5",
+          "session_idx": 19,
+          "fact_idx": 5,
+          "theme": "news",
+          "claim": "I read about the archaeological find in the news.",
+          "distinctive": [
+            "archaeological find"
+          ],
+          "valid_from": "2025-01-06T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 20,
+      "date": "2025-01-10T00:00:00.000Z",
+      "theme": "work",
+      "facts": [
+        {
+          "fact_id": "s20_f0",
+          "session_idx": 20,
+          "fact_idx": 0,
+          "theme": "work",
+          "claim": "My one-on-one with Anya ended up centered on new hire.",
+          "distinctive": [
+            "Anya",
+            "new hire"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f1",
+          "session_idx": 20,
+          "fact_idx": 1,
+          "theme": "work",
+          "claim": "Imani pulled me into a quick sync on incident response.",
+          "distinctive": [
+            "Imani",
+            "incident response"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f2",
+          "session_idx": 20,
+          "fact_idx": 2,
+          "theme": "work",
+          "claim": "My one-on-one with Nadya ended up centered on incident response.",
+          "distinctive": [
+            "Nadya",
+            "incident response"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f3",
+          "session_idx": 20,
+          "fact_idx": 3,
+          "theme": "work",
+          "claim": "My one-on-one with Mira ended up centered on on-call rotation.",
+          "distinctive": [
+            "Mira",
+            "on-call rotation"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f4",
+          "session_idx": 20,
+          "fact_idx": 4,
+          "theme": "work",
+          "claim": "Mateo pulled me into a quick sync on roadmap.",
+          "distinctive": [
+            "Mateo",
+            "roadmap"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f5",
+          "session_idx": 20,
+          "fact_idx": 5,
+          "theme": "work",
+          "claim": "Viggo pulled me into a quick sync on customer escalation.",
+          "distinctive": [
+            "Viggo",
+            "customer escalation"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f6",
+          "session_idx": 20,
+          "fact_idx": 6,
+          "theme": "work",
+          "claim": "I had a meeting with Octavia about the incident response.",
+          "distinctive": [
+            "Octavia",
+            "incident response"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f7",
+          "session_idx": 20,
+          "fact_idx": 7,
+          "theme": "work",
+          "claim": "Aurelio pulled me into a quick sync on compliance review.",
+          "distinctive": [
+            "Aurelio",
+            "compliance review"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f8",
+          "session_idx": 20,
+          "fact_idx": 8,
+          "theme": "work",
+          "claim": "I had a meeting with Octavia about the training program.",
+          "distinctive": [
+            "Octavia",
+            "training program"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s20_f9",
+          "session_idx": 20,
+          "fact_idx": 9,
+          "theme": "work",
+          "claim": "My one-on-one with Quinn ended up centered on timeline.",
+          "distinctive": [
+            "Quinn",
+            "timeline"
+          ],
+          "valid_from": "2025-01-10T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 21,
+      "date": "2025-01-13T12:00:00.000Z",
+      "theme": "hobby",
+      "facts": [
+        {
+          "fact_id": "s21_f0",
+          "session_idx": 21,
+          "fact_idx": 0,
+          "theme": "hobby",
+          "claim": "I went snowshoeing at Sapphire Bay.",
+          "distinctive": [
+            "snowshoeing",
+            "Sapphire Bay"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f1",
+          "session_idx": 21,
+          "fact_idx": 1,
+          "theme": "hobby",
+          "claim": "Spent the morning archery out at Obsidian Spire.",
+          "distinctive": [
+            "archery",
+            "Obsidian Spire"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f2",
+          "session_idx": 21,
+          "fact_idx": 2,
+          "theme": "hobby",
+          "claim": "Spent the morning fly fishing out at Granite Hollow.",
+          "distinctive": [
+            "fly fishing",
+            "Granite Hollow"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f3",
+          "session_idx": 21,
+          "fact_idx": 3,
+          "theme": "hobby",
+          "claim": "Mount Hood turned out to be a great spot for archery.",
+          "distinctive": [
+            "archery",
+            "Mount Hood"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f4",
+          "session_idx": 21,
+          "fact_idx": 4,
+          "theme": "hobby",
+          "claim": "I went hiking at Hemlock Bowl.",
+          "distinctive": [
+            "hiking",
+            "Hemlock Bowl"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f5",
+          "session_idx": 21,
+          "fact_idx": 5,
+          "theme": "hobby",
+          "claim": "Indigo Valley turned out to be a great spot for spelunking.",
+          "distinctive": [
+            "spelunking",
+            "Indigo Valley"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f6",
+          "session_idx": 21,
+          "fact_idx": 6,
+          "theme": "hobby",
+          "claim": "Salt Marsh turned out to be a great spot for kayaking.",
+          "distinctive": [
+            "kayaking",
+            "Salt Marsh"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f7",
+          "session_idx": 21,
+          "fact_idx": 7,
+          "theme": "hobby",
+          "claim": "Spent the morning paragliding out at Crater Ridge.",
+          "distinctive": [
+            "paragliding",
+            "Crater Ridge"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s21_f8",
+          "session_idx": 21,
+          "fact_idx": 8,
+          "theme": "hobby",
+          "claim": "Pine Hollow turned out to be a great spot for photography.",
+          "distinctive": [
+            "photography",
+            "Pine Hollow"
+          ],
+          "valid_from": "2025-01-13T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 22,
+      "date": "2025-01-17T00:00:00.000Z",
+      "theme": "travel",
+      "facts": [
+        {
+          "fact_id": "s22_f0",
+          "session_idx": 22,
+          "fact_idx": 0,
+          "theme": "travel",
+          "claim": "Mostar was the destination this time.",
+          "distinctive": [
+            "Mostar"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f1",
+          "session_idx": 22,
+          "fact_idx": 1,
+          "theme": "travel",
+          "claim": "I visited Sarajevo.",
+          "distinctive": [
+            "Sarajevo"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f2",
+          "session_idx": 22,
+          "fact_idx": 2,
+          "theme": "travel",
+          "claim": "I visited Tromsø.",
+          "distinctive": [
+            "Tromsø"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f3",
+          "session_idx": 22,
+          "fact_idx": 3,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Valletta.",
+          "distinctive": [
+            "Valletta"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f4",
+          "session_idx": 22,
+          "fact_idx": 4,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Lviv.",
+          "distinctive": [
+            "Lviv"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f5",
+          "session_idx": 22,
+          "fact_idx": 5,
+          "theme": "travel",
+          "claim": "Cádiz was the destination this time.",
+          "distinctive": [
+            "Cádiz"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f6",
+          "session_idx": 22,
+          "fact_idx": 6,
+          "theme": "travel",
+          "claim": "Ljubljana was the destination this time.",
+          "distinctive": [
+            "Ljubljana"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s22_f7",
+          "session_idx": 22,
+          "fact_idx": 7,
+          "theme": "travel",
+          "claim": "Almaty was the destination this time.",
+          "distinctive": [
+            "Almaty"
+          ],
+          "valid_from": "2025-01-17T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 23,
+      "date": "2025-01-20T12:00:00.000Z",
+      "theme": "family",
+      "facts": [
+        {
+          "fact_id": "s23_f0",
+          "session_idx": 23,
+          "fact_idx": 0,
+          "theme": "family",
+          "claim": "I called my second cousin Tabitha.",
+          "distinctive": [
+            "second cousin",
+            "Tabitha"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f1",
+          "session_idx": 23,
+          "fact_idx": 1,
+          "theme": "family",
+          "claim": "I called my aunt Ysolde.",
+          "distinctive": [
+            "aunt",
+            "Ysolde"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f2",
+          "session_idx": 23,
+          "fact_idx": 2,
+          "theme": "family",
+          "claim": "Vespera, my grandfather, and I caught up on the phone.",
+          "distinctive": [
+            "grandfather",
+            "Vespera"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f3",
+          "session_idx": 23,
+          "fact_idx": 3,
+          "theme": "family",
+          "claim": "Edmund, my stepmother, and I caught up on the phone.",
+          "distinctive": [
+            "stepmother",
+            "Edmund"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f4",
+          "session_idx": 23,
+          "fact_idx": 4,
+          "theme": "family",
+          "claim": "Got an unexpected call from my grandfather Wendell today.",
+          "distinctive": [
+            "grandfather",
+            "Wendell"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f5",
+          "session_idx": 23,
+          "fact_idx": 5,
+          "theme": "family",
+          "claim": "Got an unexpected call from my sibling Helena today.",
+          "distinctive": [
+            "sibling",
+            "Helena"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f6",
+          "session_idx": 23,
+          "fact_idx": 6,
+          "theme": "family",
+          "claim": "I called my godparent Walter.",
+          "distinctive": [
+            "godparent",
+            "Walter"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f7",
+          "session_idx": 23,
+          "fact_idx": 7,
+          "theme": "family",
+          "claim": "Got an unexpected call from my uncle Nessa today.",
+          "distinctive": [
+            "uncle",
+            "Nessa"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s23_f8",
+          "session_idx": 23,
+          "fact_idx": 8,
+          "theme": "family",
+          "claim": "Got an unexpected call from my nephew Ysolde today.",
+          "distinctive": [
+            "nephew",
+            "Ysolde"
+          ],
+          "valid_from": "2025-01-20T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 24,
+      "date": "2025-01-24T00:00:00.000Z",
+      "theme": "health",
+      "facts": [
+        {
+          "fact_id": "s24_f0",
+          "session_idx": 24,
+          "fact_idx": 0,
+          "theme": "health",
+          "claim": "Booked time with Dr. Zhang to address sore knee.",
+          "distinctive": [
+            "Dr. Zhang",
+            "sore knee"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f1",
+          "session_idx": 24,
+          "fact_idx": 1,
+          "theme": "health",
+          "claim": "Dr. Park saw me about bad cold.",
+          "distinctive": [
+            "Dr. Park",
+            "bad cold"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f2",
+          "session_idx": 24,
+          "fact_idx": 2,
+          "theme": "health",
+          "claim": "Dr. Quinones saw me about thyroid panel.",
+          "distinctive": [
+            "Dr. Quinones",
+            "thyroid panel"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f3",
+          "session_idx": 24,
+          "fact_idx": 3,
+          "theme": "health",
+          "claim": "I went to Dr. Park for a hearing test.",
+          "distinctive": [
+            "Dr. Park",
+            "hearing test"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f4",
+          "session_idx": 24,
+          "fact_idx": 4,
+          "theme": "health",
+          "claim": "Booked time with Dr. Andersen to address referral consult.",
+          "distinctive": [
+            "Dr. Andersen",
+            "referral consult"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f5",
+          "session_idx": 24,
+          "fact_idx": 5,
+          "theme": "health",
+          "claim": "I went to Dr. Bauer for a tooth extraction.",
+          "distinctive": [
+            "Dr. Bauer",
+            "tooth extraction"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f6",
+          "session_idx": 24,
+          "fact_idx": 6,
+          "theme": "health",
+          "claim": "Dr. Eriksen saw me about ankle sprain.",
+          "distinctive": [
+            "Dr. Eriksen",
+            "ankle sprain"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f7",
+          "session_idx": 24,
+          "fact_idx": 7,
+          "theme": "health",
+          "claim": "Dr. Petrovic saw me about sleep study.",
+          "distinctive": [
+            "Dr. Petrovic",
+            "sleep study"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s24_f8",
+          "session_idx": 24,
+          "fact_idx": 8,
+          "theme": "health",
+          "claim": "Booked time with Dr. Bauer to address iron deficiency.",
+          "distinctive": [
+            "Dr. Bauer",
+            "iron deficiency"
+          ],
+          "valid_from": "2025-01-24T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 25,
+      "date": "2025-01-27T12:00:00.000Z",
+      "theme": "food",
+      "facts": [
+        {
+          "fact_id": "s25_f0",
+          "session_idx": 25,
+          "fact_idx": 0,
+          "theme": "food",
+          "claim": "Picked up doro wat on the way home — that was brunch.",
+          "distinctive": [
+            "doro wat",
+            "brunch"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f1",
+          "session_idx": 25,
+          "fact_idx": 1,
+          "theme": "food",
+          "claim": "I ate fish and chips for breakfast.",
+          "distinctive": [
+            "fish and chips",
+            "breakfast"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f2",
+          "session_idx": 25,
+          "fact_idx": 2,
+          "theme": "food",
+          "claim": "I ate shakshuka for late-night snack.",
+          "distinctive": [
+            "shakshuka",
+            "late-night snack"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f3",
+          "session_idx": 25,
+          "fact_idx": 3,
+          "theme": "food",
+          "claim": "I ate ramen for dinner.",
+          "distinctive": [
+            "ramen",
+            "dinner"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f4",
+          "session_idx": 25,
+          "fact_idx": 4,
+          "theme": "food",
+          "claim": "I ate gazpacho for brunch.",
+          "distinctive": [
+            "gazpacho",
+            "brunch"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f5",
+          "session_idx": 25,
+          "fact_idx": 5,
+          "theme": "food",
+          "claim": "Late-night snack today was kimchi stew.",
+          "distinctive": [
+            "kimchi stew",
+            "late-night snack"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f6",
+          "session_idx": 25,
+          "fact_idx": 6,
+          "theme": "food",
+          "claim": "Brunch today was gnocchi.",
+          "distinctive": [
+            "gnocchi",
+            "brunch"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s25_f7",
+          "session_idx": 25,
+          "fact_idx": 7,
+          "theme": "food",
+          "claim": "Brunch today was sushi.",
+          "distinctive": [
+            "sushi",
+            "brunch"
+          ],
+          "valid_from": "2025-01-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 26,
+      "date": "2025-01-31T00:00:00.000Z",
+      "theme": "books",
+      "facts": [
+        {
+          "fact_id": "s26_f0",
+          "session_idx": 26,
+          "fact_idx": 0,
+          "theme": "books",
+          "claim": "Cracked open \"Velvet Tides\" this evening.",
+          "distinctive": [
+            "Velvet Tides"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f1",
+          "session_idx": 26,
+          "fact_idx": 1,
+          "theme": "books",
+          "claim": "I started reading \"Velvet Tides\".",
+          "distinctive": [
+            "Velvet Tides"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f2",
+          "session_idx": 26,
+          "fact_idx": 2,
+          "theme": "books",
+          "claim": "\"The Last Cartographer\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "The Last Cartographer"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f3",
+          "session_idx": 26,
+          "fact_idx": 3,
+          "theme": "books",
+          "claim": "Cracked open \"The Salt Witch\" this evening.",
+          "distinctive": [
+            "The Salt Witch"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f4",
+          "session_idx": 26,
+          "fact_idx": 4,
+          "theme": "books",
+          "claim": "Cracked open \"Birds of the Borderlands\" this evening.",
+          "distinctive": [
+            "Birds of the Borderlands"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f5",
+          "session_idx": 26,
+          "fact_idx": 5,
+          "theme": "books",
+          "claim": "\"The Black Reed\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "The Black Reed"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f6",
+          "session_idx": 26,
+          "fact_idx": 6,
+          "theme": "books",
+          "claim": "Cracked open \"The Marble Choir\" this evening.",
+          "distinctive": [
+            "The Marble Choir"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f7",
+          "session_idx": 26,
+          "fact_idx": 7,
+          "theme": "books",
+          "claim": "I started reading \"The Marble Choir\".",
+          "distinctive": [
+            "The Marble Choir"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f8",
+          "session_idx": 26,
+          "fact_idx": 8,
+          "theme": "books",
+          "claim": "I started reading \"The Last Cartographer\".",
+          "distinctive": [
+            "The Last Cartographer"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s26_f9",
+          "session_idx": 26,
+          "fact_idx": 9,
+          "theme": "books",
+          "claim": "Cracked open \"Bone Compass\" this evening.",
+          "distinctive": [
+            "Bone Compass"
+          ],
+          "valid_from": "2025-01-31T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 27,
+      "date": "2025-02-03T12:00:00.000Z",
+      "theme": "music",
+      "facts": [
+        {
+          "fact_id": "s27_f0",
+          "session_idx": 27,
+          "fact_idx": 0,
+          "theme": "music",
+          "claim": "Discovered Indigo Forge via a friend's playlist.",
+          "distinctive": [
+            "Indigo Forge"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f1",
+          "session_idx": 27,
+          "fact_idx": 1,
+          "theme": "music",
+          "claim": "Discovered The Slow Train via a friend's playlist.",
+          "distinctive": [
+            "The Slow Train"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f2",
+          "session_idx": 27,
+          "fact_idx": 2,
+          "theme": "music",
+          "claim": "The Field Recorders has been on repeat.",
+          "distinctive": [
+            "The Field Recorders"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f3",
+          "session_idx": 27,
+          "fact_idx": 3,
+          "theme": "music",
+          "claim": "I listened to Ember Sister.",
+          "distinctive": [
+            "Ember Sister"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f4",
+          "session_idx": 27,
+          "fact_idx": 4,
+          "theme": "music",
+          "claim": "Discovered Bramble Crown via a friend's playlist.",
+          "distinctive": [
+            "Bramble Crown"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f5",
+          "session_idx": 27,
+          "fact_idx": 5,
+          "theme": "music",
+          "claim": "I listened to The Ophir Sessions.",
+          "distinctive": [
+            "The Ophir Sessions"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f6",
+          "session_idx": 27,
+          "fact_idx": 6,
+          "theme": "music",
+          "claim": "Halcyon Tin has been on repeat.",
+          "distinctive": [
+            "Halcyon Tin"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f7",
+          "session_idx": 27,
+          "fact_idx": 7,
+          "theme": "music",
+          "claim": "I listened to The Chestnut Letter.",
+          "distinctive": [
+            "The Chestnut Letter"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f8",
+          "session_idx": 27,
+          "fact_idx": 8,
+          "theme": "music",
+          "claim": "Discovered Twin Larch via a friend's playlist.",
+          "distinctive": [
+            "Twin Larch"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s27_f9",
+          "session_idx": 27,
+          "fact_idx": 9,
+          "theme": "music",
+          "claim": "Marigold Veil has been on repeat.",
+          "distinctive": [
+            "Marigold Veil"
+          ],
+          "valid_from": "2025-02-03T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 28,
+      "date": "2025-02-07T00:00:00.000Z",
+      "theme": "weather",
+      "facts": [
+        {
+          "fact_id": "s28_f0",
+          "session_idx": 28,
+          "fact_idx": 0,
+          "theme": "weather",
+          "claim": "Had to delay everything because of dust haze.",
+          "distinctive": [
+            "dust haze"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f1",
+          "session_idx": 28,
+          "fact_idx": 1,
+          "theme": "weather",
+          "claim": "Lake-effect flurries rolled through overnight.",
+          "distinctive": [
+            "lake-effect flurries"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f2",
+          "session_idx": 28,
+          "fact_idx": 2,
+          "theme": "weather",
+          "claim": "Frost warning rolled through overnight.",
+          "distinctive": [
+            "frost warning"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f3",
+          "session_idx": 28,
+          "fact_idx": 3,
+          "theme": "weather",
+          "claim": "There was fog in the morning.",
+          "distinctive": [
+            "fog"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f4",
+          "session_idx": 28,
+          "fact_idx": 4,
+          "theme": "weather",
+          "claim": "There was low cloud cover in the morning.",
+          "distinctive": [
+            "low cloud cover"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f5",
+          "session_idx": 28,
+          "fact_idx": 5,
+          "theme": "weather",
+          "claim": "Sleet rolled through overnight.",
+          "distinctive": [
+            "sleet"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f6",
+          "session_idx": 28,
+          "fact_idx": 6,
+          "theme": "weather",
+          "claim": "There was a humid mist in the morning.",
+          "distinctive": [
+            "humid mist"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f7",
+          "session_idx": 28,
+          "fact_idx": 7,
+          "theme": "weather",
+          "claim": "High gusts rolled through overnight.",
+          "distinctive": [
+            "high gusts"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f8",
+          "session_idx": 28,
+          "fact_idx": 8,
+          "theme": "weather",
+          "claim": "Polar plunge rolled through overnight.",
+          "distinctive": [
+            "polar plunge"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s28_f9",
+          "session_idx": 28,
+          "fact_idx": 9,
+          "theme": "weather",
+          "claim": "There was heavy snow in the morning.",
+          "distinctive": [
+            "heavy snow"
+          ],
+          "valid_from": "2025-02-07T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 29,
+      "date": "2025-02-10T12:00:00.000Z",
+      "theme": "news",
+      "facts": [
+        {
+          "fact_id": "s29_f0",
+          "session_idx": 29,
+          "fact_idx": 0,
+          "theme": "news",
+          "claim": "The election story keeps developing.",
+          "distinctive": [
+            "election"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f1",
+          "session_idx": 29,
+          "fact_idx": 1,
+          "theme": "news",
+          "claim": "The archaeological find story keeps developing.",
+          "distinctive": [
+            "archaeological find"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f2",
+          "session_idx": 29,
+          "fact_idx": 2,
+          "theme": "news",
+          "claim": "The submarine cable cut story keeps developing.",
+          "distinctive": [
+            "submarine cable cut"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f3",
+          "session_idx": 29,
+          "fact_idx": 3,
+          "theme": "news",
+          "claim": "Saw a long-read on the rare-earth standoff this morning.",
+          "distinctive": [
+            "rare-earth standoff"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f4",
+          "session_idx": 29,
+          "fact_idx": 4,
+          "theme": "news",
+          "claim": "The glacier retreat report story keeps developing.",
+          "distinctive": [
+            "glacier retreat report"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f5",
+          "session_idx": 29,
+          "fact_idx": 5,
+          "theme": "news",
+          "claim": "I read about the transit referendum in the news.",
+          "distinctive": [
+            "transit referendum"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f6",
+          "session_idx": 29,
+          "fact_idx": 6,
+          "theme": "news",
+          "claim": "Saw a long-read on the spectrum auction this morning.",
+          "distinctive": [
+            "spectrum auction"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f7",
+          "session_idx": 29,
+          "fact_idx": 7,
+          "theme": "news",
+          "claim": "I read about the reservoir levels report in the news.",
+          "distinctive": [
+            "reservoir levels report"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f8",
+          "session_idx": 29,
+          "fact_idx": 8,
+          "theme": "news",
+          "claim": "The minimum wage debate story keeps developing.",
+          "distinctive": [
+            "minimum wage debate"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s29_f9",
+          "session_idx": 29,
+          "fact_idx": 9,
+          "theme": "news",
+          "claim": "I read about the microplastics ruling in the news.",
+          "distinctive": [
+            "microplastics ruling"
+          ],
+          "valid_from": "2025-02-10T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 30,
+      "date": "2025-02-14T00:00:00.000Z",
+      "theme": "work",
+      "facts": [
+        {
+          "fact_id": "s30_f0",
+          "session_idx": 30,
+          "fact_idx": 0,
+          "theme": "work",
+          "claim": "I had a meeting with Devi about the new hire.",
+          "distinctive": [
+            "Devi",
+            "new hire"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f1",
+          "session_idx": 30,
+          "fact_idx": 1,
+          "theme": "work",
+          "claim": "My one-on-one with Pavel ended up centered on compliance review.",
+          "distinctive": [
+            "Pavel",
+            "compliance review"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f2",
+          "session_idx": 30,
+          "fact_idx": 2,
+          "theme": "work",
+          "claim": "Joaquin pulled me into a quick sync on customer escalation.",
+          "distinctive": [
+            "Joaquin",
+            "customer escalation"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f3",
+          "session_idx": 30,
+          "fact_idx": 3,
+          "theme": "work",
+          "claim": "Galen pulled me into a quick sync on release notes.",
+          "distinctive": [
+            "Galen",
+            "release notes"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f4",
+          "session_idx": 30,
+          "fact_idx": 4,
+          "theme": "work",
+          "claim": "I had a meeting with Mateo about the performance review.",
+          "distinctive": [
+            "Mateo",
+            "performance review"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f5",
+          "session_idx": 30,
+          "fact_idx": 5,
+          "theme": "work",
+          "claim": "I had a meeting with Magnus about the sprint goals.",
+          "distinctive": [
+            "Magnus",
+            "sprint goals"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s30_f6",
+          "session_idx": 30,
+          "fact_idx": 6,
+          "theme": "work",
+          "claim": "I had a meeting with Zahir about the security audit.",
+          "distinctive": [
+            "Zahir",
+            "security audit"
+          ],
+          "valid_from": "2025-02-14T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 31,
+      "date": "2025-02-17T12:00:00.000Z",
+      "theme": "hobby",
+      "facts": [
+        {
+          "fact_id": "s31_f0",
+          "session_idx": 31,
+          "fact_idx": 0,
+          "theme": "hobby",
+          "claim": "Spent the morning hiking out at Nightingale Glen.",
+          "distinctive": [
+            "hiking",
+            "Nightingale Glen"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f1",
+          "session_idx": 31,
+          "fact_idx": 1,
+          "theme": "hobby",
+          "claim": "Salt Marsh turned out to be a great spot for birding.",
+          "distinctive": [
+            "birding",
+            "Salt Marsh"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f2",
+          "session_idx": 31,
+          "fact_idx": 2,
+          "theme": "hobby",
+          "claim": "I went sailing at Tanglewood Notch.",
+          "distinctive": [
+            "sailing",
+            "Tanglewood Notch"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f3",
+          "session_idx": 31,
+          "fact_idx": 3,
+          "theme": "hobby",
+          "claim": "Spent the morning astrophotography out at Junegrass Meadow.",
+          "distinctive": [
+            "astrophotography",
+            "Junegrass Meadow"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f4",
+          "session_idx": 31,
+          "fact_idx": 4,
+          "theme": "hobby",
+          "claim": "I went hiking at Verdant Ravine.",
+          "distinctive": [
+            "hiking",
+            "Verdant Ravine"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f5",
+          "session_idx": 31,
+          "fact_idx": 5,
+          "theme": "hobby",
+          "claim": "Spent the morning spelunking out at Granite Hollow.",
+          "distinctive": [
+            "spelunking",
+            "Granite Hollow"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f6",
+          "session_idx": 31,
+          "fact_idx": 6,
+          "theme": "hobby",
+          "claim": "Willowmere Pond turned out to be a great spot for hiking.",
+          "distinctive": [
+            "hiking",
+            "Willowmere Pond"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f7",
+          "session_idx": 31,
+          "fact_idx": 7,
+          "theme": "hobby",
+          "claim": "I went cycling at Pine Hollow.",
+          "distinctive": [
+            "cycling",
+            "Pine Hollow"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f8",
+          "session_idx": 31,
+          "fact_idx": 8,
+          "theme": "hobby",
+          "claim": "Rosethorn Cliffs turned out to be a great spot for snowshoeing.",
+          "distinctive": [
+            "snowshoeing",
+            "Rosethorn Cliffs"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s31_f9",
+          "session_idx": 31,
+          "fact_idx": 9,
+          "theme": "hobby",
+          "claim": "I went ice climbing at Umberwood Plateau.",
+          "distinctive": [
+            "ice climbing",
+            "Umberwood Plateau"
+          ],
+          "valid_from": "2025-02-17T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 32,
+      "date": "2025-02-21T00:00:00.000Z",
+      "theme": "travel",
+      "facts": [
+        {
+          "fact_id": "s32_f0",
+          "session_idx": 32,
+          "fact_idx": 0,
+          "theme": "travel",
+          "claim": "Valletta was the destination this time.",
+          "distinctive": [
+            "Valletta"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f1",
+          "session_idx": 32,
+          "fact_idx": 1,
+          "theme": "travel",
+          "claim": "Aarhus was the destination this time.",
+          "distinctive": [
+            "Aarhus"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f2",
+          "session_idx": 32,
+          "fact_idx": 2,
+          "theme": "travel",
+          "claim": "Tashkent was the destination this time.",
+          "distinctive": [
+            "Tashkent"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f3",
+          "session_idx": 32,
+          "fact_idx": 3,
+          "theme": "travel",
+          "claim": "I visited Vilnius.",
+          "distinctive": [
+            "Vilnius"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f4",
+          "session_idx": 32,
+          "fact_idx": 4,
+          "theme": "travel",
+          "claim": "Vilnius was the destination this time.",
+          "distinctive": [
+            "Vilnius"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f5",
+          "session_idx": 32,
+          "fact_idx": 5,
+          "theme": "travel",
+          "claim": "I visited Bologna.",
+          "distinctive": [
+            "Bologna"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f6",
+          "session_idx": 32,
+          "fact_idx": 6,
+          "theme": "travel",
+          "claim": "I visited Aarhus.",
+          "distinctive": [
+            "Aarhus"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f7",
+          "session_idx": 32,
+          "fact_idx": 7,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Trondheim.",
+          "distinctive": [
+            "Trondheim"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s32_f8",
+          "session_idx": 32,
+          "fact_idx": 8,
+          "theme": "travel",
+          "claim": "I visited Marrakech.",
+          "distinctive": [
+            "Marrakech"
+          ],
+          "valid_from": "2025-02-21T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 33,
+      "date": "2025-02-24T12:00:00.000Z",
+      "theme": "family",
+      "facts": [
+        {
+          "fact_id": "s33_f0",
+          "session_idx": 33,
+          "fact_idx": 0,
+          "theme": "family",
+          "claim": "I called my second cousin Lavinia.",
+          "distinctive": [
+            "second cousin",
+            "Lavinia"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f1",
+          "session_idx": 33,
+          "fact_idx": 1,
+          "theme": "family",
+          "claim": "Fenella, my second cousin, and I caught up on the phone.",
+          "distinctive": [
+            "second cousin",
+            "Fenella"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f2",
+          "session_idx": 33,
+          "fact_idx": 2,
+          "theme": "family",
+          "claim": "I called my second cousin Sven.",
+          "distinctive": [
+            "second cousin",
+            "Sven"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f3",
+          "session_idx": 33,
+          "fact_idx": 3,
+          "theme": "family",
+          "claim": "I called my grandmother Delphine.",
+          "distinctive": [
+            "grandmother",
+            "Delphine"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f4",
+          "session_idx": 33,
+          "fact_idx": 4,
+          "theme": "family",
+          "claim": "Got an unexpected call from my nephew Lavinia today.",
+          "distinctive": [
+            "nephew",
+            "Lavinia"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f5",
+          "session_idx": 33,
+          "fact_idx": 5,
+          "theme": "family",
+          "claim": "I called my nephew Mortimer.",
+          "distinctive": [
+            "nephew",
+            "Mortimer"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f6",
+          "session_idx": 33,
+          "fact_idx": 6,
+          "theme": "family",
+          "claim": "I called my grandfather Tabitha.",
+          "distinctive": [
+            "grandfather",
+            "Tabitha"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f7",
+          "session_idx": 33,
+          "fact_idx": 7,
+          "theme": "family",
+          "claim": "Cyrus, my grandfather, and I caught up on the phone.",
+          "distinctive": [
+            "grandfather",
+            "Cyrus"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f8",
+          "session_idx": 33,
+          "fact_idx": 8,
+          "theme": "family",
+          "claim": "Got an unexpected call from my uncle Beatrix today.",
+          "distinctive": [
+            "uncle",
+            "Beatrix"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s33_f9",
+          "session_idx": 33,
+          "fact_idx": 9,
+          "theme": "family",
+          "claim": "Orvar, my nephew, and I caught up on the phone.",
+          "distinctive": [
+            "nephew",
+            "Orvar"
+          ],
+          "valid_from": "2025-02-24T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 34,
+      "date": "2025-02-28T00:00:00.000Z",
+      "theme": "health",
+      "facts": [
+        {
+          "fact_id": "s34_f0",
+          "session_idx": 34,
+          "fact_idx": 0,
+          "theme": "health",
+          "claim": "I went to Dr. Choudhury for an ankle sprain.",
+          "distinctive": [
+            "Dr. Choudhury",
+            "ankle sprain"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f1",
+          "session_idx": 34,
+          "fact_idx": 1,
+          "theme": "health",
+          "claim": "Dr. Andersen saw me about lower back stiffness.",
+          "distinctive": [
+            "Dr. Andersen",
+            "lower back stiffness"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f2",
+          "session_idx": 34,
+          "fact_idx": 2,
+          "theme": "health",
+          "claim": "Booked time with Dr. Bauer to address balance test.",
+          "distinctive": [
+            "Dr. Bauer",
+            "balance test"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f3",
+          "session_idx": 34,
+          "fact_idx": 3,
+          "theme": "health",
+          "claim": "Booked time with Dr. Kim to address stress fracture.",
+          "distinctive": [
+            "Dr. Kim",
+            "stress fracture"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f4",
+          "session_idx": 34,
+          "fact_idx": 4,
+          "theme": "health",
+          "claim": "Booked time with Dr. Yamamoto to address thyroid panel.",
+          "distinctive": [
+            "Dr. Yamamoto",
+            "thyroid panel"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f5",
+          "session_idx": 34,
+          "fact_idx": 5,
+          "theme": "health",
+          "claim": "Booked time with Dr. Beaumont to address thyroid panel.",
+          "distinctive": [
+            "Dr. Beaumont",
+            "thyroid panel"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f6",
+          "session_idx": 34,
+          "fact_idx": 6,
+          "theme": "health",
+          "claim": "Dr. Hirsch saw me about sciatica.",
+          "distinctive": [
+            "Dr. Hirsch",
+            "sciatica"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f7",
+          "session_idx": 34,
+          "fact_idx": 7,
+          "theme": "health",
+          "claim": "Booked time with Dr. Suzuki to address allergies.",
+          "distinctive": [
+            "Dr. Suzuki",
+            "allergies"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f8",
+          "session_idx": 34,
+          "fact_idx": 8,
+          "theme": "health",
+          "claim": "I went to Dr. Zhang for persistent vertigo.",
+          "distinctive": [
+            "Dr. Zhang",
+            "persistent vertigo"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s34_f9",
+          "session_idx": 34,
+          "fact_idx": 9,
+          "theme": "health",
+          "claim": "I went to Dr. Beaumont for a skin biopsy.",
+          "distinctive": [
+            "Dr. Beaumont",
+            "skin biopsy"
+          ],
+          "valid_from": "2025-02-28T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 35,
+      "date": "2025-03-03T12:00:00.000Z",
+      "theme": "food",
+      "facts": [
+        {
+          "fact_id": "s35_f0",
+          "session_idx": 35,
+          "fact_idx": 0,
+          "theme": "food",
+          "claim": "I ate ramen for brunch.",
+          "distinctive": [
+            "ramen",
+            "brunch"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s35_f1",
+          "session_idx": 35,
+          "fact_idx": 1,
+          "theme": "food",
+          "claim": "Picked up tagine on the way home — that was breakfast.",
+          "distinctive": [
+            "tagine",
+            "breakfast"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s35_f2",
+          "session_idx": 35,
+          "fact_idx": 2,
+          "theme": "food",
+          "claim": "Brunch today was shakshuka.",
+          "distinctive": [
+            "shakshuka",
+            "brunch"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s35_f3",
+          "session_idx": 35,
+          "fact_idx": 3,
+          "theme": "food",
+          "claim": "Lunch today was shawarma.",
+          "distinctive": [
+            "shawarma",
+            "lunch"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s35_f4",
+          "session_idx": 35,
+          "fact_idx": 4,
+          "theme": "food",
+          "claim": "Picked up rendang on the way home — that was lunch.",
+          "distinctive": [
+            "rendang",
+            "lunch"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s35_f5",
+          "session_idx": 35,
+          "fact_idx": 5,
+          "theme": "food",
+          "claim": "Brunch today was spanakopita.",
+          "distinctive": [
+            "spanakopita",
+            "brunch"
+          ],
+          "valid_from": "2025-03-03T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 36,
+      "date": "2025-03-07T00:00:00.000Z",
+      "theme": "books",
+      "facts": [
+        {
+          "fact_id": "s36_f0",
+          "session_idx": 36,
+          "fact_idx": 0,
+          "theme": "books",
+          "claim": "Cracked open \"Ash and Antler\" this evening.",
+          "distinctive": [
+            "Ash and Antler"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f1",
+          "session_idx": 36,
+          "fact_idx": 1,
+          "theme": "books",
+          "claim": "\"Driftless\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "Driftless"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f2",
+          "session_idx": 36,
+          "fact_idx": 2,
+          "theme": "books",
+          "claim": "\"Bone Compass\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "Bone Compass"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f3",
+          "session_idx": 36,
+          "fact_idx": 3,
+          "theme": "books",
+          "claim": "\"The Lacquered Box\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "The Lacquered Box"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f4",
+          "session_idx": 36,
+          "fact_idx": 4,
+          "theme": "books",
+          "claim": "\"Ash and Antler\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "Ash and Antler"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f5",
+          "session_idx": 36,
+          "fact_idx": 5,
+          "theme": "books",
+          "claim": "I started reading \"The Owl Atlas\".",
+          "distinctive": [
+            "The Owl Atlas"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s36_f6",
+          "session_idx": 36,
+          "fact_idx": 6,
+          "theme": "books",
+          "claim": "\"A Quiet Sea\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "A Quiet Sea"
+          ],
+          "valid_from": "2025-03-07T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 37,
+      "date": "2025-03-10T12:00:00.000Z",
+      "theme": "music",
+      "facts": [
+        {
+          "fact_id": "s37_f0",
+          "session_idx": 37,
+          "fact_idx": 0,
+          "theme": "music",
+          "claim": "Discovered Ember Sister via a friend's playlist.",
+          "distinctive": [
+            "Ember Sister"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s37_f1",
+          "session_idx": 37,
+          "fact_idx": 1,
+          "theme": "music",
+          "claim": "Discovered Driftwood Anthem via a friend's playlist.",
+          "distinctive": [
+            "Driftwood Anthem"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s37_f2",
+          "session_idx": 37,
+          "fact_idx": 2,
+          "theme": "music",
+          "claim": "Discovered The Hawthorn Choir via a friend's playlist.",
+          "distinctive": [
+            "The Hawthorn Choir"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s37_f3",
+          "session_idx": 37,
+          "fact_idx": 3,
+          "theme": "music",
+          "claim": "I listened to Pale Lantern.",
+          "distinctive": [
+            "Pale Lantern"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s37_f4",
+          "session_idx": 37,
+          "fact_idx": 4,
+          "theme": "music",
+          "claim": "Discovered Hollow Echoes via a friend's playlist.",
+          "distinctive": [
+            "Hollow Echoes"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s37_f5",
+          "session_idx": 37,
+          "fact_idx": 5,
+          "theme": "music",
+          "claim": "Discovered Trillium Drone via a friend's playlist.",
+          "distinctive": [
+            "Trillium Drone"
+          ],
+          "valid_from": "2025-03-10T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 38,
+      "date": "2025-03-14T00:00:00.000Z",
+      "theme": "weather",
+      "facts": [
+        {
+          "fact_id": "s38_f0",
+          "session_idx": 38,
+          "fact_idx": 0,
+          "theme": "weather",
+          "claim": "Had to delay everything because of ice storm.",
+          "distinctive": [
+            "ice storm"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f1",
+          "session_idx": 38,
+          "fact_idx": 1,
+          "theme": "weather",
+          "claim": "Hailstorm rolled through overnight.",
+          "distinctive": [
+            "hailstorm"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f2",
+          "session_idx": 38,
+          "fact_idx": 2,
+          "theme": "weather",
+          "claim": "Humid mist rolled through overnight.",
+          "distinctive": [
+            "humid mist"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f3",
+          "session_idx": 38,
+          "fact_idx": 3,
+          "theme": "weather",
+          "claim": "Had to delay everything because of high gusts.",
+          "distinctive": [
+            "high gusts"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f4",
+          "session_idx": 38,
+          "fact_idx": 4,
+          "theme": "weather",
+          "claim": "There was a heat wave in the morning.",
+          "distinctive": [
+            "heat wave"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f5",
+          "session_idx": 38,
+          "fact_idx": 5,
+          "theme": "weather",
+          "claim": "There was a polar plunge in the morning.",
+          "distinctive": [
+            "polar plunge"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s38_f6",
+          "session_idx": 38,
+          "fact_idx": 6,
+          "theme": "weather",
+          "claim": "Had to delay everything because of sleet.",
+          "distinctive": [
+            "sleet"
+          ],
+          "valid_from": "2025-03-14T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 39,
+      "date": "2025-03-17T12:00:00.000Z",
+      "theme": "news",
+      "facts": [
+        {
+          "fact_id": "s39_f0",
+          "session_idx": 39,
+          "fact_idx": 0,
+          "theme": "news",
+          "claim": "I read about the new bridge in the news.",
+          "distinctive": [
+            "new bridge"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f1",
+          "session_idx": 39,
+          "fact_idx": 1,
+          "theme": "news",
+          "claim": "The spectrum auction story keeps developing.",
+          "distinctive": [
+            "spectrum auction"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f2",
+          "session_idx": 39,
+          "fact_idx": 2,
+          "theme": "news",
+          "claim": "The rail strike story keeps developing.",
+          "distinctive": [
+            "rail strike"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f3",
+          "session_idx": 39,
+          "fact_idx": 3,
+          "theme": "news",
+          "claim": "Saw a long-read on the new bridge this morning.",
+          "distinctive": [
+            "new bridge"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f4",
+          "session_idx": 39,
+          "fact_idx": 4,
+          "theme": "news",
+          "claim": "The algorithmic-bias study story keeps developing.",
+          "distinctive": [
+            "algorithmic-bias study"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f5",
+          "session_idx": 39,
+          "fact_idx": 5,
+          "theme": "news",
+          "claim": "I read about the climate report in the news.",
+          "distinctive": [
+            "climate report"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f6",
+          "session_idx": 39,
+          "fact_idx": 6,
+          "theme": "news",
+          "claim": "Saw a long-read on the stadium proposal this morning.",
+          "distinctive": [
+            "stadium proposal"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s39_f7",
+          "session_idx": 39,
+          "fact_idx": 7,
+          "theme": "news",
+          "claim": "The merger story keeps developing.",
+          "distinctive": [
+            "merger"
+          ],
+          "valid_from": "2025-03-17T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 40,
+      "date": "2025-03-21T00:00:00.000Z",
+      "theme": "work",
+      "facts": [
+        {
+          "fact_id": "s40_f0",
+          "session_idx": 40,
+          "fact_idx": 0,
+          "theme": "work",
+          "claim": "I had a meeting with Wren about the incident response.",
+          "distinctive": [
+            "Wren",
+            "incident response"
+          ],
+          "valid_from": "2025-03-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s40_f1",
+          "session_idx": 40,
+          "fact_idx": 1,
+          "theme": "work",
+          "claim": "Nadya pulled me into a quick sync on office move.",
+          "distinctive": [
+            "Nadya",
+            "office move"
+          ],
+          "valid_from": "2025-03-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s40_f2",
+          "session_idx": 40,
+          "fact_idx": 2,
+          "theme": "work",
+          "claim": "I had a meeting with Yusra about the on-call rotation.",
+          "distinctive": [
+            "Yusra",
+            "on-call rotation"
+          ],
+          "valid_from": "2025-03-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s40_f3",
+          "session_idx": 40,
+          "fact_idx": 3,
+          "theme": "work",
+          "claim": "My one-on-one with Marcus ended up centered on risk register.",
+          "distinctive": [
+            "Marcus",
+            "risk register"
+          ],
+          "valid_from": "2025-03-21T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s40_f4",
+          "session_idx": 40,
+          "fact_idx": 4,
+          "theme": "work",
+          "claim": "I had a meeting with Joaquin about the launch plan.",
+          "distinctive": [
+            "Joaquin",
+            "launch plan"
+          ],
+          "valid_from": "2025-03-21T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 41,
+      "date": "2025-03-24T12:00:00.000Z",
+      "theme": "hobby",
+      "facts": [
+        {
+          "fact_id": "s41_f0",
+          "session_idx": 41,
+          "fact_idx": 0,
+          "theme": "hobby",
+          "claim": "I went mushroom hunting at Junegrass Meadow.",
+          "distinctive": [
+            "mushroom hunting",
+            "Junegrass Meadow"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s41_f1",
+          "session_idx": 41,
+          "fact_idx": 1,
+          "theme": "hobby",
+          "claim": "Spent the morning tide-pooling out at Willowmere Pond.",
+          "distinctive": [
+            "tide-pooling",
+            "Willowmere Pond"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s41_f2",
+          "session_idx": 41,
+          "fact_idx": 2,
+          "theme": "hobby",
+          "claim": "Veridian Steppe turned out to be a great spot for ice climbing.",
+          "distinctive": [
+            "ice climbing",
+            "Veridian Steppe"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s41_f3",
+          "session_idx": 41,
+          "fact_idx": 3,
+          "theme": "hobby",
+          "claim": "I went ice climbing at Skyrim Mesa.",
+          "distinctive": [
+            "ice climbing",
+            "Skyrim Mesa"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s41_f4",
+          "session_idx": 41,
+          "fact_idx": 4,
+          "theme": "hobby",
+          "claim": "Spent the morning birding out at Larkspur Pass.",
+          "distinctive": [
+            "birding",
+            "Larkspur Pass"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s41_f5",
+          "session_idx": 41,
+          "fact_idx": 5,
+          "theme": "hobby",
+          "claim": "Yarrow Heights turned out to be a great spot for kayaking.",
+          "distinctive": [
+            "kayaking",
+            "Yarrow Heights"
+          ],
+          "valid_from": "2025-03-24T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 42,
+      "date": "2025-03-28T00:00:00.000Z",
+      "theme": "travel",
+      "facts": [
+        {
+          "fact_id": "s42_f0",
+          "session_idx": 42,
+          "fact_idx": 0,
+          "theme": "travel",
+          "claim": "I visited Almaty.",
+          "distinctive": [
+            "Almaty"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f1",
+          "session_idx": 42,
+          "fact_idx": 1,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Hoi An.",
+          "distinctive": [
+            "Hoi An"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f2",
+          "session_idx": 42,
+          "fact_idx": 2,
+          "theme": "travel",
+          "claim": "Granada was the destination this time.",
+          "distinctive": [
+            "Granada"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f3",
+          "session_idx": 42,
+          "fact_idx": 3,
+          "theme": "travel",
+          "claim": "Rotterdam was the destination this time.",
+          "distinctive": [
+            "Rotterdam"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f4",
+          "session_idx": 42,
+          "fact_idx": 4,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Cusco.",
+          "distinctive": [
+            "Cusco"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f5",
+          "session_idx": 42,
+          "fact_idx": 5,
+          "theme": "travel",
+          "claim": "Wrapped up a few days exploring Kyoto.",
+          "distinctive": [
+            "Kyoto"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f6",
+          "session_idx": 42,
+          "fact_idx": 6,
+          "theme": "travel",
+          "claim": "Porto was the destination this time.",
+          "distinctive": [
+            "Porto"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f7",
+          "session_idx": 42,
+          "fact_idx": 7,
+          "theme": "travel",
+          "claim": "I visited Bratislava.",
+          "distinctive": [
+            "Bratislava"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s42_f8",
+          "session_idx": 42,
+          "fact_idx": 8,
+          "theme": "travel",
+          "claim": "Lecce was the destination this time.",
+          "distinctive": [
+            "Lecce"
+          ],
+          "valid_from": "2025-03-28T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 43,
+      "date": "2025-03-31T12:00:00.000Z",
+      "theme": "family",
+      "facts": [
+        {
+          "fact_id": "s43_f0",
+          "session_idx": 43,
+          "fact_idx": 0,
+          "theme": "family",
+          "claim": "Got an unexpected call from my sibling Otto today.",
+          "distinctive": [
+            "sibling",
+            "Otto"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s43_f1",
+          "session_idx": 43,
+          "fact_idx": 1,
+          "theme": "family",
+          "claim": "Quincy, my stepfather, and I caught up on the phone.",
+          "distinctive": [
+            "stepfather",
+            "Quincy"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s43_f2",
+          "session_idx": 43,
+          "fact_idx": 2,
+          "theme": "family",
+          "claim": "Got an unexpected call from my uncle Caspar today.",
+          "distinctive": [
+            "uncle",
+            "Caspar"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s43_f3",
+          "session_idx": 43,
+          "fact_idx": 3,
+          "theme": "family",
+          "claim": "I called my uncle Xavier.",
+          "distinctive": [
+            "uncle",
+            "Xavier"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s43_f4",
+          "session_idx": 43,
+          "fact_idx": 4,
+          "theme": "family",
+          "claim": "Got an unexpected call from my cousin Walter today.",
+          "distinctive": [
+            "cousin",
+            "Walter"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s43_f5",
+          "session_idx": 43,
+          "fact_idx": 5,
+          "theme": "family",
+          "claim": "Got an unexpected call from my grandmother Cyrus today.",
+          "distinctive": [
+            "grandmother",
+            "Cyrus"
+          ],
+          "valid_from": "2025-03-31T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 44,
+      "date": "2025-04-04T00:00:00.000Z",
+      "theme": "health",
+      "facts": [
+        {
+          "fact_id": "s44_f0",
+          "session_idx": 44,
+          "fact_idx": 0,
+          "theme": "health",
+          "claim": "I went to Dr. Voss for a routine checkup.",
+          "distinctive": [
+            "Dr. Voss",
+            "routine checkup"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f1",
+          "session_idx": 44,
+          "fact_idx": 1,
+          "theme": "health",
+          "claim": "Booked time with Dr. Bauer to address bad cold.",
+          "distinctive": [
+            "Dr. Bauer",
+            "bad cold"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f2",
+          "session_idx": 44,
+          "fact_idx": 2,
+          "theme": "health",
+          "claim": "Dr. Quinones saw me about skin biopsy.",
+          "distinctive": [
+            "Dr. Quinones",
+            "skin biopsy"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f3",
+          "session_idx": 44,
+          "fact_idx": 3,
+          "theme": "health",
+          "claim": "I went to Dr. Hirsch for a referral consult.",
+          "distinctive": [
+            "Dr. Hirsch",
+            "referral consult"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f4",
+          "session_idx": 44,
+          "fact_idx": 4,
+          "theme": "health",
+          "claim": "Dr. Beaumont saw me about iron deficiency.",
+          "distinctive": [
+            "Dr. Beaumont",
+            "iron deficiency"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f5",
+          "session_idx": 44,
+          "fact_idx": 5,
+          "theme": "health",
+          "claim": "Dr. Choudhury saw me about balance test.",
+          "distinctive": [
+            "Dr. Choudhury",
+            "balance test"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f6",
+          "session_idx": 44,
+          "fact_idx": 6,
+          "theme": "health",
+          "claim": "Dr. Okafor saw me about persistent fatigue.",
+          "distinctive": [
+            "Dr. Okafor",
+            "persistent fatigue"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f7",
+          "session_idx": 44,
+          "fact_idx": 7,
+          "theme": "health",
+          "claim": "I went to Dr. Eriksen for a sprained wrist.",
+          "distinctive": [
+            "Dr. Eriksen",
+            "sprained wrist"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f8",
+          "session_idx": 44,
+          "fact_idx": 8,
+          "theme": "health",
+          "claim": "I went to Dr. Esposito for a balance test.",
+          "distinctive": [
+            "Dr. Esposito",
+            "balance test"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s44_f9",
+          "session_idx": 44,
+          "fact_idx": 9,
+          "theme": "health",
+          "claim": "Dr. Voss saw me about tetanus booster.",
+          "distinctive": [
+            "Dr. Voss",
+            "tetanus booster"
+          ],
+          "valid_from": "2025-04-04T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 45,
+      "date": "2025-04-07T12:00:00.000Z",
+      "theme": "food",
+      "facts": [
+        {
+          "fact_id": "s45_f0",
+          "session_idx": 45,
+          "fact_idx": 0,
+          "theme": "food",
+          "claim": "Dinner today was banh mi.",
+          "distinctive": [
+            "banh mi",
+            "dinner"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f1",
+          "session_idx": 45,
+          "fact_idx": 1,
+          "theme": "food",
+          "claim": "Picked up lasagna on the way home — that was dinner.",
+          "distinctive": [
+            "lasagna",
+            "dinner"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f2",
+          "session_idx": 45,
+          "fact_idx": 2,
+          "theme": "food",
+          "claim": "I ate mole for breakfast.",
+          "distinctive": [
+            "mole",
+            "breakfast"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f3",
+          "session_idx": 45,
+          "fact_idx": 3,
+          "theme": "food",
+          "claim": "Picked up feijoada on the way home — that was dinner.",
+          "distinctive": [
+            "feijoada",
+            "dinner"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f4",
+          "session_idx": 45,
+          "fact_idx": 4,
+          "theme": "food",
+          "claim": "Picked up risotto milanese on the way home — that was lunch.",
+          "distinctive": [
+            "risotto milanese",
+            "lunch"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f5",
+          "session_idx": 45,
+          "fact_idx": 5,
+          "theme": "food",
+          "claim": "Picked up gnocchi on the way home — that was brunch.",
+          "distinctive": [
+            "gnocchi",
+            "brunch"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s45_f6",
+          "session_idx": 45,
+          "fact_idx": 6,
+          "theme": "food",
+          "claim": "Brunch today was manti.",
+          "distinctive": [
+            "manti",
+            "brunch"
+          ],
+          "valid_from": "2025-04-07T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 46,
+      "date": "2025-04-11T00:00:00.000Z",
+      "theme": "books",
+      "facts": [
+        {
+          "fact_id": "s46_f0",
+          "session_idx": 46,
+          "fact_idx": 0,
+          "theme": "books",
+          "claim": "Cracked open \"The Last Cartographer\" this evening.",
+          "distinctive": [
+            "The Last Cartographer"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f1",
+          "session_idx": 46,
+          "fact_idx": 1,
+          "theme": "books",
+          "claim": "\"The Owl Atlas\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "The Owl Atlas"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f2",
+          "session_idx": 46,
+          "fact_idx": 2,
+          "theme": "books",
+          "claim": "Cracked open \"The Iron Garden\" this evening.",
+          "distinctive": [
+            "The Iron Garden"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f3",
+          "session_idx": 46,
+          "fact_idx": 3,
+          "theme": "books",
+          "claim": "Cracked open \"Tin Roof Republic\" this evening.",
+          "distinctive": [
+            "Tin Roof Republic"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f4",
+          "session_idx": 46,
+          "fact_idx": 4,
+          "theme": "books",
+          "claim": "I started reading \"Wireblood\".",
+          "distinctive": [
+            "Wireblood"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f5",
+          "session_idx": 46,
+          "fact_idx": 5,
+          "theme": "books",
+          "claim": "I started reading \"The Lacquered Box\".",
+          "distinctive": [
+            "The Lacquered Box"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f6",
+          "session_idx": 46,
+          "fact_idx": 6,
+          "theme": "books",
+          "claim": "\"Northern Lights\" arrived in the mail and I'm already a few chapters in.",
+          "distinctive": [
+            "Northern Lights"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s46_f7",
+          "session_idx": 46,
+          "fact_idx": 7,
+          "theme": "books",
+          "claim": "Cracked open \"Ember Year\" this evening.",
+          "distinctive": [
+            "Ember Year"
+          ],
+          "valid_from": "2025-04-11T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 47,
+      "date": "2025-04-14T12:00:00.000Z",
+      "theme": "music",
+      "facts": [
+        {
+          "fact_id": "s47_f0",
+          "session_idx": 47,
+          "fact_idx": 0,
+          "theme": "music",
+          "claim": "Wildgrass Almanac has been on repeat.",
+          "distinctive": [
+            "Wildgrass Almanac"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f1",
+          "session_idx": 47,
+          "fact_idx": 1,
+          "theme": "music",
+          "claim": "The Ophir Sessions has been on repeat.",
+          "distinctive": [
+            "The Ophir Sessions"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f2",
+          "session_idx": 47,
+          "fact_idx": 2,
+          "theme": "music",
+          "claim": "Discovered Vesper Fern via a friend's playlist.",
+          "distinctive": [
+            "Vesper Fern"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f3",
+          "session_idx": 47,
+          "fact_idx": 3,
+          "theme": "music",
+          "claim": "Discovered Wildgrass Almanac via a friend's playlist.",
+          "distinctive": [
+            "Wildgrass Almanac"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f4",
+          "session_idx": 47,
+          "fact_idx": 4,
+          "theme": "music",
+          "claim": "I listened to Marigold Veil.",
+          "distinctive": [
+            "Marigold Veil"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f5",
+          "session_idx": 47,
+          "fact_idx": 5,
+          "theme": "music",
+          "claim": "I listened to Russet Hare.",
+          "distinctive": [
+            "Russet Hare"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s47_f6",
+          "session_idx": 47,
+          "fact_idx": 6,
+          "theme": "music",
+          "claim": "Bramble Crown has been on repeat.",
+          "distinctive": [
+            "Bramble Crown"
+          ],
+          "valid_from": "2025-04-14T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 48,
+      "date": "2025-04-18T00:00:00.000Z",
+      "theme": "weather",
+      "facts": [
+        {
+          "fact_id": "s48_f0",
+          "session_idx": 48,
+          "fact_idx": 0,
+          "theme": "weather",
+          "claim": "Had to delay everything because of patchy drizzle.",
+          "distinctive": [
+            "patchy drizzle"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f1",
+          "session_idx": 48,
+          "fact_idx": 1,
+          "theme": "weather",
+          "claim": "Had to delay everything because of frost warning.",
+          "distinctive": [
+            "frost warning"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f2",
+          "session_idx": 48,
+          "fact_idx": 2,
+          "theme": "weather",
+          "claim": "There was sleet in the morning.",
+          "distinctive": [
+            "sleet"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f3",
+          "session_idx": 48,
+          "fact_idx": 3,
+          "theme": "weather",
+          "claim": "Had to delay everything because of low cloud cover.",
+          "distinctive": [
+            "low cloud cover"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f4",
+          "session_idx": 48,
+          "fact_idx": 4,
+          "theme": "weather",
+          "claim": "Low cloud cover rolled through overnight.",
+          "distinctive": [
+            "low cloud cover"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f5",
+          "session_idx": 48,
+          "fact_idx": 5,
+          "theme": "weather",
+          "claim": "Had to delay everything because of heavy snow.",
+          "distinctive": [
+            "heavy snow"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f6",
+          "session_idx": 48,
+          "fact_idx": 6,
+          "theme": "weather",
+          "claim": "Ice storm rolled through overnight.",
+          "distinctive": [
+            "ice storm"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f7",
+          "session_idx": 48,
+          "fact_idx": 7,
+          "theme": "weather",
+          "claim": "Had to delay everything because of wind advisory.",
+          "distinctive": [
+            "wind advisory"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f8",
+          "session_idx": 48,
+          "fact_idx": 8,
+          "theme": "weather",
+          "claim": "There was a wind advisory in the morning.",
+          "distinctive": [
+            "wind advisory"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        },
+        {
+          "fact_id": "s48_f9",
+          "session_idx": 48,
+          "fact_idx": 9,
+          "theme": "weather",
+          "claim": "Had to delay everything because of humid mist.",
+          "distinctive": [
+            "humid mist"
+          ],
+          "valid_from": "2025-04-18T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "session_idx": 49,
+      "date": "2025-04-21T12:00:00.000Z",
+      "theme": "news",
+      "facts": [
+        {
+          "fact_id": "s49_f0",
+          "session_idx": 49,
+          "fact_idx": 0,
+          "theme": "news",
+          "claim": "I read about the minimum wage debate in the news.",
+          "distinctive": [
+            "minimum wage debate"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f1",
+          "session_idx": 49,
+          "fact_idx": 1,
+          "theme": "news",
+          "claim": "Saw a long-read on the election this morning.",
+          "distinctive": [
+            "election"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f2",
+          "session_idx": 49,
+          "fact_idx": 2,
+          "theme": "news",
+          "claim": "I read about the stadium proposal in the news.",
+          "distinctive": [
+            "stadium proposal"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f3",
+          "session_idx": 49,
+          "fact_idx": 3,
+          "theme": "news",
+          "claim": "I read about the spectrum auction in the news.",
+          "distinctive": [
+            "spectrum auction"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f4",
+          "session_idx": 49,
+          "fact_idx": 4,
+          "theme": "news",
+          "claim": "Saw a long-read on the climate report this morning.",
+          "distinctive": [
+            "climate report"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f5",
+          "session_idx": 49,
+          "fact_idx": 5,
+          "theme": "news",
+          "claim": "Saw a long-read on the merger this morning.",
+          "distinctive": [
+            "merger"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f6",
+          "session_idx": 49,
+          "fact_idx": 6,
+          "theme": "news",
+          "claim": "The data breach story keeps developing.",
+          "distinctive": [
+            "data breach"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f7",
+          "session_idx": 49,
+          "fact_idx": 7,
+          "theme": "news",
+          "claim": "Saw a long-read on the submarine cable cut this morning.",
+          "distinctive": [
+            "submarine cable cut"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        },
+        {
+          "fact_id": "s49_f8",
+          "session_idx": 49,
+          "fact_idx": 8,
+          "theme": "news",
+          "claim": "I read about the rail strike in the news.",
+          "distinctive": [
+            "rail strike"
+          ],
+          "valid_from": "2025-04-21T12:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "qid": "cst_q_001",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "low cloud cover"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_002",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "data breach"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_003",
+      "type": "recent",
+      "question": "What did I say about books this week?",
+      "distinctive": [
+        "The Last Cartographer"
+      ],
+      "ref_session_idx": 46
+    },
+    {
+      "qid": "cst_q_004",
+      "type": "recent",
+      "question": "What did I say about food this week?",
+      "distinctive": [
+        "mole",
+        "breakfast"
+      ],
+      "ref_session_idx": 45
+    },
+    {
+      "qid": "cst_q_005",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "merger"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_006",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "election"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_007",
+      "type": "recent",
+      "question": "What did I say about books this week?",
+      "distinctive": [
+        "The Iron Garden"
+      ],
+      "ref_session_idx": 46
+    },
+    {
+      "qid": "cst_q_008",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "patchy drizzle"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_009",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "heavy snow"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_010",
+      "type": "recent",
+      "question": "What did I say about music this week?",
+      "distinctive": [
+        "Marigold Veil"
+      ],
+      "ref_session_idx": 47
+    },
+    {
+      "qid": "cst_q_011",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "minimum wage debate"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_012",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "stadium proposal"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_013",
+      "type": "recent",
+      "question": "What did I say about music this week?",
+      "distinctive": [
+        "Vesper Fern"
+      ],
+      "ref_session_idx": 47
+    },
+    {
+      "qid": "cst_q_014",
+      "type": "recent",
+      "question": "What did I say about food this week?",
+      "distinctive": [
+        "gnocchi",
+        "brunch"
+      ],
+      "ref_session_idx": 45
+    },
+    {
+      "qid": "cst_q_015",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "rail strike"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_016",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "wind advisory"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_017",
+      "type": "recent",
+      "question": "What did I say about food this week?",
+      "distinctive": [
+        "lasagna",
+        "dinner"
+      ],
+      "ref_session_idx": 45
+    },
+    {
+      "qid": "cst_q_018",
+      "type": "recent",
+      "question": "What did I say about books this week?",
+      "distinctive": [
+        "Wireblood"
+      ],
+      "ref_session_idx": 46
+    },
+    {
+      "qid": "cst_q_019",
+      "type": "recent",
+      "question": "What did I say about food this week?",
+      "distinctive": [
+        "manti",
+        "brunch"
+      ],
+      "ref_session_idx": 45
+    },
+    {
+      "qid": "cst_q_020",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "climate report"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_021",
+      "type": "recent",
+      "question": "What did I say about music this week?",
+      "distinctive": [
+        "Russet Hare"
+      ],
+      "ref_session_idx": 47
+    },
+    {
+      "qid": "cst_q_022",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "humid mist"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_023",
+      "type": "recent",
+      "question": "What did I say about news this week?",
+      "distinctive": [
+        "spectrum auction"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_024",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "frost warning"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_025",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "low cloud cover"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_026",
+      "type": "recent",
+      "question": "What did I say about books this week?",
+      "distinctive": [
+        "Northern Lights"
+      ],
+      "ref_session_idx": 46
+    },
+    {
+      "qid": "cst_q_027",
+      "type": "recent",
+      "question": "What did I say about music this week?",
+      "distinctive": [
+        "Bramble Crown"
+      ],
+      "ref_session_idx": 47
+    },
+    {
+      "qid": "cst_q_028",
+      "type": "recent",
+      "question": "What did I say about food this week?",
+      "distinctive": [
+        "feijoada",
+        "dinner"
+      ],
+      "ref_session_idx": 45
+    },
+    {
+      "qid": "cst_q_029",
+      "type": "recent",
+      "question": "What did I say about weather this week?",
+      "distinctive": [
+        "wind advisory"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_030",
+      "type": "recent",
+      "question": "What did I say about music this week?",
+      "distinctive": [
+        "Wildgrass Almanac"
+      ],
+      "ref_session_idx": 47
+    },
+    {
+      "qid": "cst_q_031",
+      "type": "mid",
+      "question": "What did I mention about books a few weeks ago?",
+      "distinctive": [
+        "The Quiet Ferryman"
+      ],
+      "ref_session_idx": 16
+    },
+    {
+      "qid": "cst_q_032",
+      "type": "mid",
+      "question": "What did I mention about hobby a few weeks ago?",
+      "distinctive": [
+        "orienteering",
+        "Whisperwind Ridge"
+      ],
+      "ref_session_idx": 11
+    },
+    {
+      "qid": "cst_q_033",
+      "type": "mid",
+      "question": "What did I mention about travel a few weeks ago?",
+      "distinctive": [
+        "Cádiz"
+      ],
+      "ref_session_idx": 22
+    },
+    {
+      "qid": "cst_q_034",
+      "type": "mid",
+      "question": "What did I mention about family a few weeks ago?",
+      "distinctive": [
+        "nephew",
+        "Ysolde"
+      ],
+      "ref_session_idx": 23
+    },
+    {
+      "qid": "cst_q_035",
+      "type": "mid",
+      "question": "What did I mention about food a few weeks ago?",
+      "distinctive": [
+        "doro wat",
+        "brunch"
+      ],
+      "ref_session_idx": 25
+    },
+    {
+      "qid": "cst_q_036",
+      "type": "mid",
+      "question": "What did I mention about family a few weeks ago?",
+      "distinctive": [
+        "stepmother",
+        "Orvar"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_037",
+      "type": "mid",
+      "question": "What did I mention about travel a few weeks ago?",
+      "distinctive": [
+        "Almaty"
+      ],
+      "ref_session_idx": 22
+    },
+    {
+      "qid": "cst_q_038",
+      "type": "mid",
+      "question": "What did I mention about books a few weeks ago?",
+      "distinctive": [
+        "The Marble Choir"
+      ],
+      "ref_session_idx": 26
+    },
+    {
+      "qid": "cst_q_039",
+      "type": "mid",
+      "question": "What did I mention about travel a few weeks ago?",
+      "distinctive": [
+        "Plovdiv"
+      ],
+      "ref_session_idx": 12
+    },
+    {
+      "qid": "cst_q_040",
+      "type": "mid",
+      "question": "What did I mention about books a few weeks ago?",
+      "distinctive": [
+        "Birds of the Borderlands"
+      ],
+      "ref_session_idx": 26
+    },
+    {
+      "qid": "cst_q_041",
+      "type": "mid",
+      "question": "What did I mention about work a few weeks ago?",
+      "distinctive": [
+        "Fenwick",
+        "release notes"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_042",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "dust haze"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_043",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "wind advisory"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_044",
+      "type": "mid",
+      "question": "What did I mention about hobby a few weeks ago?",
+      "distinctive": [
+        "snowshoeing",
+        "Larkspur Pass"
+      ],
+      "ref_session_idx": 11
+    },
+    {
+      "qid": "cst_q_045",
+      "type": "mid",
+      "question": "What did I mention about work a few weeks ago?",
+      "distinctive": [
+        "Mateo",
+        "roadmap"
+      ],
+      "ref_session_idx": 20
+    },
+    {
+      "qid": "cst_q_046",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "patchy drizzle"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_047",
+      "type": "mid",
+      "question": "What did I mention about work a few weeks ago?",
+      "distinctive": [
+        "Nadya",
+        "incident response"
+      ],
+      "ref_session_idx": 20
+    },
+    {
+      "qid": "cst_q_048",
+      "type": "mid",
+      "question": "What did I mention about news a few weeks ago?",
+      "distinctive": [
+        "reservoir levels report"
+      ],
+      "ref_session_idx": 29
+    },
+    {
+      "qid": "cst_q_049",
+      "type": "mid",
+      "question": "What did I mention about hobby a few weeks ago?",
+      "distinctive": [
+        "hiking",
+        "Hemlock Bowl"
+      ],
+      "ref_session_idx": 21
+    },
+    {
+      "qid": "cst_q_050",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "high gusts"
+      ],
+      "ref_session_idx": 28
+    },
+    {
+      "qid": "cst_q_051",
+      "type": "mid",
+      "question": "What did I mention about family a few weeks ago?",
+      "distinctive": [
+        "grandfather",
+        "Vespera"
+      ],
+      "ref_session_idx": 23
+    },
+    {
+      "qid": "cst_q_052",
+      "type": "mid",
+      "question": "What did I mention about family a few weeks ago?",
+      "distinctive": [
+        "uncle",
+        "Imogen"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_053",
+      "type": "mid",
+      "question": "What did I mention about music a few weeks ago?",
+      "distinctive": [
+        "Marigold Veil"
+      ],
+      "ref_session_idx": 27
+    },
+    {
+      "qid": "cst_q_054",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "fog"
+      ],
+      "ref_session_idx": 28
+    },
+    {
+      "qid": "cst_q_055",
+      "type": "mid",
+      "question": "What did I mention about work a few weeks ago?",
+      "distinctive": [
+        "Tobias",
+        "capacity planning"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_056",
+      "type": "mid",
+      "question": "What did I mention about weather a few weeks ago?",
+      "distinctive": [
+        "heavy snow"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_057",
+      "type": "mid",
+      "question": "What did I mention about news a few weeks ago?",
+      "distinctive": [
+        "election"
+      ],
+      "ref_session_idx": 29
+    },
+    {
+      "qid": "cst_q_058",
+      "type": "mid",
+      "question": "What did I mention about news a few weeks ago?",
+      "distinctive": [
+        "trade deal"
+      ],
+      "ref_session_idx": 19
+    },
+    {
+      "qid": "cst_q_059",
+      "type": "mid",
+      "question": "What did I mention about hobby a few weeks ago?",
+      "distinctive": [
+        "spelunking",
+        "Indigo Valley"
+      ],
+      "ref_session_idx": 21
+    },
+    {
+      "qid": "cst_q_060",
+      "type": "mid",
+      "question": "What did I mention about news a few weeks ago?",
+      "distinctive": [
+        "archaeological find"
+      ],
+      "ref_session_idx": 19
+    },
+    {
+      "qid": "cst_q_061",
+      "type": "distant",
+      "question": "What did I say about food a few months ago?",
+      "distinctive": [
+        "tonkatsu",
+        "lunch"
+      ],
+      "ref_session_idx": 5
+    },
+    {
+      "qid": "cst_q_062",
+      "type": "distant",
+      "question": "What did I say about work a few months ago?",
+      "distinctive": [
+        "Dagny",
+        "pricing study"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_063",
+      "type": "distant",
+      "question": "What did I say about music a few months ago?",
+      "distinctive": [
+        "Flintwater"
+      ],
+      "ref_session_idx": 7
+    },
+    {
+      "qid": "cst_q_064",
+      "type": "distant",
+      "question": "What did I say about weather a few months ago?",
+      "distinctive": [
+        "wind advisory"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_065",
+      "type": "distant",
+      "question": "What did I say about health a few months ago?",
+      "distinctive": [
+        "Dr. Morales",
+        "sleep study"
+      ],
+      "ref_session_idx": 4
+    },
+    {
+      "qid": "cst_q_066",
+      "type": "distant",
+      "question": "What did I say about food a few months ago?",
+      "distinctive": [
+        "ceviche",
+        "breakfast"
+      ],
+      "ref_session_idx": 15
+    },
+    {
+      "qid": "cst_q_067",
+      "type": "distant",
+      "question": "What did I say about work a few months ago?",
+      "distinctive": [
+        "Fenwick",
+        "release notes"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_068",
+      "type": "distant",
+      "question": "What did I say about family a few months ago?",
+      "distinctive": [
+        "grandmother",
+        "Mortimer"
+      ],
+      "ref_session_idx": 3
+    },
+    {
+      "qid": "cst_q_069",
+      "type": "distant",
+      "question": "What did I say about health a few months ago?",
+      "distinctive": [
+        "Dr. Esposito",
+        "balance test"
+      ],
+      "ref_session_idx": 14
+    },
+    {
+      "qid": "cst_q_070",
+      "type": "distant",
+      "question": "What did I say about books a few months ago?",
+      "distinctive": [
+        "Driftless"
+      ],
+      "ref_session_idx": 6
+    },
+    {
+      "qid": "cst_q_071",
+      "type": "distant",
+      "question": "What did I say about family a few months ago?",
+      "distinctive": [
+        "cousin",
+        "Grover"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_072",
+      "type": "distant",
+      "question": "What did I say about travel a few months ago?",
+      "distinctive": [
+        "Antwerp"
+      ],
+      "ref_session_idx": 12
+    },
+    {
+      "qid": "cst_q_073",
+      "type": "distant",
+      "question": "What did I say about weather a few months ago?",
+      "distinctive": [
+        "ice storm"
+      ],
+      "ref_session_idx": 18
+    },
+    {
+      "qid": "cst_q_074",
+      "type": "distant",
+      "question": "What did I say about weather a few months ago?",
+      "distinctive": [
+        "polar plunge"
+      ],
+      "ref_session_idx": 8
+    },
+    {
+      "qid": "cst_q_075",
+      "type": "distant",
+      "question": "What did I say about health a few months ago?",
+      "distinctive": [
+        "Dr. Yamamoto",
+        "iron deficiency"
+      ],
+      "ref_session_idx": 4
+    },
+    {
+      "qid": "cst_q_076",
+      "type": "distant",
+      "question": "What did I say about music a few months ago?",
+      "distinctive": [
+        "Indigo Forge"
+      ],
+      "ref_session_idx": 7
+    },
+    {
+      "qid": "cst_q_077",
+      "type": "distant",
+      "question": "What did I say about books a few months ago?",
+      "distinctive": [
+        "Northern Lights"
+      ],
+      "ref_session_idx": 6
+    },
+    {
+      "qid": "cst_q_078",
+      "type": "distant",
+      "question": "What did I say about health a few months ago?",
+      "distinctive": [
+        "Dr. Najjar",
+        "hearing test"
+      ],
+      "ref_session_idx": 14
+    },
+    {
+      "qid": "cst_q_079",
+      "type": "distant",
+      "question": "What did I say about food a few months ago?",
+      "distinctive": [
+        "mapo tofu",
+        "dinner"
+      ],
+      "ref_session_idx": 15
+    },
+    {
+      "qid": "cst_q_080",
+      "type": "distant",
+      "question": "What did I say about work a few months ago?",
+      "distinctive": [
+        "Osric",
+        "tooling refresh"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_081",
+      "type": "distant",
+      "question": "What did I say about music a few months ago?",
+      "distinctive": [
+        "Cold Iron Choir"
+      ],
+      "ref_session_idx": 17
+    },
+    {
+      "qid": "cst_q_082",
+      "type": "distant",
+      "question": "What did I say about health a few months ago?",
+      "distinctive": [
+        "Dr. Voss",
+        "hearing test"
+      ],
+      "ref_session_idx": 4
+    },
+    {
+      "qid": "cst_q_083",
+      "type": "distant",
+      "question": "What did I say about work a few months ago?",
+      "distinctive": [
+        "Fenwick",
+        "tooling refresh"
+      ],
+      "ref_session_idx": 0
+    },
+    {
+      "qid": "cst_q_084",
+      "type": "distant",
+      "question": "What did I say about hobby a few months ago?",
+      "distinctive": [
+        "paragliding",
+        "Junegrass Meadow"
+      ],
+      "ref_session_idx": 11
+    },
+    {
+      "qid": "cst_q_085",
+      "type": "distant",
+      "question": "What did I say about work a few months ago?",
+      "distinctive": [
+        "Marcus",
+        "launch plan"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_086",
+      "type": "distant",
+      "question": "What did I say about family a few months ago?",
+      "distinctive": [
+        "cousin",
+        "Caspar"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_087",
+      "type": "distant",
+      "question": "What did I say about books a few months ago?",
+      "distinctive": [
+        "Fishhook Bay"
+      ],
+      "ref_session_idx": 16
+    },
+    {
+      "qid": "cst_q_088",
+      "type": "distant",
+      "question": "What did I say about family a few months ago?",
+      "distinctive": [
+        "niece",
+        "Tabitha"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_089",
+      "type": "distant",
+      "question": "What did I say about family a few months ago?",
+      "distinctive": [
+        "sibling",
+        "Krister"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_090",
+      "type": "distant",
+      "question": "What did I say about news a few months ago?",
+      "distinctive": [
+        "microplastics ruling"
+      ],
+      "ref_session_idx": 9
+    },
+    {
+      "qid": "cst_q_091",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2025-01-10?",
+      "distinctive": [
+        "Mira",
+        "on-call rotation"
+      ],
+      "ref_session_idx": 20
+    },
+    {
+      "qid": "cst_q_092",
+      "type": "time-anchored",
+      "question": "What did I mention about health around 2024-12-20?",
+      "distinctive": [
+        "Dr. Esposito",
+        "iron deficiency"
+      ],
+      "ref_session_idx": 14
+    },
+    {
+      "qid": "cst_q_093",
+      "type": "time-anchored",
+      "question": "What did I mention about family around 2025-03-31?",
+      "distinctive": [
+        "stepfather",
+        "Quincy"
+      ],
+      "ref_session_idx": 43
+    },
+    {
+      "qid": "cst_q_094",
+      "type": "time-anchored",
+      "question": "What did I mention about books around 2024-11-22?",
+      "distinctive": [
+        "The Black Reed"
+      ],
+      "ref_session_idx": 6
+    },
+    {
+      "qid": "cst_q_095",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2025-01-10?",
+      "distinctive": [
+        "Viggo",
+        "customer escalation"
+      ],
+      "ref_session_idx": 20
+    },
+    {
+      "qid": "cst_q_096",
+      "type": "time-anchored",
+      "question": "What did I mention about food around 2025-03-03?",
+      "distinctive": [
+        "ramen",
+        "brunch"
+      ],
+      "ref_session_idx": 35
+    },
+    {
+      "qid": "cst_q_097",
+      "type": "time-anchored",
+      "question": "What did I mention about travel around 2024-11-08?",
+      "distinctive": [
+        "Mostar"
+      ],
+      "ref_session_idx": 2
+    },
+    {
+      "qid": "cst_q_098",
+      "type": "time-anchored",
+      "question": "What did I mention about books around 2025-03-07?",
+      "distinctive": [
+        "The Owl Atlas"
+      ],
+      "ref_session_idx": 36
+    },
+    {
+      "qid": "cst_q_099",
+      "type": "time-anchored",
+      "question": "What did I mention about travel around 2025-02-21?",
+      "distinctive": [
+        "Trondheim"
+      ],
+      "ref_session_idx": 32
+    },
+    {
+      "qid": "cst_q_100",
+      "type": "time-anchored",
+      "question": "What did I mention about hobby around 2025-01-13?",
+      "distinctive": [
+        "snowshoeing",
+        "Sapphire Bay"
+      ],
+      "ref_session_idx": 21
+    },
+    {
+      "qid": "cst_q_101",
+      "type": "time-anchored",
+      "question": "What did I mention about food around 2025-01-27?",
+      "distinctive": [
+        "shakshuka",
+        "late-night snack"
+      ],
+      "ref_session_idx": 25
+    },
+    {
+      "qid": "cst_q_102",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2025-01-10?",
+      "distinctive": [
+        "Aurelio",
+        "compliance review"
+      ],
+      "ref_session_idx": 20
+    },
+    {
+      "qid": "cst_q_103",
+      "type": "time-anchored",
+      "question": "What did I mention about books around 2024-12-27?",
+      "distinctive": [
+        "The Mineral Sky"
+      ],
+      "ref_session_idx": 16
+    },
+    {
+      "qid": "cst_q_104",
+      "type": "time-anchored",
+      "question": "What did I mention about books around 2025-04-11?",
+      "distinctive": [
+        "Ember Year"
+      ],
+      "ref_session_idx": 46
+    },
+    {
+      "qid": "cst_q_105",
+      "type": "time-anchored",
+      "question": "What did I mention about news around 2025-04-21?",
+      "distinctive": [
+        "data breach"
+      ],
+      "ref_session_idx": 49
+    },
+    {
+      "qid": "cst_q_106",
+      "type": "time-anchored",
+      "question": "What did I mention about family around 2024-12-16?",
+      "distinctive": [
+        "sibling",
+        "Krister"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_107",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2025-03-21?",
+      "distinctive": [
+        "Marcus",
+        "risk register"
+      ],
+      "ref_session_idx": 40
+    },
+    {
+      "qid": "cst_q_108",
+      "type": "time-anchored",
+      "question": "What did I mention about travel around 2024-11-08?",
+      "distinctive": [
+        "Fes"
+      ],
+      "ref_session_idx": 2
+    },
+    {
+      "qid": "cst_q_109",
+      "type": "time-anchored",
+      "question": "What did I mention about health around 2025-04-04?",
+      "distinctive": [
+        "Dr. Eriksen",
+        "sprained wrist"
+      ],
+      "ref_session_idx": 44
+    },
+    {
+      "qid": "cst_q_110",
+      "type": "time-anchored",
+      "question": "What did I mention about hobby around 2025-02-17?",
+      "distinctive": [
+        "hiking",
+        "Willowmere Pond"
+      ],
+      "ref_session_idx": 31
+    },
+    {
+      "qid": "cst_q_111",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2024-11-01?",
+      "distinctive": [
+        "Magnus",
+        "budget"
+      ],
+      "ref_session_idx": 0
+    },
+    {
+      "qid": "cst_q_112",
+      "type": "time-anchored",
+      "question": "What did I mention about weather around 2025-04-18?",
+      "distinctive": [
+        "low cloud cover"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_113",
+      "type": "time-anchored",
+      "question": "What did I mention about news around 2024-12-02?",
+      "distinctive": [
+        "reservoir levels report"
+      ],
+      "ref_session_idx": 9
+    },
+    {
+      "qid": "cst_q_114",
+      "type": "time-anchored",
+      "question": "What did I mention about family around 2024-11-11?",
+      "distinctive": [
+        "second cousin",
+        "Delphine"
+      ],
+      "ref_session_idx": 3
+    },
+    {
+      "qid": "cst_q_115",
+      "type": "time-anchored",
+      "question": "What did I mention about news around 2024-12-02?",
+      "distinctive": [
+        "algorithmic-bias study"
+      ],
+      "ref_session_idx": 9
+    },
+    {
+      "qid": "cst_q_116",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2024-12-06?",
+      "distinctive": [
+        "Tobias",
+        "capacity planning"
+      ],
+      "ref_session_idx": 10
+    },
+    {
+      "qid": "cst_q_117",
+      "type": "time-anchored",
+      "question": "What did I mention about weather around 2025-04-18?",
+      "distinctive": [
+        "heavy snow"
+      ],
+      "ref_session_idx": 48
+    },
+    {
+      "qid": "cst_q_118",
+      "type": "time-anchored",
+      "question": "What did I mention about travel around 2025-03-28?",
+      "distinctive": [
+        "Bratislava"
+      ],
+      "ref_session_idx": 42
+    },
+    {
+      "qid": "cst_q_119",
+      "type": "time-anchored",
+      "question": "What did I mention about family around 2024-12-16?",
+      "distinctive": [
+        "uncle",
+        "Imogen"
+      ],
+      "ref_session_idx": 13
+    },
+    {
+      "qid": "cst_q_120",
+      "type": "time-anchored",
+      "question": "What did I mention about work around 2024-11-01?",
+      "distinctive": [
+        "Fenwick",
+        "tooling refresh"
+      ],
+      "ref_session_idx": 0
+    },
+    {
+      "qid": "cst_q_121",
+      "type": "order-aware",
+      "question": "Did I mention \"merger\" before or after \"Ash and Antler\"?",
+      "distinctive": [],
+      "ref_session_idx": 49,
+      "ref2_session_idx": 36,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_122",
+      "type": "order-aware",
+      "question": "Did I mention \"Dr. Bauer\" before or after \"Vesper Fern\"?",
+      "distinctive": [],
+      "ref_session_idx": 44,
+      "ref2_session_idx": 47,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_123",
+      "type": "order-aware",
+      "question": "Did I mention \"Anya\" before or after \"uncle\"?",
+      "distinctive": [],
+      "ref_session_idx": 20,
+      "ref2_session_idx": 43,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_124",
+      "type": "order-aware",
+      "question": "Did I mention \"Bramble Crown\" before or after \"Trondheim\"?",
+      "distinctive": [],
+      "ref_session_idx": 47,
+      "ref2_session_idx": 32,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_125",
+      "type": "order-aware",
+      "question": "Did I mention \"ferry route change\" before or after \"heat wave\"?",
+      "distinctive": [],
+      "ref_session_idx": 9,
+      "ref2_session_idx": 38,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_126",
+      "type": "order-aware",
+      "question": "Did I mention \"stepfather\" before or after \"The Chestnut Letter\"?",
+      "distinctive": [],
+      "ref_session_idx": 3,
+      "ref2_session_idx": 27,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_127",
+      "type": "order-aware",
+      "question": "Did I mention \"Halcyon Tin\" before or after \"bobotie\"?",
+      "distinctive": [],
+      "ref_session_idx": 27,
+      "ref2_session_idx": 15,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_128",
+      "type": "order-aware",
+      "question": "Did I mention \"Bramble Crown\" before or after \"sibling\"?",
+      "distinctive": [],
+      "ref_session_idx": 27,
+      "ref2_session_idx": 13,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_129",
+      "type": "order-aware",
+      "question": "Did I mention \"fly fishing\" before or after \"algorithmic-bias study\"?",
+      "distinctive": [],
+      "ref_session_idx": 21,
+      "ref2_session_idx": 9,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_130",
+      "type": "order-aware",
+      "question": "Did I mention \"Ash and Antler\" before or after \"mushroom hunting\"?",
+      "distinctive": [],
+      "ref_session_idx": 36,
+      "ref2_session_idx": 41,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_131",
+      "type": "order-aware",
+      "question": "Did I mention \"Aarhus\" before or after \"second cousin\"?",
+      "distinctive": [],
+      "ref_session_idx": 32,
+      "ref2_session_idx": 33,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_132",
+      "type": "order-aware",
+      "question": "Did I mention \"The Black Reed\" before or after \"Zahir\"?",
+      "distinctive": [],
+      "ref_session_idx": 26,
+      "ref2_session_idx": 30,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_133",
+      "type": "order-aware",
+      "question": "Did I mention \"Dr. Voss\" before or after \"Rashid\"?",
+      "distinctive": [],
+      "ref_session_idx": 4,
+      "ref2_session_idx": 10,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_134",
+      "type": "order-aware",
+      "question": "Did I mention \"Driftless\" before or after \"The Marble Choir\"?",
+      "distinctive": [],
+      "ref_session_idx": 6,
+      "ref2_session_idx": 16,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_135",
+      "type": "order-aware",
+      "question": "Did I mention \"microplastics ruling\" before or after \"Antwerp\"?",
+      "distinctive": [],
+      "ref_session_idx": 9,
+      "ref2_session_idx": 12,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_136",
+      "type": "order-aware",
+      "question": "Did I mention \"kibbeh\" before or after \"banh mi\"?",
+      "distinctive": [],
+      "ref_session_idx": 5,
+      "ref2_session_idx": 45,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_137",
+      "type": "order-aware",
+      "question": "Did I mention \"Aurelio\" before or after \"Bologna\"?",
+      "distinctive": [],
+      "ref_session_idx": 20,
+      "ref2_session_idx": 32,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_138",
+      "type": "order-aware",
+      "question": "Did I mention \"grandfather\" before or after \"Dr. Zhang\"?",
+      "distinctive": [],
+      "ref_session_idx": 33,
+      "ref2_session_idx": 24,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_139",
+      "type": "order-aware",
+      "question": "Did I mention \"Kyoto\" before or after \"grandmother\"?",
+      "distinctive": [],
+      "ref_session_idx": 42,
+      "ref2_session_idx": 43,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_140",
+      "type": "order-aware",
+      "question": "Did I mention \"larb\" before or after \"Vesper Fern\"?",
+      "distinctive": [],
+      "ref_session_idx": 5,
+      "ref2_session_idx": 47,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_141",
+      "type": "order-aware",
+      "question": "Did I mention \"Marigold Veil\" before or after \"Cusco\"?",
+      "distinctive": [],
+      "ref_session_idx": 47,
+      "ref2_session_idx": 42,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_142",
+      "type": "order-aware",
+      "question": "Did I mention \"Dagny\" before or after \"Dr. Petrovic\"?",
+      "distinctive": [],
+      "ref_session_idx": 10,
+      "ref2_session_idx": 24,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_143",
+      "type": "order-aware",
+      "question": "Did I mention \"Cold Iron Choir\" before or after \"doro wat\"?",
+      "distinctive": [],
+      "ref_session_idx": 17,
+      "ref2_session_idx": 25,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_144",
+      "type": "order-aware",
+      "question": "Did I mention \"Bologna\" before or after \"sushi\"?",
+      "distinctive": [],
+      "ref_session_idx": 32,
+      "ref2_session_idx": 25,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_145",
+      "type": "order-aware",
+      "question": "Did I mention \"Dr. Eriksen\" before or after \"Aarhus\"?",
+      "distinctive": [],
+      "ref_session_idx": 14,
+      "ref2_session_idx": 32,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_146",
+      "type": "order-aware",
+      "question": "Did I mention \"Mira\" before or after \"second cousin\"?",
+      "distinctive": [],
+      "ref_session_idx": 20,
+      "ref2_session_idx": 23,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_147",
+      "type": "order-aware",
+      "question": "Did I mention \"Black Salt Quartet\" before or after \"stepfather\"?",
+      "distinctive": [],
+      "ref_session_idx": 7,
+      "ref2_session_idx": 3,
+      "expected_order": "after"
+    },
+    {
+      "qid": "cst_q_148",
+      "type": "order-aware",
+      "question": "Did I mention \"Aurelio\" before or after \"Cádiz\"?",
+      "distinctive": [],
+      "ref_session_idx": 10,
+      "ref2_session_idx": 22,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_149",
+      "type": "order-aware",
+      "question": "Did I mention \"The Black Reed\" before or after \"wind advisory\"?",
+      "distinctive": [],
+      "ref_session_idx": 6,
+      "ref2_session_idx": 48,
+      "expected_order": "before"
+    },
+    {
+      "qid": "cst_q_150",
+      "type": "order-aware",
+      "question": "Did I mention \"Cold Iron Choir\" before or after \"Plovdiv\"?",
+      "distinctive": [],
+      "ref_session_idx": 17,
+      "ref2_session_idx": 12,
+      "expected_order": "after"
+    }
+  ]
+}

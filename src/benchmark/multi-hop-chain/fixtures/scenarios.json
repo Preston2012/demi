@@ -1,0 +1,251 @@
+{
+  "version": "1.0",
+  "_note": "Hand-crafted starter fixture (15 scenarios, 30 questions). Re-run scripts/multi-hop-chain/generator.ts to expand to 60.",
+  "scenarios": [
+    {
+      "scenario_id": "scn_001_family",
+      "entities": ["Alice", "Beatrice", "Carla", "Diane"],
+      "facts": [
+        { "fact_id": "f1", "text": "Alice is Beatrice's mother.", "entities": ["Alice", "Beatrice"] },
+        { "fact_id": "f2", "text": "Beatrice is Carla's mother.", "entities": ["Beatrice", "Carla"] },
+        { "fact_id": "f3", "text": "Carla is Diane's mother.", "entities": ["Carla", "Diane"] },
+        { "fact_id": "f4", "text": "Alice was born in 1940.", "entities": ["Alice"] },
+        { "fact_id": "f5", "text": "Beatrice trained as a violinist.", "entities": ["Beatrice"] },
+        { "fact_id": "f6", "text": "Carla studied architecture.", "entities": ["Carla"] },
+        { "fact_id": "f7", "text": "Diane was born in 2005.", "entities": ["Diane"] },
+        { "fact_id": "f8", "text": "Alice never moved out of Detroit.", "entities": ["Alice"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who is Carla's grandmother?", "answer": "Alice", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "Who is Diane's great-grandmother?", "answer": "Alice", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_002_office",
+      "entities": ["Marco", "Patricia", "Studio North", "Gallery East", "Toronto"],
+      "facts": [
+        { "fact_id": "f1", "text": "Marco founded Studio North.", "entities": ["Marco", "Studio North"] },
+        { "fact_id": "f2", "text": "Patricia owns Gallery East.", "entities": ["Patricia", "Gallery East"] },
+        { "fact_id": "f3", "text": "Gallery East acquired Studio North in 2023.", "entities": ["Gallery East", "Studio North"] },
+        { "fact_id": "f4", "text": "Patricia lives in Toronto.", "entities": ["Patricia", "Toronto"] },
+        { "fact_id": "f5", "text": "Studio North specializes in print design.", "entities": ["Studio North"] },
+        { "fact_id": "f6", "text": "Gallery East was founded in 2015.", "entities": ["Gallery East"] },
+        { "fact_id": "f7", "text": "Marco previously worked as a graphic designer.", "entities": ["Marco"] },
+        { "fact_id": "f8", "text": "Toronto is in Ontario.", "entities": ["Toronto"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who currently owns Studio North?", "answer": "Patricia", "evidence_chain": ["f2", "f3"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What city is Marco's ultimate boss based in?", "answer": "Toronto", "evidence_chain": ["f1", "f3", "f4"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_003_keys",
+      "entities": ["the spare key", "the blue tin", "the kitchen drawer", "Theo's house"],
+      "facts": [
+        { "fact_id": "f1", "text": "The spare key is hidden in the blue tin.", "entities": ["the spare key", "the blue tin"] },
+        { "fact_id": "f2", "text": "The blue tin sits in the kitchen drawer.", "entities": ["the blue tin", "the kitchen drawer"] },
+        { "fact_id": "f3", "text": "The kitchen drawer is part of Theo's house.", "entities": ["the kitchen drawer", "Theo's house"] },
+        { "fact_id": "f4", "text": "Theo's house was built in 1972.", "entities": ["Theo's house"] },
+        { "fact_id": "f5", "text": "The blue tin is a leftover cookie tin.", "entities": ["the blue tin"] },
+        { "fact_id": "f6", "text": "The spare key fits the back door.", "entities": ["the spare key"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "What container holds the spare key, and where does that container live?", "answer": "the blue tin in the kitchen drawer", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "Whose house is the spare key inside?", "answer": "Theo's house", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_004_team",
+      "entities": ["Reza", "Yuki", "Project Atlas", "Project Polaris", "the platform team"],
+      "facts": [
+        { "fact_id": "f1", "text": "Reza leads the platform team.", "entities": ["Reza", "the platform team"] },
+        { "fact_id": "f2", "text": "Yuki is on the platform team.", "entities": ["Yuki", "the platform team"] },
+        { "fact_id": "f3", "text": "The platform team owns Project Atlas.", "entities": ["the platform team", "Project Atlas"] },
+        { "fact_id": "f4", "text": "Project Atlas was renamed to Project Polaris in March.", "entities": ["Project Atlas", "Project Polaris"] },
+        { "fact_id": "f5", "text": "Yuki specializes in distributed systems.", "entities": ["Yuki"] },
+        { "fact_id": "f6", "text": "Reza joined the company in 2019.", "entities": ["Reza"] },
+        { "fact_id": "f7", "text": "Project Polaris launches in Q4.", "entities": ["Project Polaris"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who is Yuki's manager?", "answer": "Reza", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What project does Yuki's team currently own?", "answer": "Project Polaris", "evidence_chain": ["f2", "f3", "f4"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_005_pets",
+      "entities": ["Mia", "Sam", "Pepper", "Biscuit", "Greenwood vet"],
+      "facts": [
+        { "fact_id": "f1", "text": "Mia adopted a cat named Pepper.", "entities": ["Mia", "Pepper"] },
+        { "fact_id": "f2", "text": "Pepper is a tortoiseshell cat.", "entities": ["Pepper"] },
+        { "fact_id": "f3", "text": "Mia and Sam share the apartment.", "entities": ["Mia", "Sam"] },
+        { "fact_id": "f4", "text": "Sam adopted a dog named Biscuit.", "entities": ["Sam", "Biscuit"] },
+        { "fact_id": "f5", "text": "Both pets see Greenwood vet for checkups.", "entities": ["Pepper", "Biscuit", "Greenwood vet"] },
+        { "fact_id": "f6", "text": "Greenwood vet is on Maple Avenue.", "entities": ["Greenwood vet"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who is the owner of the tortoiseshell cat?", "answer": "Mia", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "On what street do Mia's roommate's dog and her own cat get veterinary care?", "answer": "Maple Avenue", "evidence_chain": ["f3", "f5", "f6"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_006_supply",
+      "entities": ["Northwind Mills", "Vega Bakery", "Bartleby Cafe", "the rye flour"],
+      "facts": [
+        { "fact_id": "f1", "text": "Northwind Mills supplies rye flour to Vega Bakery.", "entities": ["Northwind Mills", "Vega Bakery", "the rye flour"] },
+        { "fact_id": "f2", "text": "Vega Bakery sells sourdough loaves to Bartleby Cafe.", "entities": ["Vega Bakery", "Bartleby Cafe"] },
+        { "fact_id": "f3", "text": "Bartleby Cafe serves the loaves at brunch.", "entities": ["Bartleby Cafe"] },
+        { "fact_id": "f4", "text": "Northwind Mills is located in Vermont.", "entities": ["Northwind Mills"] },
+        { "fact_id": "f5", "text": "Vega Bakery uses only Northwind rye for sourdough.", "entities": ["Vega Bakery", "Northwind Mills"] },
+        { "fact_id": "f6", "text": "Bartleby Cafe opened in 2019.", "entities": ["Bartleby Cafe"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Where does Vega Bakery's rye flour come from?", "answer": "Northwind Mills", "evidence_chain": ["f1", "f5"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What state does the flour in Bartleby Cafe's brunch loaves originate from?", "answer": "Vermont", "evidence_chain": ["f1", "f2", "f4"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_007_books",
+      "entities": ["Lila", "Salt Roads", "Open Window Press", "Esperanza Vega"],
+      "facts": [
+        { "fact_id": "f1", "text": "Lila wrote the novel Salt Roads.", "entities": ["Lila", "Salt Roads"] },
+        { "fact_id": "f2", "text": "Salt Roads was published by Open Window Press.", "entities": ["Salt Roads", "Open Window Press"] },
+        { "fact_id": "f3", "text": "Open Window Press is run by Esperanza Vega.", "entities": ["Open Window Press", "Esperanza Vega"] },
+        { "fact_id": "f4", "text": "Lila lives in Lisbon.", "entities": ["Lila"] },
+        { "fact_id": "f5", "text": "Salt Roads won the Glimmer Prize in 2022.", "entities": ["Salt Roads"] },
+        { "fact_id": "f6", "text": "Esperanza Vega founded Open Window Press in 2010.", "entities": ["Esperanza Vega", "Open Window Press"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who published Lila's novel?", "answer": "Open Window Press", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "Who runs the press that published Lila's novel?", "answer": "Esperanza Vega", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_008_music",
+      "entities": ["Jonas", "Hollow Echoes", "Cobalt Records", "Bregenz"],
+      "facts": [
+        { "fact_id": "f1", "text": "Jonas drums for Hollow Echoes.", "entities": ["Jonas", "Hollow Echoes"] },
+        { "fact_id": "f2", "text": "Hollow Echoes is signed to Cobalt Records.", "entities": ["Hollow Echoes", "Cobalt Records"] },
+        { "fact_id": "f3", "text": "Cobalt Records is headquartered in Bregenz.", "entities": ["Cobalt Records", "Bregenz"] },
+        { "fact_id": "f4", "text": "Jonas grew up in Linz.", "entities": ["Jonas"] },
+        { "fact_id": "f5", "text": "Hollow Echoes formed in 2017.", "entities": ["Hollow Echoes"] },
+        { "fact_id": "f6", "text": "Bregenz sits on Lake Constance.", "entities": ["Bregenz"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Which label is Jonas's band signed to?", "answer": "Cobalt Records", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What city is Jonas's record label based in?", "answer": "Bregenz", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_009_lab",
+      "entities": ["Dr. Okafor", "the Helix Lab", "Iron Garden Inc", "biosensors"],
+      "facts": [
+        { "fact_id": "f1", "text": "Dr. Okafor leads the Helix Lab.", "entities": ["Dr. Okafor", "the Helix Lab"] },
+        { "fact_id": "f2", "text": "The Helix Lab partners with Iron Garden Inc.", "entities": ["the Helix Lab", "Iron Garden Inc"] },
+        { "fact_id": "f3", "text": "Iron Garden Inc manufactures biosensors.", "entities": ["Iron Garden Inc", "biosensors"] },
+        { "fact_id": "f4", "text": "Dr. Okafor previously taught at Cambridge.", "entities": ["Dr. Okafor"] },
+        { "fact_id": "f5", "text": "Helix Lab is a small academic group.", "entities": ["the Helix Lab"] },
+        { "fact_id": "f6", "text": "Iron Garden Inc was founded by Mei Chen.", "entities": ["Iron Garden Inc"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Which company does Dr. Okafor's lab partner with?", "answer": "Iron Garden Inc", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What kind of products does Dr. Okafor's industry partner make?", "answer": "biosensors", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_010_inheritance",
+      "entities": ["Grandfather Wallace", "the cottage", "Aunt Greta", "Cousin Iris"],
+      "facts": [
+        { "fact_id": "f1", "text": "Grandfather Wallace owned the cottage.", "entities": ["Grandfather Wallace", "the cottage"] },
+        { "fact_id": "f2", "text": "Grandfather Wallace left the cottage to Aunt Greta.", "entities": ["Grandfather Wallace", "Aunt Greta", "the cottage"] },
+        { "fact_id": "f3", "text": "Aunt Greta later gifted the cottage to Cousin Iris.", "entities": ["Aunt Greta", "Cousin Iris", "the cottage"] },
+        { "fact_id": "f4", "text": "Cousin Iris uses the cottage every summer.", "entities": ["Cousin Iris", "the cottage"] },
+        { "fact_id": "f5", "text": "The cottage sits on the coast of Maine.", "entities": ["the cottage"] },
+        { "fact_id": "f6", "text": "Aunt Greta is a retired schoolteacher.", "entities": ["Aunt Greta"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who currently owns the cottage?", "answer": "Cousin Iris", "evidence_chain": ["f2", "f3"] },
+        { "question_id": "q2", "type": "3-hop", "question": "Where does the cottage that Grandfather Wallace originally owned now sit?", "answer": "the coast of Maine", "evidence_chain": ["f1", "f3", "f5"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_011_sports",
+      "entities": ["Coach Berman", "the Falcons", "Kira", "midfield"],
+      "facts": [
+        { "fact_id": "f1", "text": "Coach Berman manages the Falcons.", "entities": ["Coach Berman", "the Falcons"] },
+        { "fact_id": "f2", "text": "Kira plays for the Falcons.", "entities": ["Kira", "the Falcons"] },
+        { "fact_id": "f3", "text": "Kira plays midfield.", "entities": ["Kira", "midfield"] },
+        { "fact_id": "f4", "text": "Coach Berman previously coached the Wolves.", "entities": ["Coach Berman"] },
+        { "fact_id": "f5", "text": "The Falcons train in the south stadium.", "entities": ["the Falcons"] },
+        { "fact_id": "f6", "text": "Kira joined the team last spring.", "entities": ["Kira"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Who coaches Kira?", "answer": "Coach Berman", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What position does Coach Berman's player Kira play?", "answer": "midfield", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_012_wedding",
+      "entities": ["Ana", "Devraj", "Hotel Solano", "Mendoza"],
+      "facts": [
+        { "fact_id": "f1", "text": "Ana married Devraj last fall.", "entities": ["Ana", "Devraj"] },
+        { "fact_id": "f2", "text": "Their reception was at Hotel Solano.", "entities": ["Hotel Solano"] },
+        { "fact_id": "f3", "text": "Hotel Solano is in Mendoza.", "entities": ["Hotel Solano", "Mendoza"] },
+        { "fact_id": "f4", "text": "Ana grew up in Buenos Aires.", "entities": ["Ana"] },
+        { "fact_id": "f5", "text": "Devraj works as a sommelier.", "entities": ["Devraj"] },
+        { "fact_id": "f6", "text": "Mendoza is famous for malbec wine.", "entities": ["Mendoza"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Where was Ana and Devraj's reception held?", "answer": "Hotel Solano", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What city did Ana and Devraj celebrate their wedding in?", "answer": "Mendoza", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_013_ship",
+      "entities": ["Captain Voss", "the Aurora", "Reykjavik", "haddock"],
+      "facts": [
+        { "fact_id": "f1", "text": "Captain Voss commands the Aurora.", "entities": ["Captain Voss", "the Aurora"] },
+        { "fact_id": "f2", "text": "The Aurora sails out of Reykjavik.", "entities": ["the Aurora", "Reykjavik"] },
+        { "fact_id": "f3", "text": "The Aurora is a haddock fishing trawler.", "entities": ["the Aurora", "haddock"] },
+        { "fact_id": "f4", "text": "Captain Voss has been at sea for thirty years.", "entities": ["Captain Voss"] },
+        { "fact_id": "f5", "text": "Reykjavik harbor freezes only rarely.", "entities": ["Reykjavik"] },
+        { "fact_id": "f6", "text": "Haddock catches peaked last summer.", "entities": ["haddock"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "From which port does Captain Voss's ship sail?", "answer": "Reykjavik", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What fish does Captain Voss's Reykjavik-based ship target?", "answer": "haddock", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_014_school",
+      "entities": ["Ms. Halliday", "the chess club", "Wren Middle School", "Saturday mornings"],
+      "facts": [
+        { "fact_id": "f1", "text": "Ms. Halliday advises the chess club.", "entities": ["Ms. Halliday", "the chess club"] },
+        { "fact_id": "f2", "text": "The chess club meets at Wren Middle School.", "entities": ["the chess club", "Wren Middle School"] },
+        { "fact_id": "f3", "text": "The club gathers on Saturday mornings.", "entities": ["the chess club", "Saturday mornings"] },
+        { "fact_id": "f4", "text": "Ms. Halliday teaches eighth-grade math.", "entities": ["Ms. Halliday"] },
+        { "fact_id": "f5", "text": "Wren Middle School has 600 students.", "entities": ["Wren Middle School"] },
+        { "fact_id": "f6", "text": "The chess club competes in a regional league.", "entities": ["the chess club"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "At what school does Ms. Halliday's chess club meet?", "answer": "Wren Middle School", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "When during the week does Ms. Halliday's club at Wren Middle School meet?", "answer": "Saturday mornings", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    },
+    {
+      "scenario_id": "scn_015_software",
+      "entities": ["Imani", "Octave Tools", "Vertex Bank", "loan-pricing"],
+      "facts": [
+        { "fact_id": "f1", "text": "Imani built Octave Tools.", "entities": ["Imani", "Octave Tools"] },
+        { "fact_id": "f2", "text": "Vertex Bank licenses Octave Tools.", "entities": ["Vertex Bank", "Octave Tools"] },
+        { "fact_id": "f3", "text": "Vertex Bank uses Octave Tools for loan-pricing.", "entities": ["Vertex Bank", "Octave Tools", "loan-pricing"] },
+        { "fact_id": "f4", "text": "Imani holds a doctorate in optimization.", "entities": ["Imani"] },
+        { "fact_id": "f5", "text": "Vertex Bank serves small-business clients.", "entities": ["Vertex Bank"] },
+        { "fact_id": "f6", "text": "Octave Tools is written in Rust.", "entities": ["Octave Tools"] }
+      ],
+      "questions": [
+        { "question_id": "q1", "type": "2-hop", "question": "Which bank licenses Imani's software?", "answer": "Vertex Bank", "evidence_chain": ["f1", "f2"] },
+        { "question_id": "q2", "type": "3-hop", "question": "What banking task does Imani's software get used for at Vertex Bank?", "answer": "loan-pricing", "evidence_chain": ["f1", "f2", "f3"] }
+      ]
+    }
+  ]
+}

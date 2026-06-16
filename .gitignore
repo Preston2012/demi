@@ -1,0 +1,99 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Data (blanket-ignore everything directly under data/, then re-include
+# the W4 Track A eval directory but keep its JSONL outputs ignored -
+# those land in a follow-up PR after the prep scripts run on a host
+# with network + corpus access). See WEDGE_4_TRACK_A_PACKET.md.
+data/*
+!data/track-a-eval/
+data/track-a-eval/*.jsonl
+!data/vault-eval/
+# W4.5 vault eval corpus IS checked in (unlike track-a-eval which is generated).
+backups/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Models (ONNX too large for git, download at deploy time)
+models/
+!models/.gitkeep
+!models/tokenizer.json
+!models/tokenizer_config.json
+
+# Thompson shadow logs
+thompson-shadow.jsonl
+thompson-shadow.jsonl.bak
+
+# Benchmark output
+benchmark-results/
+
+# LongMemEval raw dataset (too large for git, download at run time)
+fixtures/benchmark/longmemeval/*_cleaned.json
+fixtures/benchmark/longmemeval/*_oracle.json
+# Track extracted facts cache (small, expensive to regenerate)
+!fixtures/benchmark/longmemeval/extracted-facts-*.json
+
+# Official LOCOMO raw dataset (publicly downloadable, too large for git)
+fixtures/benchmark/locomo-official/locomo10.json
+# Track extracted facts cache (expensive to regenerate, ~$5-15 one-time cost)
+!fixtures/benchmark/locomo-official/extracted-facts.json
+
+# BEAM raw dataset
+fixtures/benchmark/beam/*.json
+!fixtures/benchmark/beam/*-indices.json
+!fixtures/benchmark/beam/*-nano-indices.json
+
+# Dev scripts (one-off debugging)
+run*.sh
+diag.ts
+fix-*.py
+-e 
+# Temp benchmark runners
+run-*.sh
+*.log
+*.bak
+*.bak-s6
+dual-phrasing-log*.txt
+extraction-log.txt
+auto-launch-*.sh
+
+# FRAME metric harness outputs (runtime, per-run JSON + trend jsonl)
+metric-results/
+
+# S40 sanity bench scratch dir (launchers, logs, pid files)
+s40-sanity/
+
+# S51 Wikidata SPARQL cache (regenerable; do not commit large response blobs)
+/tmp/wikidata-cache/
+
+# Wedge 1.5 Phase 5: SBOM output is generate-on-demand, never committed
+/sbom/
+
+# S78 scorecard: derived classifier cache (regenerable from query-classifier.ts)
+src/benchmark/scorecard/.cache/

@@ -1,0 +1,827 @@
+{
+  "version": "1.0",
+  "_note": "Hand-crafted starter fixture (15 scenarios, 45 questions). Re-run src/benchmark/intent-ambiguity/generator.ts to expand to 50.",
+  "scenarios": [
+    {
+      "scenario_id": "amb_001_pronoun_he",
+      "entities": ["Marcus", "David", "the contract"],
+      "facts": [
+        { "fact_id": "f1", "text": "Marcus signed the contract last Tuesday.", "about_entity": "Marcus" },
+        { "fact_id": "f2", "text": "Marcus drives a black sedan.", "about_entity": "Marcus" },
+        { "fact_id": "f3", "text": "David flew to Berlin yesterday.", "about_entity": "David" },
+        { "fact_id": "f4", "text": "David is the lead engineer on the project.", "about_entity": "David" },
+        { "fact_id": "f5", "text": "The contract is for a two-year engagement.", "about_entity": "the contract" },
+        { "fact_id": "f6", "text": "The contract was renegotiated three times before signing.", "about_entity": "the contract" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "pronoun",
+          "question": "After David flew to Berlin yesterday, did he sign the contract?",
+          "preferred_interpretation": {
+            "entity": "David",
+            "answer": "No, David flew to Berlin; the contract was signed by Marcus.",
+            "evidence": ["f1", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Marcus",
+            "answer": "Yes, he signed the contract last Tuesday."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "default-reference",
+          "question": "Who is the lead engineer?",
+          "preferred_interpretation": {
+            "entity": "David",
+            "answer": "David is the lead engineer.",
+            "evidence": ["f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Marcus",
+            "answer": "Marcus is the lead engineer."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "time-relative",
+          "question": "How long is the current contract?",
+          "preferred_interpretation": {
+            "entity": "the contract",
+            "answer": "Two years.",
+            "evidence": ["f5", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the contract",
+            "answer": "Three years."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_002_partial_name_john",
+      "entities": ["John Smith", "John Doe", "Acme Corp"],
+      "facts": [
+        { "fact_id": "f1", "text": "John Smith is the CFO at Acme Corp.", "about_entity": "John Smith" },
+        { "fact_id": "f2", "text": "John Smith joined Acme in 2018.", "about_entity": "John Smith" },
+        { "fact_id": "f3", "text": "I had lunch with John Smith yesterday to discuss the budget.", "about_entity": "John Smith" },
+        { "fact_id": "f4", "text": "John Doe is an old college friend who lives in Tokyo.", "about_entity": "John Doe" },
+        { "fact_id": "f5", "text": "John Doe works as a freelance translator.", "about_entity": "John Doe" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "partial-name",
+          "question": "What did I discuss with John yesterday?",
+          "preferred_interpretation": {
+            "entity": "John Smith",
+            "answer": "The budget at Acme Corp.",
+            "evidence": ["f3", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "John Doe",
+            "answer": "Translation work in Tokyo."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "default-reference",
+          "question": "What is John's job?",
+          "preferred_interpretation": {
+            "entity": "John Smith",
+            "answer": "CFO at Acme Corp.",
+            "evidence": ["f1", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "John Doe",
+            "answer": "Freelance translator."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "partial-name",
+          "question": "When did John join the company?",
+          "preferred_interpretation": {
+            "entity": "John Smith",
+            "answer": "John Smith joined Acme in 2018.",
+            "evidence": ["f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "John Doe",
+            "answer": "John Doe is freelance, not at a company."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_003_polysemy_apple",
+      "entities": ["Apple Inc", "the apple orchard", "Sarah"],
+      "facts": [
+        { "fact_id": "f1", "text": "Sarah is a software engineer at Apple Inc in Cupertino.", "about_entity": "Apple Inc" },
+        { "fact_id": "f2", "text": "Apple Inc launched a new chip last quarter.", "about_entity": "Apple Inc" },
+        { "fact_id": "f3", "text": "Sarah grew up on her family's apple orchard in Washington.", "about_entity": "the apple orchard" },
+        { "fact_id": "f4", "text": "The apple orchard has been in Sarah's family for four generations.", "about_entity": "the apple orchard" },
+        { "fact_id": "f5", "text": "Sarah currently lives in San Jose.", "about_entity": "Sarah" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "polysemy",
+          "question": "Tell me about Apple where Sarah works.",
+          "preferred_interpretation": {
+            "entity": "Apple Inc",
+            "answer": "Apple Inc is in Cupertino; Sarah is a software engineer there.",
+            "evidence": ["f1", "f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the apple orchard",
+            "answer": "The apple orchard in Washington where Sarah grew up."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "polysemy",
+          "question": "Where is the apple Sarah grew up around?",
+          "preferred_interpretation": {
+            "entity": "the apple orchard",
+            "answer": "The apple orchard in Washington.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Apple Inc",
+            "answer": "Cupertino, California."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "Where does Sarah live now?",
+          "preferred_interpretation": {
+            "entity": "Sarah",
+            "answer": "San Jose.",
+            "evidence": ["f5", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the apple orchard",
+            "answer": "On the family apple orchard in Washington."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_004_versions_app",
+      "entities": ["the app", "version 1", "version 2", "version 3"],
+      "facts": [
+        { "fact_id": "f1", "text": "The app shipped version 1 in January 2024.", "about_entity": "version 1" },
+        { "fact_id": "f2", "text": "The app shipped version 2 in June 2024.", "about_entity": "version 2" },
+        { "fact_id": "f3", "text": "The app shipped version 3 in March 2025.", "about_entity": "version 3" },
+        { "fact_id": "f4", "text": "Version 3 added biometric login.", "about_entity": "version 3" },
+        { "fact_id": "f5", "text": "Version 1 was a basic prototype.", "about_entity": "version 1" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "time-relative",
+          "question": "What's in the latest version of the app?",
+          "preferred_interpretation": {
+            "entity": "version 3",
+            "answer": "Biometric login, shipped March 2025.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "version 1",
+            "answer": "Basic prototype features."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "time-relative",
+          "question": "When did the app first ship?",
+          "preferred_interpretation": {
+            "entity": "version 1",
+            "answer": "January 2024.",
+            "evidence": ["f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "version 3",
+            "answer": "March 2025."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "Which version added biometric login?",
+          "preferred_interpretation": {
+            "entity": "version 3",
+            "answer": "Version 3.",
+            "evidence": ["f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "version 2",
+            "answer": "Version 2."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_005_default_travel",
+      "entities": ["Paris", "Tokyo", "Lisbon"],
+      "facts": [
+        { "fact_id": "f1", "text": "I went to Paris in March for a conference.", "about_entity": "Paris" },
+        { "fact_id": "f2", "text": "I went to Tokyo in June with my partner.", "about_entity": "Tokyo" },
+        { "fact_id": "f3", "text": "I am flying to Lisbon next Friday for a long-planned vacation.", "about_entity": "Lisbon" },
+        { "fact_id": "f4", "text": "The Lisbon trip will be ten days.", "about_entity": "Lisbon" },
+        { "fact_id": "f5", "text": "Paris was rainy the whole time.", "about_entity": "Paris" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "default-reference",
+          "question": "Where am I going on my trip?",
+          "preferred_interpretation": {
+            "entity": "Lisbon",
+            "answer": "Lisbon, next Friday for ten days.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Paris",
+            "answer": "Paris, in March."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "time-relative",
+          "question": "Where was my most recent past trip?",
+          "preferred_interpretation": {
+            "entity": "Tokyo",
+            "answer": "Tokyo in June.",
+            "evidence": ["f2", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Paris",
+            "answer": "Paris in March."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "How long is the trip?",
+          "preferred_interpretation": {
+            "entity": "Lisbon",
+            "answer": "Ten days.",
+            "evidence": ["f4", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Paris",
+            "answer": "A few days."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_006_pronoun_she",
+      "entities": ["Dr. Patel", "Dr. Okafor", "the trial"],
+      "facts": [
+        { "fact_id": "f1", "text": "Dr. Patel runs the cardiology trial.", "about_entity": "Dr. Patel" },
+        { "fact_id": "f2", "text": "Dr. Patel published her findings last month.", "about_entity": "Dr. Patel" },
+        { "fact_id": "f3", "text": "Dr. Okafor presented her keynote at the Vienna conference yesterday.", "about_entity": "Dr. Okafor" },
+        { "fact_id": "f4", "text": "Dr. Okafor specializes in pediatric oncology.", "about_entity": "Dr. Okafor" },
+        { "fact_id": "f5", "text": "The trial has enrolled 200 patients so far.", "about_entity": "the trial" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "pronoun",
+          "question": "Right after the Vienna keynote, what did she say about pediatric oncology?",
+          "preferred_interpretation": {
+            "entity": "Dr. Okafor",
+            "answer": "Dr. Okafor specializes in pediatric oncology and gave the Vienna keynote.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Dr. Patel",
+            "answer": "Dr. Patel runs the cardiology trial."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "partial-name",
+          "question": "What did Dr. P publish?",
+          "preferred_interpretation": {
+            "entity": "Dr. Patel",
+            "answer": "Cardiology trial findings.",
+            "evidence": ["f2", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Dr. Okafor",
+            "answer": "Pediatric oncology research."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "How many patients are in the trial?",
+          "preferred_interpretation": {
+            "entity": "the trial",
+            "answer": "200 patients.",
+            "evidence": ["f5"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the trial",
+            "answer": "Around 50 patients."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_007_polysemy_jaguar",
+      "entities": ["the jaguar car", "the jaguar animal", "the wildlife reserve"],
+      "facts": [
+        { "fact_id": "f1", "text": "I bought a Jaguar XF sedan last spring.", "about_entity": "the jaguar car" },
+        { "fact_id": "f2", "text": "The Jaguar XF gets serviced at the dealership in Newark.", "about_entity": "the jaguar car" },
+        { "fact_id": "f3", "text": "I saw a wild jaguar on safari in Belize last year.", "about_entity": "the jaguar animal" },
+        { "fact_id": "f4", "text": "The jaguar is the largest cat in the Americas.", "about_entity": "the jaguar animal" },
+        { "fact_id": "f5", "text": "The wildlife reserve in Belize protects jaguars and pumas.", "about_entity": "the wildlife reserve" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "polysemy",
+          "question": "Where do I take the jaguar for service?",
+          "preferred_interpretation": {
+            "entity": "the jaguar car",
+            "answer": "The dealership in Newark.",
+            "evidence": ["f1", "f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the jaguar animal",
+            "answer": "The wildlife reserve."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "polysemy",
+          "question": "Where did I see the jaguar in the wild?",
+          "preferred_interpretation": {
+            "entity": "the jaguar animal",
+            "answer": "On safari in Belize.",
+            "evidence": ["f3", "f5"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the jaguar car",
+            "answer": "At the dealership."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "When did I get the jaguar?",
+          "preferred_interpretation": {
+            "entity": "the jaguar car",
+            "answer": "Last spring.",
+            "evidence": ["f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the jaguar animal",
+            "answer": "On a safari last year."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_008_pronoun_it_meeting",
+      "entities": ["the design meeting", "the strategy meeting", "the agenda"],
+      "facts": [
+        { "fact_id": "f1", "text": "The design meeting is on Tuesday at 10am.", "about_entity": "the design meeting" },
+        { "fact_id": "f2", "text": "The design meeting will cover the new dashboard mockups.", "about_entity": "the design meeting" },
+        { "fact_id": "f3", "text": "The strategy meeting is on Thursday at 2pm.", "about_entity": "the strategy meeting" },
+        { "fact_id": "f4", "text": "The strategy meeting will set goals for the next quarter.", "about_entity": "the strategy meeting" },
+        { "fact_id": "f5", "text": "The agenda for both meetings is shared in the team folder.", "about_entity": "the agenda" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "pronoun",
+          "question": "Going into the strategy meeting Thursday, what's on it?",
+          "preferred_interpretation": {
+            "entity": "the strategy meeting",
+            "answer": "Goals for the next quarter.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the design meeting",
+            "answer": "New dashboard mockups."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "time-relative",
+          "question": "What's the next meeting on my calendar?",
+          "preferred_interpretation": {
+            "entity": "the design meeting",
+            "answer": "The design meeting Tuesday at 10am.",
+            "evidence": ["f1", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the strategy meeting",
+            "answer": "The strategy meeting Thursday."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "Where can I find the agenda?",
+          "preferred_interpretation": {
+            "entity": "the agenda",
+            "answer": "In the shared team folder.",
+            "evidence": ["f5"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the agenda",
+            "answer": "Emailed separately."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_009_partial_name_chris",
+      "entities": ["Chris Rivera", "Chris Adams", "the report"],
+      "facts": [
+        { "fact_id": "f1", "text": "Chris Rivera is my manager and writes our quarterly report.", "about_entity": "Chris Rivera" },
+        { "fact_id": "f2", "text": "Chris Rivera prefers async updates over standups.", "about_entity": "Chris Rivera" },
+        { "fact_id": "f3", "text": "Chris Adams is a vendor contact at Octave Tools.", "about_entity": "Chris Adams" },
+        { "fact_id": "f4", "text": "Chris Adams emailed about renewal pricing yesterday.", "about_entity": "Chris Adams" },
+        { "fact_id": "f5", "text": "The quarterly report is due next Friday.", "about_entity": "the report" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "partial-name",
+          "question": "What's Chris's preference about communication?",
+          "preferred_interpretation": {
+            "entity": "Chris Rivera",
+            "answer": "Async updates over standups.",
+            "evidence": ["f2", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Chris Adams",
+            "answer": "Email is fine."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "partial-name",
+          "question": "What did Chris email about yesterday?",
+          "preferred_interpretation": {
+            "entity": "Chris Adams",
+            "answer": "Renewal pricing.",
+            "evidence": ["f4", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Chris Rivera",
+            "answer": "The quarterly report."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "time-relative",
+          "question": "When is the report due?",
+          "preferred_interpretation": {
+            "entity": "the report",
+            "answer": "Next Friday.",
+            "evidence": ["f5"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the report",
+            "answer": "Already submitted."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_010_pronoun_they_team",
+      "entities": ["the platform team", "the data team", "the migration"],
+      "facts": [
+        { "fact_id": "f1", "text": "The platform team owns infrastructure and CI/CD.", "about_entity": "the platform team" },
+        { "fact_id": "f2", "text": "The platform team is led by Reza.", "about_entity": "the platform team" },
+        { "fact_id": "f3", "text": "The data team owns analytics and warehousing.", "about_entity": "the data team" },
+        { "fact_id": "f4", "text": "The data team is currently running the migration to BigQuery.", "about_entity": "the data team" },
+        { "fact_id": "f5", "text": "The migration to BigQuery is scheduled to finish in Q3.", "about_entity": "the migration" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "pronoun",
+          "question": "Now that the migration is in flight, what are they responsible for?",
+          "preferred_interpretation": {
+            "entity": "the data team",
+            "answer": "Analytics and warehousing — they own the migration.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the platform team",
+            "answer": "Infrastructure and CI/CD."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "default-reference",
+          "question": "Who leads the platform team?",
+          "preferred_interpretation": {
+            "entity": "the platform team",
+            "answer": "Reza.",
+            "evidence": ["f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the data team",
+            "answer": "Reza."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "time-relative",
+          "question": "When will the migration be done?",
+          "preferred_interpretation": {
+            "entity": "the migration",
+            "answer": "Q3.",
+            "evidence": ["f5", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the migration",
+            "answer": "Already done."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_011_default_book",
+      "entities": ["Salt Roads", "The Iron Garden", "the book club"],
+      "facts": [
+        { "fact_id": "f1", "text": "I started reading Salt Roads last weekend and I'm halfway through.", "about_entity": "Salt Roads" },
+        { "fact_id": "f2", "text": "Salt Roads is a historical novel set in 18th-century Lisbon.", "about_entity": "Salt Roads" },
+        { "fact_id": "f3", "text": "The Iron Garden was the book club pick three months ago.", "about_entity": "The Iron Garden" },
+        { "fact_id": "f4", "text": "The book club meets the first Sunday of every month.", "about_entity": "the book club" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "default-reference",
+          "question": "What book am I reading?",
+          "preferred_interpretation": {
+            "entity": "Salt Roads",
+            "answer": "Salt Roads.",
+            "evidence": ["f1", "f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "The Iron Garden",
+            "answer": "The Iron Garden."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "time-relative",
+          "question": "What was the last book club pick?",
+          "preferred_interpretation": {
+            "entity": "The Iron Garden",
+            "answer": "The Iron Garden, three months ago.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Salt Roads",
+            "answer": "Salt Roads."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "When does the book club meet?",
+          "preferred_interpretation": {
+            "entity": "the book club",
+            "answer": "First Sunday of every month.",
+            "evidence": ["f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the book club",
+            "answer": "Whenever the host is free."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_012_polysemy_python",
+      "entities": ["Python the language", "the python snake", "Mira"],
+      "facts": [
+        { "fact_id": "f1", "text": "Mira is learning Python for data analysis.", "about_entity": "Python the language" },
+        { "fact_id": "f2", "text": "Python is widely used for machine learning.", "about_entity": "Python the language" },
+        { "fact_id": "f3", "text": "Mira saw a python snake at the local zoo last weekend.", "about_entity": "the python snake" },
+        { "fact_id": "f4", "text": "The python snake at the zoo is twelve feet long.", "about_entity": "the python snake" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "polysemy",
+          "question": "What is Mira learning Python for?",
+          "preferred_interpretation": {
+            "entity": "Python the language",
+            "answer": "Data analysis.",
+            "evidence": ["f1", "f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the python snake",
+            "answer": "To handle a snake."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "polysemy",
+          "question": "How big is the python at the zoo?",
+          "preferred_interpretation": {
+            "entity": "the python snake",
+            "answer": "Twelve feet long.",
+            "evidence": ["f4", "f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Python the language",
+            "answer": "Python isn't measured in feet."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "What is Python widely used for?",
+          "preferred_interpretation": {
+            "entity": "Python the language",
+            "answer": "Machine learning.",
+            "evidence": ["f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the python snake",
+            "answer": "Pythons live in tropical regions."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_013_pronoun_he_brothers",
+      "entities": ["Tom", "Jerry", "the cabin"],
+      "facts": [
+        { "fact_id": "f1", "text": "Tom and Jerry are brothers who co-own a cabin.", "about_entity": "the cabin" },
+        { "fact_id": "f2", "text": "Tom uses the cabin in summer.", "about_entity": "Tom" },
+        { "fact_id": "f3", "text": "Jerry repaired the cabin's roof last fall.", "about_entity": "Jerry" },
+        { "fact_id": "f4", "text": "Jerry lives an hour away from the cabin.", "about_entity": "Jerry" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "pronoun",
+          "question": "Last fall when the cabin's roof was leaking, did he fix it?",
+          "preferred_interpretation": {
+            "entity": "Jerry",
+            "answer": "Yes, Jerry repaired the roof last fall.",
+            "evidence": ["f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Tom",
+            "answer": "Yes, Tom fixed it."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "default-reference",
+          "question": "Who lives nearer to the cabin?",
+          "preferred_interpretation": {
+            "entity": "Jerry",
+            "answer": "Jerry, one hour away.",
+            "evidence": ["f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Tom",
+            "answer": "Tom."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "time-relative",
+          "question": "When does Tom typically use the cabin?",
+          "preferred_interpretation": {
+            "entity": "Tom",
+            "answer": "Summer.",
+            "evidence": ["f2"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Jerry",
+            "answer": "Whenever the roof needs repair."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_014_partial_name_amazon",
+      "entities": ["Amazon the company", "the Amazon river", "the documentary"],
+      "facts": [
+        { "fact_id": "f1", "text": "I subscribe to Amazon Prime and shop there weekly.", "about_entity": "Amazon the company" },
+        { "fact_id": "f2", "text": "Amazon shipped my package in two days.", "about_entity": "Amazon the company" },
+        { "fact_id": "f3", "text": "I watched a documentary about the Amazon rainforest last night.", "about_entity": "the documentary" },
+        { "fact_id": "f4", "text": "The Amazon river runs through nine countries.", "about_entity": "the Amazon river" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "polysemy",
+          "question": "How long did Amazon take to ship my order?",
+          "preferred_interpretation": {
+            "entity": "Amazon the company",
+            "answer": "Two days.",
+            "evidence": ["f2", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "the Amazon river",
+            "answer": "The Amazon river is over 4,000 miles long."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "polysemy",
+          "question": "Through how many countries does the Amazon flow?",
+          "preferred_interpretation": {
+            "entity": "the Amazon river",
+            "answer": "Nine countries.",
+            "evidence": ["f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Amazon the company",
+            "answer": "Amazon ships to most countries."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "default-reference",
+          "question": "What documentary did I watch last night?",
+          "preferred_interpretation": {
+            "entity": "the documentary",
+            "answer": "One about the Amazon rainforest.",
+            "evidence": ["f3"]
+          },
+          "incorrect_interpretation": {
+            "entity": "Amazon the company",
+            "answer": "An ad for Amazon Prime."
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "amb_015_time_relative_fight",
+      "entities": ["my older sister", "my partner", "the disagreement"],
+      "facts": [
+        { "fact_id": "f1", "text": "I had a disagreement with my older sister last Christmas about the family house.", "about_entity": "my older sister" },
+        { "fact_id": "f2", "text": "My older sister and I patched things up by spring.", "about_entity": "my older sister" },
+        { "fact_id": "f3", "text": "My partner and I had a fight last week about scheduling.", "about_entity": "my partner" },
+        { "fact_id": "f4", "text": "My partner and I are still working through the scheduling issue.", "about_entity": "my partner" }
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "ambiguity_type": "time-relative",
+          "question": "What was the most recent disagreement?",
+          "preferred_interpretation": {
+            "entity": "my partner",
+            "answer": "With my partner last week, about scheduling.",
+            "evidence": ["f3", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "my older sister",
+            "answer": "With my sister at Christmas."
+          }
+        },
+        {
+          "question_id": "q2",
+          "ambiguity_type": "default-reference",
+          "question": "Is the disagreement resolved?",
+          "preferred_interpretation": {
+            "entity": "my partner",
+            "answer": "No — still working through it.",
+            "evidence": ["f3", "f4"]
+          },
+          "incorrect_interpretation": {
+            "entity": "my older sister",
+            "answer": "Yes — patched up by spring."
+          }
+        },
+        {
+          "question_id": "q3",
+          "ambiguity_type": "time-relative",
+          "question": "When did the older disagreement end?",
+          "preferred_interpretation": {
+            "entity": "my older sister",
+            "answer": "By spring.",
+            "evidence": ["f2", "f1"]
+          },
+          "incorrect_interpretation": {
+            "entity": "my partner",
+            "answer": "Last week."
+          }
+        }
+      ]
+    }
+  ]
+}

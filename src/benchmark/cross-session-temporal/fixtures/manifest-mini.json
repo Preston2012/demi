@@ -1,0 +1,73 @@
+{
+  "fixtureVersion": "2.0.0",
+  "bakedAt": "2026-05-10T18:12:44.526Z",
+  "embeddingModel": "bge-small-en-v1.5-onnx-fp32",
+  "seed": 42,
+  "mode": "mini",
+  "factCount": 153,
+  "questionCount": 30,
+  "pairwise": {
+    "max": 0.9184803433471378,
+    "mean": 0.47335127025937224,
+    "p99": 0.7956439058581355,
+    "enforcedMaxCosine": 0.92
+  },
+  "perTheme": {
+    "work": {
+      "facts": 17,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "hobby": {
+      "facts": 11,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "travel": {
+      "facts": 16,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "family": {
+      "facts": 20,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "health": {
+      "facts": 19,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "food": {
+      "facts": 13,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "books": {
+      "facts": 12,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "music": {
+      "facts": 13,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "weather": {
+      "facts": 16,
+      "templateShapes": 3,
+      "pool": []
+    },
+    "news": {
+      "facts": 16,
+      "templateShapes": 3,
+      "pool": []
+    }
+  },
+  "generationStats": {
+    "candidatesGenerated": 166,
+    "candidatesRejected": 13,
+    "rejectRate": 0.0783132530120482,
+    "bakeWallSeconds": 0.06
+  }
+}
