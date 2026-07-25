@@ -6,7 +6,7 @@ what the engine does (spec §8). Generalizes the single-slice prototype
 `scripts/hallucination-scorecard.py` to every bench, one unified cross-bench
 taxonomy, a measured variance layer, and an unskippable gate.
 
-Spec: `docs/internal/SCORECARD_CC_PACKET.md` (§1–14).
+Spec: `docs/internal/SCORECARD_CC_PACKET.md` (§1 to 14).
 
 ## Run it
 

@@ -90,7 +90,7 @@ We do not currently offer a paid bug bounty. We do offer:
 
 If the report affects other projects (e.g. an upstream library), we
 coordinate disclosure with those maintainers and honor reasonable
-embargoes (typically 14–30 days beyond our own fix window) so that
+embargoes (typically 14 to 30 days beyond our own fix window) so that
 patches can ship in parallel.
 
 If you intend to publish your own write-up, please share a draft with
