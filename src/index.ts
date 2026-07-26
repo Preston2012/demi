@@ -11,8 +11,18 @@ async function main(): Promise<void> {
 
   try {
     runtime = await boot();
-  } catch {
-    // boot() already logged the error and rolled back
+  } catch (err) {
+    // boot() logs and rolls back any failure raised inside its own try block,
+    // but the flag-dependency, LLM-provider and webhook validations run BEFORE
+    // that block, so those throws arrive here having logged nothing. Write to
+    // stderr directly rather than through the logger, because loadConfig() can
+    // itself be the thing that failed. A bare exit code 1 with an empty log is
+    // the worst possible first run for a fresh clone.
+    const message = err instanceof Error ? err.message : String(err);
+    process.stderr.write(`[FATAL] Boot failed: ${message}\n`);
+    if (process.env.LOG_LEVEL === 'debug' && err instanceof Error && err.stack) {
+      process.stderr.write(`${err.stack}\n`);
+    }
     process.exitCode = 1;
     return;
   }
