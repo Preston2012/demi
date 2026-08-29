@@ -97,3 +97,12 @@ s40-sanity/
 
 # S78 scorecard: derived classifier cache (regenerable from query-classifier.ts)
 src/benchmark/scorecard/.cache/
+
+# .env matches exactly one filename. A prefixed or suffixed variant walks past
+# it. Applied by fleet-adopt.sh; edit there, not here.
+.env.*
+*.env
+*.key
+*.pem
+*credential*
+*secret*
