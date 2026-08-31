@@ -65,10 +65,12 @@ VAULT confirms encryption is enforced at rest: zero plaintext leaks across all 5
 | Suite | Score | Tests |
 |---|---|---|
 | paraphrase | 91.9% | 800 cluster-level Jaccard checks across 4 paraphrasings |
-| stale-memory | 37.7% | 300 Wikidata revision-history scenarios (bi-temporal supersession) |
+| stale-memory | 37.7%, superseded, see the update below | 300 Wikidata revision-history scenarios (bi-temporal supersession) |
 | attribution | 39.6% | 240 source-disclosure queries across 5 patterns |
 
-stale-memory and attribution are low for one specific, diagnosed reason. See the note below.
+**Update, 2026-06-17, measured after `bea5522`.** The stale-memory harness carried two measurement faults. It ran a hardcoded bench prompt rather than the production per-category prompt, and its scorer matched the old value as a substring, so a renamed entity that still echoes its old name counted as a miss. Both were fixed and the suite re-scored on the same 300-scenario fixture. Supersession on real transitions, where the old and the new fact were both stored with validity dates, measures 93.0 percent, 120 of 129, on gpt-4.1-mini at seed 42, unrouted. The residual is 9 prefix renames where the model answers with the old short form of a name. The other case, where only the superseded fact was ever stored and the engine should decline rather than answer, is not yet threaded through the harness clock and is not counted here. The 37.7 percent in the table is the pre-fix figure at `bea5522`, left in place so the earlier number stays visible.
+
+attribution is low for one specific, diagnosed reason. See the note below.
 
 ### Calibration
 
@@ -79,9 +81,9 @@ stale-memory and attribution are low for one specific, diagnosed reason. See the
 
 ECE (expected calibration error) measures how closely stated confidence tracks observed accuracy: 0.100 means confidence claims and outcomes agree within about 10 points across the calibration curve. recall@K measures retrieval quality against labeled-cluster ground truth, independent of the answer model.
 
-### Why stale-memory and attribution are low
+### Why attribution is low
 
-Both trace to one cause in the retrieval layer, not the answer model. When the same fact is asserted at different times (a country's capital changes, an officeholder changes), the deduplication step collapses the near-identical claims, and the engine can keep the earlier version while the current one never reaches retrieval. attribution then cites the wrong date, and stale-memory returns the superseded value. The fix is a recency-preserving exception in the deduplication comparator, so two claims that read alike but carry different validity dates are kept apart. It is in progress. These scores are published as measured rather than scored around, because a memory engine that quietly hides its temporal blind spot is the opposite of what this project is for.
+Both trace to one cause in the retrieval layer, not the answer model. When the same fact is asserted at different times (a country's capital changes, an officeholder changes), the deduplication step collapses the near-identical claims, and the engine can keep the earlier version while the current one never reaches retrieval. attribution then cites the wrong date. The fix is a recency-preserving exception in the deduplication comparator, so two claims that read alike but carry different validity dates are kept apart. It is in progress. This score is published as measured rather than scored around, because a memory engine that quietly hides its temporal blind spot is the opposite of what this project is for. The stale-memory number in the table was measured before the two harness fixes above and the re-measured figure is stated with them.
 
 ## How to read these numbers
 
