@@ -42,13 +42,13 @@
     "node": ">=24.7.0"
   },
   "dependencies": {
-    "@huggingface/transformers": "4.2.0",
-    "@modelcontextprotocol/sdk": "1.29.0",
+    "@huggingface/transformers": "4.3.2",
+    "@modelcontextprotocol/sdk": "1.32.2",
     "better-sqlite3-multiple-ciphers": "12.9.0",
     "chrono-node": "2.9.1",
     "dotenv": "16.6.1",
-    "fastify": "5.8.5",
-    "onnxruntime-node": "1.24.3",
+    "fastify": "5.12.8",
+    "onnxruntime-node": "1.31.1",
     "pino": "9.14.0",
     "sqlite-vec": "0.1.9",
     "uuid": "^11.1.1",
@@ -65,17 +65,22 @@
     "tar": "^7.5.21",
     "postcss": "^8.5.18",
     "brace-expansion": "^5.0.8",
-    "sharp": "^0.35.0"
+    "sharp": "^0.35.0",
+    "minimatch": "11.0.1",
+    "onnxruntime-node": "$onnxruntime-node"
   },
   "devDependencies": {
-    "@cyclonedx/cyclonedx-npm": "^5.0.0",
+    "@cyclonedx/cyclonedx-npm": "^7.0.1",
     "@eslint/js": "10.0.1",
     "@types/better-sqlite3": "7.6.13",
     "@types/js-yaml": "4.0.9",
     "@types/node": "22.19.17",
     "@types/uuid": "10.0.0",
-    "@vitest/coverage-v8": "^3.2.6",
-    "eslint": "10.2.0",
+    "@vitest/coverage-v8": "^4.1.12",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1",
+    "ajv-formats-draft2019": "^1.6.1",
+    "eslint": "10.15.0",
     "eslint-config-prettier": "10.1.8",
     "husky": "9.1.7",
     "js-yaml": "^4.3.0",
@@ -85,7 +90,7 @@
     "tsx": "4.21.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.58.1",
-    "vitest": "^3.2.6"
+    "vitest": "^4.1.12"
   },
   "lint-staged": {
     "*.ts": [
