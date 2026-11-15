@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { OffsetDateTimeSchema, UuidSchema } from './formats.js';
 
 // --- Enums ---
 
@@ -163,7 +164,7 @@ export const SYSTEM_USER_ID = 'system';
 // --- Memory Record (the canonical schema) ---
 
 export const MemoryRecordSchema = z.object({
-  id: z.string().uuid(),
+  id: UuidSchema,
   // Packet 0: optional in the type so existing fixtures keep compiling.
   // The repository fills in 'system' when reading rows that lack the column,
   // and the write pipeline always sets it explicitly.
@@ -172,34 +173,34 @@ export const MemoryRecordSchema = z.object({
   claim: z.string().min(1).max(2000),
   subject: z.string().min(1).max(500),
   scope: ScopeSchema,
-  validFrom: z.string().datetime({ offset: true }).nullable(),
-  validTo: z.string().datetime({ offset: true }).nullable(),
+  validFrom: OffsetDateTimeSchema.nullable(),
+  validTo: OffsetDateTimeSchema.nullable(),
   provenance: ProvenanceSchema,
   trustClass: TrustClassSchema,
   confidence: z.number().min(0).max(1),
   sourceHash: z.string().min(1),
-  supersedes: z.string().uuid().nullable(),
-  conflictsWith: z.array(z.string().uuid()),
+  supersedes: UuidSchema.nullable(),
+  conflictsWith: z.array(UuidSchema),
   reviewStatus: ReviewStatusSchema,
   accessCount: z.number().int().min(0),
-  lastAccessed: z.string().datetime({ offset: true }),
-  createdAt: z.string().datetime({ offset: true }),
-  updatedAt: z.string().datetime({ offset: true }),
+  lastAccessed: OffsetDateTimeSchema,
+  createdAt: OffsetDateTimeSchema,
+  updatedAt: OffsetDateTimeSchema,
   embedding: z.array(z.number()).nullable(),
   permanenceStatus: PermanenceStatusSchema.default(PermanenceStatus.PROVISIONAL),
 
   // Hub-and-spoke (Novel Council: Fractal Hub-and-Spoke)
-  hubId: z.string().uuid().nullable().default(null),
+  hubId: UuidSchema.nullable().default(null),
   hubScore: z.number().min(0).max(1).default(0),
   resolution: z.number().int().min(1).max(3).default(ResolutionLevel.SPECIFIC),
   memoryType: MemoryTypeSchema.default(MemoryType.DECLARATIVE),
 
   // Versioning (Novel Council: Memory Versioning)
   versionNumber: z.number().int().min(1).default(1),
-  parentVersionId: z.string().uuid().nullable().default(null),
+  parentVersionId: UuidSchema.nullable().default(null),
 
   // Decay management (Novel Council: Decay + Pause)
-  frozenAt: z.string().datetime({ offset: true }).nullable().default(null),
+  frozenAt: OffsetDateTimeSchema.nullable().default(null),
   decayScore: z.number().min(0).max(1).default(1),
   storageTier: StorageTierSchema.default(StorageTier.ACTIVE),
 
@@ -215,8 +216,8 @@ export const MemoryRecordSchema = z.object({
   isFrozen: z.boolean().default(false),
 
   // Causal/narrative chains
-  causedBy: z.string().uuid().nullable().default(null),
-  leadsTo: z.string().uuid().nullable().default(null),
+  causedBy: UuidSchema.nullable().default(null),
+  leadsTo: UuidSchema.nullable().default(null),
 
   // Fact-Family Collapse (FFC)
   canonicalFactId: z.string().nullable().default(null),
@@ -225,8 +226,8 @@ export const MemoryRecordSchema = z.object({
   // Packet A: bi-temporal validity (Graphiti pattern)
   // validAt: when the fact became true (defaults to createdAt)
   // invalidAt: when the fact stopped being true (NULL = still valid)
-  validAt: z.string().datetime({ offset: true }).nullable().default(null),
-  invalidAt: z.string().datetime({ offset: true }).nullable().default(null),
+  validAt: OffsetDateTimeSchema.nullable().default(null),
+  invalidAt: OffsetDateTimeSchema.nullable().default(null),
 
   // Packet C3 / Bug 3: persona flag. When true, the fact carries a persona
   // constraint (vegetarian, sober, peanut allergy, etc.) and gets a fixed
@@ -340,14 +341,14 @@ export const AddMemoryInputSchema = z.object({
   scope: ScopeSchema.optional().default(Scope.GLOBAL),
   source: MemorySourceSchema.optional().default(MemorySource.LLM),
   confidence: z.number().min(0).max(1).optional(),
-  validFrom: z.string().datetime({ offset: true }).optional(),
-  validTo: z.string().datetime({ offset: true }).optional(),
+  validFrom: OffsetDateTimeSchema.optional(),
+  validTo: OffsetDateTimeSchema.optional(),
   isInhibitory: z.boolean().optional().default(false),
   inhibitionTarget: z.string().optional(),
   memoryType: MemoryTypeSchema.optional().default(MemoryType.DECLARATIVE),
   tags: z.array(z.string()).optional(),
-  causedBy: z.string().uuid().optional(),
-  leadsTo: z.string().uuid().optional(),
+  causedBy: UuidSchema.optional(),
+  leadsTo: UuidSchema.optional(),
   canonicalFactId: z.string().optional(),
   isCanonical: z.boolean().optional(),
   // Packet C3 / Bug 3: callers can mark a write as a persona fact explicitly.
@@ -372,15 +373,15 @@ export type AddMemoryInput = z.infer<typeof AddMemoryInputSchema>;
 // --- Result from adding a memory ---
 
 export const AddMemoryResultSchema = z.object({
-  id: z.string().uuid(),
+  id: UuidSchema,
   trustClass: TrustClassSchema,
   action: z.enum(['confirmed', 'stored', 'quarantined', 'rejected', 'duplicate']),
   reason: z.string(),
-  conflictsWith: z.array(z.string().uuid()).optional(),
+  conflictsWith: z.array(UuidSchema).optional(),
   // S49: existing memory IDs the new write temporally superseded.
   // Set when the write had explicit validFrom and existed older same-subject
   // related claims; write/index.ts has marked those facts invalid_at.
-  supersedes: z.array(z.string().uuid()).optional(),
+  supersedes: z.array(UuidSchema).optional(),
 });
 
 export type AddMemoryResult = z.infer<typeof AddMemoryResultSchema>;
