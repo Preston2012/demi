@@ -10,6 +10,8 @@ version: 2
 # - To move this repo to monthly version updates, copy the entry shape from any client site
 #   repo (one grouped pull request per package manager per month, 7 day cooldown).
 # - Nothing auto-merges.
+# Not listed: docker. Dependabot raises no security updates for it, and this repo takes no
+# routine version updates, so an entry would do nothing.
 
 updates:
   - package-ecosystem: npm  # "ecosystem" is Dependabot's own key name (W-7)
@@ -22,21 +24,6 @@ updates:
     open-pull-requests-limit: 0
     groups:
       npm-security:
-        applies-to: security-updates
-        update-types:
-          - minor
-          - patch
-
-  - package-ecosystem: docker  # "ecosystem" is Dependabot's own key name (W-7)
-    directories:
-      - "/"
-    schedule:
-      interval: monthly
-      time: "06:00"
-      timezone: Etc/UTC
-    open-pull-requests-limit: 0
-    groups:
-      docker-security:
         applies-to: security-updates
         update-types:
           - minor
