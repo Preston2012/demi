@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { OffsetDateTimeSchema, UuidSchema } from './formats.js';
 
 export const AuditAction = {
   CREATED: 'created',
@@ -108,17 +109,17 @@ export const AuditActionSchema = z.enum([
 ]);
 
 export const AuditEntrySchema = z.object({
-  id: z.string().uuid(),
+  id: UuidSchema,
   // S2: userId is optional on the schema for back-compat with snapshots
   // written before per-user chains. Verifier groups by this field when
   // present; if a row predates the column, it is treated as user 'system'.
   userId: z.string().nullable().optional(),
-  memoryId: z.string().uuid().nullable(),
+  memoryId: UuidSchema.nullable(),
   action: AuditActionSchema,
   details: z.string().max(2000).nullable(),
   previousHash: z.string().nullable(),
   hash: z.string(),
-  timestamp: z.string().datetime({ offset: true }),
+  timestamp: OffsetDateTimeSchema,
 });
 
 export type AuditEntry = z.infer<typeof AuditEntrySchema>;

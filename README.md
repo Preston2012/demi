@@ -36,6 +36,8 @@ Every number here is produced by the exact configuration that ships as the produ
 
 Every benchmark here is measured at a single commit, `bea5522`, unrouted.
 
+Dependencies were refreshed on 2026-11-15. The only code change is the zod 4 move, taken from the engine's own upgrade, which keeps zod 3 acceptance for ids and timestamps. The benchmark figures below were measured at `bea5522` with its original lockfile.
+
 ### Public benchmarks
 
 | Benchmark | Score | Questions |
