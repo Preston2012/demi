@@ -1,0 +1,30 @@
+version: 2
+
+# Fleet Dependabot standard (S426, Preston 2026-11-15). This repo: security fixes only.
+# Why: the public mirror; it takes its dependencies from the engine.
+#
+# - open-pull-requests-limit 0 turns routine version updates off. Security fixes still open
+#   when the advisory is published, grouped per package manager (minor and patch); a major
+#   security fix comes alone. Group rules in this file override the repository's grouped
+#   security setting for every directory named here.
+# - To move this repo to monthly version updates, copy the entry shape from any client site
+#   repo (one grouped pull request per package manager per month, 7 day cooldown).
+# - Nothing auto-merges.
+# Not listed: docker. Dependabot raises no security updates for it, and this repo takes no
+# routine version updates, so an entry would do nothing.
+
+updates:
+  - package-ecosystem: npm  # "ecosystem" is Dependabot's own key name (W-7)
+    directories:
+      - "/"
+    schedule:
+      interval: monthly
+      time: "06:00"
+      timezone: Etc/UTC
+    open-pull-requests-limit: 0
+    groups:
+      npm-security:
+        applies-to: security-updates
+        update-types:
+          - minor
+          - patch
